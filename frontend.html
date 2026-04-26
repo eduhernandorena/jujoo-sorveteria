@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujoo Sorveteria - Gestão</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; }
+        
+        .header { background: linear-gradient(135deg, #ff6b6b, #ffa500); color: white; padding: 20px; text-align: center; }
+        .header h1 { font-size: 2rem; }
+        .header p { opacity: 0.9; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        
+        .nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+        .nav button {
+            padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer;
+            background: white; color: #333; font-weight: 600; transition: 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav button:hover, .nav button.active { background: #ff6b6b; color: white; }
+        
+        .section { display: none; }
+        .section.active { display: block; }
+        
+        .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .card h2 { color: #333; margin-bottom: 15px; border-bottom: 2px solid #ff6b6b; padding-bottom: 10px; }
+        
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: 600; color: #555; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem;
+        }
+        
+        .btn { padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: 0.3s; }
+        .btn-primary { background: #ff6b6b; color: white; }
+        .btn-primary:hover { background: #e55a5a; }
+        .btn-secondary { background: #666; color: white; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+        .item { background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 4px solid #ff6b6b; }
+        .item h3 { color: #333; font-size: 1.1rem; }
+        .item p { color: #666; margin: 5px 0; }
+        .item .price { color: #ff6b6b; font-weight: bold; font-size: 1.2rem; }
+        
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .stat-card { background: linear-gradient(135deg, #ff6b6b, #ffa500); color: white; padding: 20px; border-radius: 12px; text-align: center; }
+        .stat-card h3 { font-size: 2rem; margin-bottom: 5px; }
+        .stat-card p { opacity: 0.9; }
+        
+        .alert { padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+        .alert-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .alert-error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #f5f5f5; font-weight: 600; }
+        
+        .badge { padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; }
+        .badge-ativo { background: #d4edda; color: #155724; }
+        .badge-inativo { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🍦 Jujoo Sorveteria</h1>
+        <p>Sistema de Gestão</p>
+    </div>
+    
+    <div class="container">
+        <div class="nav">
+            <button class="active" onclick="showSection('dashboard')">📊 Dashboard</button>
+            <button onclick="showSection('produtos')">🍨 Produtos</button>
+            <button onclick="showSection('estoque')">📦 Estoque</button>
+            <button onclick="showSection('vendas')">💰 Vendas</button>
+            <button onclick="showSection('compras')">🛒 Compras</button>
+            <button onclick="showSection('producao')">⚙️ Produção</button>
+            <button onclick="showSection('caixa')">💵 Caixa</button>
+            <button onclick="showSection('relatorios')">📈 Relatórios</button>
+        </div>
+        
+        <!-- Dashboard -->
+        <div id="dashboard" class="section active">
+            <div class="stats" id="stats"></div>
+        </div>
+        
+        <!-- Produtos -->
+        <div id="produtos" class="section">
+            <div class="card">
+                <h2>Novo Produto</h2>
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" id="produto-nome" placeholder="Ex: Sorvete de Chocolate">
+                </div>
+                <div class="form-group">
+                    <label>Categoria</label>
+                    <select id="produto-categoria">
+                        <option value="sorvete">Sorvete</option>
+                        <option value="picole">Picolé</option>
+                        <option value="acai">Açaí</option>
+                        <option value="topping">Topping</option>
+                        <option value="bebida">Bebida</option>
+                        <option value="acompanhamento">Acompanhamento</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preço de Venda (R$)</label>
+                    <input type="number" id="produto-preco" step="0.01" placeholder="0.00">
+                </div>
+                <div class="form-group">
+                    <label>Custo de Produção (R$)</label>
+                    <input type="number" id="produto-custo" step="0.01" placeholder="0.00">
+                </div>
+                <button class="btn btn-primary" onclick="criarProduto()">Cadastrar Produto</button>
+            </div>
+            <div class="card">
+                <h2>Produtos Cadastrados</h2>
+                <div id="lista-produtos" class="grid"></div>
+            </div>
+        </div>
+        
+        <!-- Estoque -->
+        <div id="estoque" class="section">
+            <div class="card">
+                <h2>Nova Matéria-Prima</h2>
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" id="mp-nome" placeholder="Ex: Leite Integral">
+                </div>
+                <div class="form-group">
+                    <label>Unidade</label>
+                    <select id="mp-unidade">
+                        <option value="l">Litro (l)</option>
+                        <option value="kg">Quilograma (kg)</option>
+                        <option value="g">Grama (g)</option>
+                        <option value="ml">Mililitro (ml)</option>
+                        <option value="un">Unidade (un)</option>
+                        <option value="cx">Caixa (cx)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Quantidade em Estoque</label>
+                    <input type="number" id="mp-quantidade" step="0.01" placeholder="0">
+                </div>
+                <div class="form-group">
+                    <label>Quantidade Mínima</label>
+                    <input type="number" id="mp-minima" step="0.01" placeholder="10">
+                </div>
+                <div class="form-group">
+                    <label>Preço Unitário (R$)</label>
+                    <input type="number" id="mp-preco" step="0.01" placeholder="0.00">
+                </div>
+                <button class="btn btn-primary" onclick="criarMateriaPrima()">Cadastrar Matéria-Prima</button>
+            </div>
+            <div class="card">
+                <h2>Estoque Atual</h2>
+                <div id="lista-estoque" class="grid"></div>
+            </div>
+        </div>
+        
+        <!-- Vendas -->
+        <div id="vendas" class="section">
+            <div class="card">
+                <h2>Nova Venda</h2>
+                <div id="venda-alert"></div>
+                <div class="form-group">
+                    <label>Produto</label>
+                    <select id="venda-produto"></select>
+                </div>
+                <div class="form-group">
+                    <label>Quantidade</label>
+                    <input type="number" id="venda-quantidade" value="1" min="1">
+                </div>
+                <div class="form-group">
+                    <label>Forma de Pagamento</label>
+                    <select id="venda-pagamento">
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="pix">PIX</option>
+                        <option value="cartao_credito">Cartão de Crédito</option>
+                        <option value="cartao_debito">Cartão de Débito</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" onclick="fazerVenda()">Registrar Venda</button>
+            </div>
+            <div class="card">
+                <h2>Vendas do Dia</h2>
+                <div id="lista-vendas"></div>
+            </div>
+        </div>
+        
+        <!-- Compras -->
+        <div id="compras" class="section">
+            <div class="card">
+                <h2>Nova Compra</h2>
+                <div id="compra-alert"></div>
+                <div class="form-group">
+                    <label>Fornecedor</label>
+                    <input type="text" id="compra-fornecedor" placeholder="Nome do fornecedor">
+                </div>
+                <div class="form-group">
+                    <label>Matéria-Prima</label>
+                    <select id="compra-materia"></select>
+                </div>
+                <div class="form-group">
+                    <label>Quantidade</label>
+                    <input type="number" id="compra-quantidade" value="1" min="1">
+                </div>
+                <div class="form-group">
+                    <label>Preço Unitário (R$)</label>
+                    <input type="number" id="compra-preco" step="0.01" placeholder="0.00">
+                </div>
+                <button class="btn btn-primary" onclick="fazerCompra()">Registrar Compra</button>
+            </div>
+        </div>
+        
+        <!-- Produção -->
+        <div id="producao" class="section">
+            <div class="card">
+                <h2>Registrar Produção</h2>
+                <div id="producao-alert"></div>
+                <div class="form-group">
+                    <label>Produto</label>
+                    <select id="producao-produto"></select>
+                </div>
+                <div class="form-group">
+                    <label>Quantidade a Produzir</label>
+                    <input type="number" id="producao-quantidade" value="1" min="1">
+                </div>
+                <button class="btn btn-primary" onclick="registrarProducao()">Registrar Produção</button>
+            </div>
+        </div>
+        
+        <!-- Caixa -->
+        <div id="caixa" class="section">
+            <div class="card">
+                <h2>Movimento de Caixa</h2>
+                <div class="form-group">
+                    <label>Tipo</label>
+                    <select id="caixa-tipo">
+                        <option value="entrada">Entrada</option>
+                        <option value="saida">Saída</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Valor (R$)</label>
+                    <input type="number" id="caixa-valor" step="0.01" placeholder="0.00">
+                </div>
+                <div class="form-group">
+                    <label>Descrição</label>
+                    <input type="text" id="caixa-descricao" placeholder="Descrição do movimento">
+                </div>
+                <div class="form-group">
+                    <label>Forma de Pagamento</label>
+                    <select id="caixa-forma">
+                        <option value="dinheiro">Dinheiro</option>
+                        <option value="pix">PIX</option>
+                        <option value="cartao_credito">Cartão de Crédito</option>
+                        <option value="cartao_debito">Cartão de Débito</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" onclick="criarMovimento()">Registrar Movimento</button>
+            </div>
+            <div class="card">
+                <h2>Saldo</h2>
+                <div id="caixa-saldo"></div>
+            </div>
+            <div class="card">
+                <h2>Fechamentos</h2>
+                <button class="btn btn-primary" onclick="fecharDia()">Fechamento Diário</button>
+                <button class="btn btn-secondary" onclick="fecharMes()">Fechamento Mensal</button>
+            </div>
+        </div>
+        
+        <!-- Relatórios -->
+        <div id="relatorios" class="section">
+            <div class="card">
+                <h2>Relatórios</h2>
+                <button class="btn btn-primary" onclick="relatorioVendas()">Relatório de Vendas</button>
+                <button class="btn btn-primary" onclick="relatorioEstoque()">Relatório de Estoque</button>
+                <button class="btn btn-primary" onclick="relatorioLucratividade()">Relatório de Lucratividade</button>
+            </div>
+            <div class="card">
+                <h2>Resultado</h2>
+                <div id="relatorio-resultado"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API = 'http://localhost:8000/api';
+        
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.target.classList.add('active');
+            loadData(id);
+        }
+        
+        async function loadData(section) {
+            switch(section) {
+                case 'dashboard': loadDashboard(); break;
+                case 'produtos': loadProdutos(); break;
+                case 'estoque': loadEstoque(); break;
+                case 'vendas': loadVendas(); break;
+                case 'compras': loadCompras(); break;
+                case 'producao': loadProducao(); break;
+                case 'caixa': loadCaixa(); break;
+            }
+        }
+        
+        // Dashboard
+        async function loadDashboard() {
+            const data = await fetch(`${API}/relatorios/dashboard`).then(r => r.json());
+            document.getElementById('stats').innerHTML = `
+                <div class="stat-card">
+                    <h3>R$ ${data.vendas.do_dia.toFixed(2)}</h3>
+                    <p>Vendas do Dia</p>
+                </div>
+                <div class="stat-card">
+                    <h3>${data.vendas.quantidade}</h3>
+                    <p>Quantidade de Vendas</p>
+                </div>
+                <div class="stat-card">
+                    <h3>R$ ${data.caixa.saldo_atual.toFixed(2)}</h3>
+                    <p>Saldo do Caixa</p>
+                </div>
+                <div class="stat-card">
+                    <h3>${data.estoque.itens}</h3>
+                    <p>Itens em Estoque</p>
+                </div>
+            `;
+        }
+        
+        // Produtos
+        async function loadProdutos() {
+            const produtos = await fetch(`${API}/produtos/`).then(r => r.json());
+            document.getElementById('lista-produtos').innerHTML = produtos.map(p => `
+                <div class="item">
+                    <h3>${p.nome}</h3>
+                    <p>${p.categoria}</p>
+                    <div class="price">R$ ${p.preco_venda.toFixed(2)}</div>
+                    <span class="badge badge-${p.status}">${p.status}</span>
+                </div>
+            `).join('') || '<p>Nenhum produto cadastrado</p>';
+        }
+        
+        async function criarProduto() {
+            const dados = {
+                nome: document.getElementById('produto-nome').value,
+                categoria: document.getElementById('produto-categoria').value,
+                preco_venda: parseFloat(document.getElementById('produto-preco').value),
+                custo_producao: parseFloat(document.getElementById('produto-custo').value) || 0,
+                receita: []
+            };
+            await fetch(`${API}/produtos/`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(dados)
+            });
+            alert('Produto criado com sucesso!');
+            loadProdutos();
+        }
+        
+        // Estoque
+        async function loadEstoque() {
+            const estoque = await fetch(`${API}/estoque/`).then(r => r.json());
+            document.getElementById('lista-estoque').innerHTML = estoque.map(m => `
+                <div class="item">
+                    <h3>${m.nome}</h3>
+                    <p>Unidade: ${m.unidade}</p>
+                    <div class="price">${m.quantidade_estoque} ${m.unidade}</div>
+                    <p>Mín: ${m.quantidade_minima} | Preço: R$ ${m.preco_unitario.toFixed(2)}</p>
+                    ${m.precisa_repor ? '<span style="color:red">⚠️ Repor estoque</span>' : ''}
+                </div>
+            `).join('') || '<p>Nenhuma matéria-prima cadastrada</p>';
+        }
+        
+        async function criarMateriaPrima() {
+            const dados = {
+                nome: document.getElementById('mp-nome').value,
+                unidade: document.getElementById('mp-unidade').value,
+                quantidade_estoque: parseFloat(document.getElementById('mp-quantidade').value) || 0,
+                quantidade_minima: parseFloat(document.getElementById('mp-minima').value) || 10,
+                preco_unitario: parseFloat(document.getElementById('mp-preco').value) || 0
+            };
+            await fetch(`${API}/estoque/`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(dados)
+            });
+            alert('Matéria-prima criada com sucesso!');
+            loadEstoque();
+        }
+        
+        // Vendas
+        async function loadVendas() {
+            const produtos = await fetch(`${API}/produtos/`).then(r => r.json());
+            const vendas = await fetch(`${API}/vendas/do-dia`).then(r => r.json());
+            
+            document.getElementById('venda-produto').innerHTML = produtos.map(p => 
+                `<option value='${JSON.stringify({id: p.id, nome: p.nome, preco: p.preco_venda})}'>${p.nome} - R$ ${p.preco_venda.toFixed(2)}</option>`
+            ).join('');
+            
+            document.getElementById('lista-vendas').innerHTML = vendas.length ? `
+                <table>
+                    <tr><th>ID</th><th>Total</th><th>Forma Pagamento</th><th>Data</th></tr>
+                    ${vendas.map(v => `<tr><td>${v.id}</td><td>R$ ${v.total.toFixed(2)}</td><td>${v.forma_pagamento}</td><td>${new Date(v.data).toLocaleString()}</td></tr>`).join('')}
+                </table>
+            ` : '<p>Nenhuma venda hoje</p>';
+        }
+        
+        async function fazerVenda() {
+            const produtoSel = JSON.parse(document.getElementById('venda-produto').value);
+            const qtd = parseFloat(document.getElementById('venda-quantidade').value);
+            const dados = {
+                itens: [{
+                    produto_id: produtoSel.id,
+                    produto_nome: produtoSel.nome,
+                    quantidade: qtd,
+                    preco_unitario: produtoSel.preco,
+                    desconto: 0,
+                    total: qtd * produtoSel.preco
+                }],
+                forma_pagamento: document.getElementById('venda-pagamento').value,
+                desconto_total: 0
+            };
+            
+            const result = await fetch(`${API}/vendas/`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(dados)
+            }).then(r => r.json());
+            
+            if (result.venda) {
+                document.getElementById('venda-alert').innerHTML = '<div class="alert alert-success">Venda realizada! NFCe gerada.</div>';
+                loadVendas();
+            } else {
+                document.getElementById('venda-alert').innerHTML = '<div class="alert alert-error">Erro: ' + result.detail + '</div>';
+            }
+        }
+        
+        // Compras
+        async function loadCompras() {
+            const estoque = await fetch(`${API}/estoque/`).then(r => r.json());
+            document.getElementById('compra-materia').innerHTML = estoque.map(m => 
+                `<option value='${JSON.stringify({id: m.id, nome: m.nome})}'>${m.nome}</option>`
+            ).join('');
+        }
+        
+        async function fazerCompra() {
+            const mpSel = JSON.parse(document.getElementById('compra-materia').value);
+            const dados = {
+                fornecedor: document.getElementById('compra-fornecedor').value,
+                itens: [{
+                    materia_prima_id: mpSel.id,
+                    materia_prima_nome: mpSel.nome,
+                    quantidade: parseFloat(document.getElementById('compra-quantidade').value),
+                    preco_unitario: parseFloat(document.getElementById('compra-preco').value),
+                    total: parseFloat(document.getElementById('compra-quantidade').value) * parseFloat(document.getElementById('compra-preco').value)
+                }],
+                forma_pagamento: 'dinheiro'
+            };
+            
+            const result = await fetch(`${API}/compras/`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(dados)
+            }).then(r => r.json());
+            
+            if (result.compra) {
+                document.getElementById('compra-alert').innerHTML = '<div class="alert alert-success">Compra registrada e estoque atualizado!</div>';
+            }
+        }
+        
+        // Produção
+        async function loadProducao() {
+            const produtos = await fetch(`${API}/produtos/`).then(r => r.json());
+            document.getElementById('producao-produto').innerHTML = produtos.map(p => 
+                `<option value='${JSON.stringify({id: p.id, nome: p.nome})}'>${p.nome}</option>`
+            ).join('');
+        }
+        
+        async function registrarProducao() {
+            const prodSel = JSON.parse(document.getElementById('producao-produto').value);
+            const dados = {
+                itens: [{
+                    produto_id: prodSel.id,
+                    produto_nome: prodSel.nome,
+                    quantidade: parseFloat(document.getElementById('producao-quantidade').value)
+                }]
+            };
+            
+            const result = await fetch(`${API}/producao/`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(dados)
+            }).then(r => r.json());
+            
+            if (result.erro) {
+                document.getElementById('producao-alert').innerHTML = '<div class="alert alert-error">Erro: ' + result.detalhes.join(', ') + '</div>';
+            } else {
+                document.getElementById('producao-alert').innerHTML = '<div class="alert alert-success">Produção registrada! Matérias-primas descontadas.</div>';
+            }
+        }
+        
+        // Caixa
+        async function loadCaixa() {
+            const saldo = await fetch(`${API}/caixa/saldo`).then(r => r.json());
+            document.getElementById('caixa-saldo').innerHTML = `
+                <div class="stats">
+                    <div class="stat-card"><h3>R$ ${saldo.saldo_atual.toFixed(2)}</h3><p>Saldo Atual</p></div>
+                    <div class="stat-card"><h3>R$ ${saldo.saldo_do_dia.toFixed(2)}</h3><p>Saldo do Dia</p></div>
+                </div>
+            `;
+        }
+        
+        async function criarMovimento() {
+            const dados = {
+                tipo: document.getElementById('caixa-tipo').value,
+                valor: parseFloat(document.getElementById('caixa-valor').value),
+                origem: 'despesa',
+                descricao: document.getElementById('caixa-descricao').value,
+                forma_pagamento: document.getElementById('caixa-forma').value
+            };
+            
+            await fetch(`${API}/caixa/movimento`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(dados)
+            });
+            alert('Movimento registrado!');
+            loadCaixa();
+        }
+        
+        async function fecharDia() {
+            const result = await fetch(`${API}/caixa/fechamento-diario`, {method: 'POST'}).then(r => r.json());
+            alert(`Fechamento diário: R$ ${result.saldo.toFixed(2)}`);
+        }
+        
+        async function fecharMes() {
+            const result = await fetch(`${API}/caixa/fechamento-mensal`, {method: 'POST'}).then(r => r.json());
+            alert(`Fechamento mensal: R$ ${result.saldo.toFixed(2)}`);
+        }
+        
+        // Relatórios
+        async function relatorioVendas() {
+            const r = await fetch(`${API}/relatorios/vendas`).then(r => r.json());
+            document.getElementById('relatorio-resultado').innerHTML = `
+                <p><strong>Total Vendido:</strong> R$ ${r.resumo.total_vendido.toFixed(2)}</p>
+                <p><strong>Quantidade:</strong> ${r.resumo.quantidade_vendas}</p>
+                <p><strong>Ticket Médio:</strong> R$ ${r.resumo.ticket_medio.toFixed(2)}</p>
+            `;
+        }
+        
+        async function relatorioEstoque() {
+            const r = await fetch(`${API}/relatorios/estoque`).then(r => r.json());
+            document.getElementById('relatorio-resultado').innerHTML = `
+                <p><strong>Total Itens:</strong> ${r.resumo.total_itens}</p>
+                <p><strong>Estoque Baixo:</strong> ${r.resumo.estoque_baixo}</p>
+                <p><strong>Valor Total:</strong> R$ ${r.resumo.valor_total.toFixed(2)}</p>
+            `;
+        }
+        
+        async function relatorioLucratividade() {
+            const r = await fetch(`${API}/relatorios/lucratividade`).then(r => r.json());
+            document.getElementById('relatorio-resultado').innerHTML = `
+                <p><strong>Receita:</strong> R$ ${r.resumo.receita_vendas.toFixed(2)}</p>
+                <p><strong>Custo:</strong> R$ ${r.resumo.custo_mercadorias.toFixed(2)}</p>
+                <p><strong>Lucro:</strong> R$ ${r.resumo.lucro_bruto.toFixed(2)}</p>
+                <p><strong>Margem:</strong> ${r.resumo.margem_percentual.toFixed(2)}%</p>
+                <p><em>${r.analise}</em></p>
+            `;
+        }
+        
+        // Inicializa
+        loadDashboard();
+    </script>
+</body>
+</html>

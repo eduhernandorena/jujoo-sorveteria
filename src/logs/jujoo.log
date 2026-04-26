@@ -1,0 +1,38 @@
+2026-04-26 19:29:26,251 - jujoo - INFO - Processando pagamento em dinheiro: R$ 100.0
+2026-04-26 19:29:26,253 - jujoo - INFO - Processando pagamento PIX: R$ 100.0
+2026-04-26 19:29:26,256 - jujoo - INFO - Processando cartão de crédito: R$ 100.0
+2026-04-26 19:29:26,262 - jujoo - INFO - Processando cartão de débito: R$ 100.0
+2026-04-26 19:29:26,266 - jujoo - INFO - Estornando transação: transacao_123
+2026-04-26 19:29:26,268 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-26 19:29:26,269 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-26 19:29:26,273 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-26 19:29:26,274 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-26 19:29:26,278 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-26 19:29:26,278 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-26 19:29:26,279 - jujoo - INFO - NFCe 1 cancelada
+2026-04-26 19:29:39,630 - jujoo - INFO - Processando pagamento em dinheiro: R$ 100.0
+2026-04-26 19:29:39,635 - jujoo - INFO - Processando pagamento PIX: R$ 100.0
+2026-04-26 19:29:39,639 - jujoo - INFO - Processando cartão de crédito: R$ 100.0
+2026-04-26 19:29:39,641 - jujoo - INFO - Processando cartão de débito: R$ 100.0
+2026-04-26 19:29:39,648 - jujoo - INFO - Estornando transação: transacao_123
+2026-04-26 19:29:39,651 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-26 19:29:39,652 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-26 19:29:39,655 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-26 19:29:39,656 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-26 19:29:39,659 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-26 19:29:39,661 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-26 19:29:39,661 - jujoo - INFO - NFCe 1 cancelada
+2026-04-26 19:30:59,986 - jujoo - INFO - Fechamento diário 2026-04-26: R$ 0.0
+2026-04-26 19:31:08,782 - jujoo - INFO - ==================================================
+2026-04-26 19:31:08,782 - jujoo - INFO - Iniciando Jujoo Sorveteria
+2026-04-26 19:31:08,782 - jujoo - INFO - ==================================================
+2026-04-26 19:31:08,837 - jujoo - INFO - Iniciando Jujoo Sorveteria API v1.0.0
+2026-04-26 19:34:36,939 - jujoo - INFO - ==================================================
+2026-04-26 19:34:36,940 - jujoo - INFO - Iniciando Jujoo Sorveteria
+2026-04-26 19:34:36,940 - jujoo - INFO - ==================================================
+2026-04-26 19:34:37,060 - jujoo - INFO - Iniciando Jujoo Sorveteria API v1.0.0
+2026-04-26 19:38:02,810 - jujoo - INFO - Encerrando API
+2026-04-26 19:38:04,557 - jujoo - INFO - ==================================================
+2026-04-26 19:38:04,557 - jujoo - INFO - Iniciando Jujoo Sorveteria
+2026-04-26 19:38:04,557 - jujoo - INFO - ==================================================
+2026-04-26 19:38:04,615 - jujoo - INFO - Iniciando Jujoo Sorveteria API v1.0.0
