@@ -33,5 +33,5 @@ def criar_producao(dados: ProducaoCreate):
     """Cria nova produção"""
     resultado = producao_service.criar(dados)
     if "erro" in resultado:
-        raise HTTPException(status_code=400, detail=resultado["erro"])
+        raise HTTPException(status_code=400, detail=resultado.get("detalhes") or resultado["erro"])
     return resultado

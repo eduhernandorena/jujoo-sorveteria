@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "id": "prod_20260426195312_7543ed09",
+    "nome": "Teste Creme",
+    "categoria": "sorvete",
+    "descricao": "teste",
+    "preco_venda": 12.5,
+    "custo_producao": 6.2,
+    "receita": [],
+    "status": "ativo",
+    "data": "2026-04-26T19:53:12.131487",
+    "data_cadastro": "2026-04-26T19:53:12.131487",
+    "data_atualizacao": "2026-04-26T19:53:12.131487"
+  },
+  {
+    "id": "prod_20260426195453_0c4af69a",
+    "nome": "Morango Teste",
+    "categoria": "sorvete",
+    "descricao": "ok",
+    "preco_venda": 14.9,
+    "custo_producao": 7.1,
+    "receita": [],
+    "status": "ativo",
+    "data": "2026-04-26T19:54:53.093864",
+    "data_cadastro": "2026-04-26T19:54:53.093864",
+    "data_atualizacao": "2026-04-26T19:54:53.093864"
+  },
+  {
+    "id": "prod_20260426195525_50ba6987",
+    "nome": "Chocolate",
+    "categoria": "sorvete",
+    "descricao": "",
+    "preco_venda": 25.0,
+    "custo_producao": 12.0,
+    "receita": [],
+    "status": "ativo",
+    "data": "2026-04-26T19:55:25.470623",
+    "data_cadastro": "2026-04-26T19:55:25.470623",
+    "data_atualizacao": "2026-04-26T19:55:25.470623"
+  },
+  {
+    "id": "prod_20260426200352_32223380",
+    "nome": "Sorvete de Morango",
+    "categoria": "sorvete",
+    "descricao": "Sorvete artesanal de morango",
+    "preco_venda": 15.0,
+    "custo_producao": 5.0,
+    "receita": [],
+    "status": "ativo",
+    "data": "2026-04-26T20:03:52.503543",
+    "data_cadastro": "2026-04-26T20:03:52.503543",
+    "data_atualizacao": "2026-04-26T20:03:52.503543"
+  },
+  {
+    "id": "prod_20260426221042_c7875582",
+    "nome": "Sorvete de Morango",
+    "categoria": "sorvete",
+    "descricao": "Sorvete artesanal de morango",
+    "preco_venda": 15.0,
+    "custo_producao": 5.0,
+    "receita": [],
+    "status": "ativo",
+    "data": "2026-04-26T22:10:42.794653",
+    "data_cadastro": "2026-04-26T22:10:42.794653",
+    "data_atualizacao": "2026-04-26T22:10:42.794653"
+  }
+]

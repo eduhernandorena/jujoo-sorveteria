@@ -56,6 +56,7 @@ class ProdutoResponse(BaseModel):
     descricao: str
     preco_venda: float
     custo_producao: float
+    receita: List[ReceitaItem] = []
     status: str
     data_cadastro: datetime
     data_atualizacao: datetime

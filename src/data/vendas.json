@@ -1,1 +1,71 @@
-[]
+[
+  {
+    "id": "venda_20260426195751_d37f08d3",
+    "itens": [
+      {
+        "produto_id": "prod_20260426195525_50ba6987",
+        "produto_nome": "Chocolate",
+        "quantidade": 1.0,
+        "preco_unitario": 25.0,
+        "desconto": 0.0,
+        "total": 25.0
+      }
+    ],
+    "subtotal": 25.0,
+    "desconto_total": 0.0,
+    "total": 25.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-26T19:57:51.920936",
+    "data_cadastro": "2026-04-26T19:57:51.920936",
+    "data_atualizacao": "2026-04-26T19:57:51.923468",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260426195801_3a33e76d",
+    "itens": [
+      {
+        "produto_id": "prod_20260426195312_7543ed09",
+        "produto_nome": "Teste Creme",
+        "quantidade": 1.0,
+        "preco_unitario": 12.5,
+        "desconto": 0.0,
+        "total": 12.5
+      }
+    ],
+    "subtotal": 12.5,
+    "desconto_total": 0.0,
+    "total": 12.5,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-26T19:58:01.622500",
+    "data_cadastro": "2026-04-26T19:58:01.622500",
+    "data_atualizacao": "2026-04-26T19:58:01.624927",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260426200539_88ba39f1",
+    "itens": [
+      {
+        "produto_id": "prod_20260426195525_50ba6987",
+        "produto_nome": "Chocolate",
+        "quantidade": 1.0,
+        "preco_unitario": 25.0,
+        "desconto": 0.0,
+        "total": 25.0
+      }
+    ],
+    "subtotal": 25.0,
+    "desconto_total": 0.0,
+    "total": 25.0,
+    "forma_pagamento": "cartao_credito",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-26T20:05:39.878245",
+    "data_cadastro": "2026-04-26T20:05:39.878245",
+    "data_atualizacao": "2026-04-26T20:05:39.880490",
+    "nfce_id": "nfce_1"
+  }
+]

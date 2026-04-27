@@ -2,6 +2,7 @@
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 from src.models.venda import Venda, VendaCreate, VendaResponse, ItemVenda
+from src.models.caixa import MovimentoCaixaCreate
 from src.repositories.arquivo_repo import ArquivoRepositorio
 from src.core.config import ARQUIVO_VENDAS
 from src.utils.logger import logger
@@ -69,27 +70,27 @@ class VendaService:
             tipo="entrada",
             valor=total,
             origem="venda",
-            descricao=f"Venda #{venda.id}",
-            referencia_id=venda.id,
+            descricao=f"Venda #{venda['id']}",
+            referencia_id=venda["id"],
             forma_pagamento=dados.forma_pagamento
         ))
         
         # Emitir NFCe
         nfce = mock_nfce.emitir(
-            venda_id=venda.id,
+            venda_id=venda["id"],
             itens=[item.model_dump() for item in dados.itens],
             forma_pagamento=dados.forma_pagamento,
             total=subtotal,
             desconto=dados.desconto_total
         )
-        
+
         # Atualizar venda com ID da NFCe
-        self.repo.atualizar(venda.id, {"nfce_id": nfce.id})
-        
-        logger.info(f"Venda criada: {venda.id} - R$ {total}")
-        
+        self.repo.atualizar(venda["id"], {"nfce_id": nfce.id})
+
+        logger.info(f"Venda criada: {venda['id']} - R$ {total}")
+
         return {
-            "venda": self._to_response(self.repo.buscar_por_id(venda.id)),
+            "venda": self._to_response(self.repo.buscar_por_id(venda["id"])),
             "pagamento": resultado_pagamento,
             "nfce": nfce.model_dump()
         }

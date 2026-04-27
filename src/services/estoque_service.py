@@ -47,7 +47,7 @@ class EstoqueService:
             "status": "ativo"
         }
         materia = self.repo.criar(materia_dict)
-        logger.info(f"Matéria-prima criada: {materia.nome}")
+        logger.info(f"Matéria-prima criada: {materia['nome']}")
         return self._to_response(materia)
     
     def atualizar(self, id: str, dados: MateriaPrimaUpdate) -> Optional[MateriaPrimaResponse]:

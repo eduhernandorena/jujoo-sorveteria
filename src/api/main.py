@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from pathlib import Path
 from src.api.routes import produtos, estoque, caixa, vendas, compras, producao, relatorios, monitor
-from src.core.config import API_TITLE, API_VERSION
+from src.core.config import API_TITLE, API_VERSION, CORS_ORIGINS
 from src.utils.logger import logger
 
 # Criar aplicação FastAPI
@@ -17,7 +17,7 @@ app = FastAPI(
 # Configurar CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=CORS_ORIGINS if CORS_ORIGINS else ["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

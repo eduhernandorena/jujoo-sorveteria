@@ -43,7 +43,7 @@ class ProdutoService:
             "status": "ativo"
         }
         produto = self.repo.criar(produto_dict)
-        logger.info(f"Produto criado: {produto.nome}")
+        logger.info(f"Produto criado: {produto['nome']}")
         return self._to_response(produto)
     
     def atualizar(self, id: str, dados: ProdutoUpdate) -> Optional[ProdutoResponse]:
@@ -67,9 +67,10 @@ class ProdutoService:
             descricao=produto.get("descricao", ""),
             preco_venda=produto["preco_venda"],
             custo_producao=produto.get("custo_producao", 0),
+            receita=produto.get("receita", []),
             status=produto["status"],
-            data_cadastro=produto.get("data_cadastro"),
-            data_atualizacao=produto.get("data_atualizacao")
+            data_cadastro=produto.get("data_cadastro") or produto.get("data") or produto.get("data_atualizacao"),
+            data_atualizacao=produto.get("data_atualizacao") or produto.get("data_cadastro") or produto.get("data")
         )
 
 

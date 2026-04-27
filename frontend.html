@@ -5,158 +5,721 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jujoo Sorveteria - Gestão</title>
     <style>
+        :root {
+            --bg: #fff8f2;
+            --bg-soft: #fffdfb;
+            --surface: rgba(255, 255, 255, 0.86);
+            --surface-strong: #ffffff;
+            --border: rgba(106, 56, 29, 0.12);
+            --text: #2d1b12;
+            --text-muted: #7b665c;
+            --accent: #f26444;
+            --accent-strong: #db4e30;
+            --accent-soft: #fff1e6;
+            --success: #197a52;
+            --success-soft: #e8f6ef;
+            --danger: #b54236;
+            --danger-soft: #fdebea;
+            --shadow: 0 18px 40px rgba(116, 63, 28, 0.08);
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; }
-        
-        .header { background: linear-gradient(135deg, #ff6b6b, #ffa500); color: white; padding: 20px; text-align: center; }
-        .header h1 { font-size: 2rem; }
-        .header p { opacity: 0.9; }
-        
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        
-        .nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+
+        body {
+            font-family: "Aptos", "Trebuchet MS", "Segoe UI", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(255, 191, 126, 0.36), transparent 30%),
+                radial-gradient(circle at top right, rgba(242, 100, 68, 0.16), transparent 28%),
+                linear-gradient(180deg, #fffaf5 0%, #fff5ee 100%);
+            min-height: 100vh;
+        }
+
+        .shell {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 24px;
+            padding: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            border-radius: 24px;
+            background:
+                linear-gradient(135deg, rgba(255,255,255,0.92), rgba(255,245,238,0.85)),
+                linear-gradient(135deg, #f26444, #f0ae52);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(12px);
+            margin-bottom: 18px;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 720px;
+        }
+
+        .eyebrow {
+            width: fit-content;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent-strong);
+            background: rgba(255, 255, 255, 0.74);
+            border: 1px solid rgba(242, 100, 68, 0.14);
+        }
+
+        .header h1 {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            line-height: 1;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 56ch;
+        }
+
+        .header-meta {
+            min-width: 230px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .meta-card {
+            padding: 16px 18px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.55);
+        }
+
+        .meta-card strong {
+            display: block;
+            font-size: 0.85rem;
+            margin-bottom: 6px;
+            color: var(--text-muted);
+        }
+
+        .meta-card span {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .container { padding-top: 8px; }
+
+        .nav {
+            position: sticky;
+            top: 18px;
+            z-index: 10;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+            padding: 12px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.72);
+            box-shadow: 0 10px 30px rgba(86, 46, 22, 0.08);
+        }
+
         .nav button {
-            padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer;
-            background: white; color: #333; font-weight: 600; transition: 0.3s;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 11px 16px;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            cursor: pointer;
+            background: transparent;
+            color: var(--text-muted);
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.25s ease;
         }
-        .nav button:hover, .nav button.active { background: #ff6b6b; color: white; }
-        
+
+        .nav button:hover {
+            color: var(--text);
+            background: rgba(242, 100, 68, 0.08);
+            border-color: rgba(242, 100, 68, 0.12);
+        }
+
+        .nav button.active {
+            background: linear-gradient(135deg, var(--accent), #f39b4a);
+            color: white;
+            box-shadow: 0 10px 24px rgba(242, 100, 68, 0.28);
+        }
+
         .section { display: none; }
-        .section.active { display: block; }
-        
-        .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .card h2 { color: #333; margin-bottom: 15px; border-bottom: 2px solid #ff6b6b; padding-bottom: 10px; }
-        
-        .form-group { margin-bottom: 15px; }
-        .form-group label { display: block; margin-bottom: 5px; font-weight: 600; color: #555; }
-        .form-group input, .form-group select, .form-group textarea {
-            width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem;
+        .section.active {
+            display: grid;
+            gap: 20px;
+            animation: fadeIn 0.24s ease;
         }
-        
-        .btn { padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: 0.3s; }
-        .btn-primary { background: #ff6b6b; color: white; }
-        .btn-primary:hover { background: #e55a5a; }
-        .btn-secondary { background: #666; color: white; }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
-        .item { background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 4px solid #ff6b6b; }
-        .item h3 { color: #333; font-size: 1.1rem; }
-        .item p { color: #666; margin: 5px 0; }
-        .item .price { color: #ff6b6b; font-weight: bold; font-size: 1.2rem; }
-        
-        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
-        .stat-card { background: linear-gradient(135deg, #ff6b6b, #ffa500); color: white; padding: 20px; border-radius: 12px; text-align: center; }
-        .stat-card h3 { font-size: 2rem; margin-bottom: 5px; }
-        .stat-card p { opacity: 0.9; }
-        
-        .alert { padding: 15px; border-radius: 8px; margin-bottom: 15px; }
-        .alert-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-        .alert-error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-        
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 16px;
+        }
+
+        .section-header h2 {
+            font-size: 1.6rem;
+            margin-bottom: 4px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+            gap: 20px;
+            align-items: start;
+        }
+
+        .content-grid.single {
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            padding: 22px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(14px);
+        }
+
+        .card h2 {
+            font-size: 1.15rem;
+            margin-bottom: 6px;
+        }
+
+        .card-intro {
+            margin-bottom: 18px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .form-grid .form-group.full { grid-column: 1 / -1; }
+
+        .form-group { margin-bottom: 0; }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            font-size: 0.98rem;
+            color: var(--text);
+            background: rgba(255, 255, 255, 0.78);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: rgba(242, 100, 68, 0.45);
+            box-shadow: 0 0 0 4px rgba(242, 100, 68, 0.12);
+            background: white;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        .btn {
+            padding: 12px 18px;
+            border: 1px solid transparent;
+            border-radius: 14px;
+            cursor: pointer;
+            font-size: 0.96rem;
+            font-weight: 700;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            color: white;
+            background: linear-gradient(135deg, var(--accent), #f39b4a);
+            box-shadow: 0 10px 24px rgba(242, 100, 68, 0.24);
+        }
+
+        .btn-primary:hover { transform: translateY(-1px); }
+
+        .btn-secondary {
+            color: var(--text);
+            background: rgba(255, 255, 255, 0.78);
+            border-color: var(--border);
+        }
+
+        .btn-secondary:hover { background: white; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+
+        .item {
+            background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,248,243,0.92));
+            padding: 18px;
+            border-radius: 18px;
+            border: 1px solid rgba(242, 100, 68, 0.1);
+            box-shadow: 0 12px 24px rgba(116, 63, 28, 0.06);
+        }
+
+        .item h3 { color: var(--text); font-size: 1.05rem; margin-bottom: 8px; }
+        .item p { color: var(--text-muted); margin: 4px 0; }
+        .item .price { color: var(--accent-strong); font-weight: 800; font-size: 1.25rem; margin: 10px 0 8px; }
+
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+
+        .stat-card {
+            position: relative;
+            overflow: hidden;
+            color: white;
+            padding: 22px;
+            border-radius: 22px;
+            text-align: left;
+            background: linear-gradient(145deg, #f26444 0%, #f39b4a 100%);
+            box-shadow: 0 18px 32px rgba(242, 100, 68, 0.24);
+        }
+
+        .stat-card::after {
+            content: "";
+            position: absolute;
+            inset: auto -20px -28px auto;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.12);
+        }
+
+        .stat-card h3 { font-size: 2rem; margin-bottom: 8px; position: relative; z-index: 1; }
+        .stat-card p { opacity: 0.92; position: relative; z-index: 1; }
+
+        .alert {
+            padding: 14px 16px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            border: 1px solid transparent;
+            font-weight: 600;
+        }
+
+        .alert-success { background: var(--success-soft); color: var(--success); border-color: rgba(25, 122, 82, 0.12); }
+        .alert-error { background: var(--danger-soft); color: var(--danger); border-color: rgba(181, 66, 54, 0.12); }
+
+        .table-wrap {
+            overflow-x: auto;
+            border-radius: 16px;
+            border: 1px solid rgba(106, 56, 29, 0.08);
+            background: rgba(255,255,255,0.75);
+        }
+
         table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
-        th { background: #f5f5f5; font-weight: 600; }
-        
-        .badge { padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; }
-        .badge-ativo { background: #d4edda; color: #155724; }
-        .badge-inativo { background: #f8d7da; color: #721c24; }
+        th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid rgba(106, 56, 29, 0.08); }
+        th { background: rgba(242, 100, 68, 0.06); font-weight: 800; color: var(--text); }
+        tr:last-child td { border-bottom: none; }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 0.76rem;
+            font-weight: 800;
+        }
+
+        .badge-ativo { background: #e7f6ee; color: var(--success); }
+        .badge-inativo { background: #fdecea; color: var(--danger); }
+
+        .inline-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr auto;
+            gap: 10px;
+            align-items: end;
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(106, 56, 29, 0.08);
+        }
+
+        .muted { color: var(--text-muted); font-size: 0.93rem; line-height: 1.5; }
+
+        .empty-state {
+            padding: 20px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.65);
+            color: var(--text-muted);
+            border: 1px dashed rgba(106, 56, 29, 0.14);
+        }
+
+        .stack { display: grid; gap: 20px; }
+        .mini-stack { display: grid; gap: 12px; }
+        .panel-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 20px; align-items: start; }
+        .split-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .toolbar p { color: var(--text-muted); }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 14px; }
+        .product-card {
+            padding: 18px;
+            border-radius: 20px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,247,240,0.9));
+            border: 1px solid rgba(242, 100, 68, 0.12);
+            box-shadow: 0 14px 28px rgba(116, 63, 28, 0.06);
+        }
+        .product-card.active {
+            border-color: rgba(242, 100, 68, 0.34);
+            box-shadow: 0 18px 32px rgba(242, 100, 68, 0.16);
+        }
+        .product-card-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .product-card-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+        .compact-btn {
+            padding: 9px 12px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,0.82);
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .chip-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+        .chip {
+            padding: 7px 10px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent-strong);
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+        .recipe-row {
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(120px, 0.8fr) minmax(100px, 0.7fr) auto;
+            gap: 10px;
+            align-items: end;
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 16px;
+            border: 1px solid rgba(106, 56, 29, 0.08);
+            background: rgba(255,255,255,0.72);
+        }
+        .aside-note {
+            padding: 14px 16px;
+            border-radius: 16px;
+            background: rgba(242, 100, 68, 0.07);
+            color: var(--text-muted);
+        }
+        .stock-list { display: grid; gap: 10px; }
+        .stock-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 14px 16px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.76);
+            border: 1px solid rgba(106, 56, 29, 0.08);
+        }
+        .stock-row strong { display: block; margin-bottom: 4px; }
+        .report-grid { display: grid; gap: 20px; }
+        .report-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+        .report-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+        .metric-card {
+            padding: 18px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.82);
+            border: 1px solid rgba(106, 56, 29, 0.08);
+        }
+        .metric-card strong {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-muted);
+            font-size: 0.86rem;
+        }
+        .metric-card span {
+            font-size: 1.45rem;
+            font-weight: 800;
+        }
+        .report-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+        .list-card {
+            padding: 18px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.82);
+            border: 1px solid rgba(106, 56, 29, 0.08);
+        }
+        .list-card h3 { margin-bottom: 12px; }
+        .kv-list { display: grid; gap: 10px; }
+        .kv-item {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(106, 56, 29, 0.08);
+        }
+        .kv-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .report-summary-text {
+            padding: 18px;
+            border-radius: 18px;
+            background: rgba(242, 100, 68, 0.08);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 980px) {
+            .header, .section-header, .content-grid { grid-template-columns: 1fr; display: grid; }
+            .header-meta { min-width: 0; }
+            .content-grid { gap: 16px; }
+            .panel-grid, .split-grid, .report-detail-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 720px) {
+            .shell { padding: 16px; }
+            .header { padding: 22px; border-radius: 20px; }
+            .nav { top: 12px; }
+            .form-grid { grid-template-columns: 1fr; }
+            .inline-row { grid-template-columns: 1fr; }
+            .recipe-row { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
+    <div class="shell">
     <div class="header">
-        <h1>🍦 Jujoo Sorveteria</h1>
-        <p>Sistema de Gestão</p>
+        <div class="brand">
+            <span class="eyebrow">Operação da Loja</span>
+            <h1>Jujoo Sorveteria</h1>
+            <p>Controle produtos, estoque, vendas, produção e caixa numa única tela, com fluxo mais rápido para a rotina do balcão e da cozinha.</p>
+        </div>
+        <div class="header-meta">
+            <div class="meta-card">
+                <strong>Painel</strong>
+                <span>Gestão em tempo real</span>
+            </div>
+            <div class="meta-card">
+                <strong>Status</strong>
+                <span>Frontend conectado à API local</span>
+            </div>
+        </div>
     </div>
     
     <div class="container">
         <div class="nav">
-            <button class="active" onclick="showSection('dashboard')">📊 Dashboard</button>
-            <button onclick="showSection('produtos')">🍨 Produtos</button>
-            <button onclick="showSection('estoque')">📦 Estoque</button>
-            <button onclick="showSection('vendas')">💰 Vendas</button>
-            <button onclick="showSection('compras')">🛒 Compras</button>
-            <button onclick="showSection('producao')">⚙️ Produção</button>
-            <button onclick="showSection('caixa')">💵 Caixa</button>
-            <button onclick="showSection('relatorios')">📈 Relatórios</button>
+            <button class="active" onclick="showSection('dashboard')">Dashboard</button>
+            <button onclick="showSection('produtos')">Produtos</button>
+            <button onclick="showSection('vendas')">Vendas</button>
+            <button onclick="showSection('compras')">Compras</button>
+            <button onclick="showSection('caixa')">Caixa</button>
+            <button onclick="showSection('relatorios')">Relatórios</button>
         </div>
         
         <!-- Dashboard -->
         <div id="dashboard" class="section active">
+            <div class="section-header">
+                <div>
+                    <h2>Visão Geral</h2>
+                    <p>Um resumo rápido do dia para acompanhar vendas, caixa e operação.</p>
+                </div>
+            </div>
             <div class="stats" id="stats"></div>
         </div>
         
         <!-- Produtos -->
         <div id="produtos" class="section">
-            <div class="card">
-                <h2>Novo Produto</h2>
-                <div class="form-group">
-                    <label>Nome</label>
-                    <input type="text" id="produto-nome" placeholder="Ex: Sorvete de Chocolate">
+            <div class="section-header">
+                <div>
+                    <h2>Produtos</h2>
+                    <p>Cadastre o produto final, monte a receita padrão, consulte o estoque base e dispare uma produção sem sair da mesma aba.</p>
                 </div>
-                <div class="form-group">
-                    <label>Categoria</label>
-                    <select id="produto-categoria">
-                        <option value="sorvete">Sorvete</option>
-                        <option value="picole">Picolé</option>
-                        <option value="acai">Açaí</option>
-                        <option value="topping">Topping</option>
-                        <option value="bebida">Bebida</option>
-                        <option value="acompanhamento">Acompanhamento</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Preço de Venda (R$)</label>
-                    <input type="number" id="produto-preco" step="0.01" placeholder="0.00">
-                </div>
-                <div class="form-group">
-                    <label>Custo de Produção (R$)</label>
-                    <input type="number" id="produto-custo" step="0.01" placeholder="0.00">
-                </div>
-                <button class="btn btn-primary" onclick="criarProduto()">Cadastrar Produto</button>
             </div>
-            <div class="card">
-                <h2>Produtos Cadastrados</h2>
-                <div id="lista-produtos" class="grid"></div>
+            <div class="panel-grid">
+                <div class="stack">
+                    <div class="card">
+                        <div class="toolbar">
+                            <div>
+                                <h2>Cadastro e Edição</h2>
+                                <p class="card-intro">Defina o produto final e a receita padrão usada nas produções.</p>
+                            </div>
+                            <span id="produto-form-status" class="badge badge-ativo">Novo produto</span>
+                        </div>
+                        <input type="hidden" id="produto-id">
+                        <div class="form-grid">
+                            <div class="form-group full">
+                                <label>Nome</label>
+                                <input type="text" id="produto-nome" placeholder="Ex: Sorvete de Chocolate">
+                            </div>
+                            <div class="form-group">
+                                <label>Categoria</label>
+                                <select id="produto-categoria">
+                                    <option value="sorvete">Sorvete</option>
+                                    <option value="picole">Picolé</option>
+                                    <option value="acai">Açaí</option>
+                                    <option value="topping">Topping</option>
+                                    <option value="bebida">Bebida</option>
+                                    <option value="acompanhamento">Acompanhamento</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Preço de Venda (R$)</label>
+                                <input type="number" id="produto-preco" step="0.01" placeholder="0.00">
+                            </div>
+                            <div class="form-group">
+                                <label>Custo de Produção (R$)</label>
+                                <input type="number" id="produto-custo" step="0.01" placeholder="0.00">
+                            </div>
+                            <div class="form-group full">
+                                <label>Receita Padrão</label>
+                                <p class="muted">Defina quanto cada matéria-prima consome para produzir uma unidade do produto final.</p>
+                                <div id="produto-receita"></div>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn-secondary" onclick="adicionarItemReceita()">Adicionar Item à Receita</button>
+                            <button class="btn btn-secondary" onclick="resetProdutoForm()">Limpar</button>
+                            <button class="btn btn-primary" onclick="salvarProduto()">Salvar Produto</button>
+                        </div>
+                    </div>
+                    <div class="split-grid">
+                        <div class="card">
+                            <h2>Estoque Base</h2>
+                            <p class="card-intro">Referência rápida de matérias-primas para montar a receita.</p>
+                            <div id="lista-estoque-produtos" class="stock-list"></div>
+                        </div>
+                        <div class="card">
+                            <h2>Produção Rápida</h2>
+                            <p class="card-intro">Use a receita padrão do produto ou ajuste o consumo do lote antes de lançar.</p>
+                            <div id="producao-alert"></div>
+                            <div class="form-grid">
+                                <div class="form-group full">
+                                    <label>Produto</label>
+                                    <select id="producao-produto"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Quantidade a Produzir</label>
+                                    <input type="number" id="producao-quantidade" value="1" min="1">
+                                </div>
+                                <div class="form-group full">
+                                    <label>Consumo do Lote</label>
+                                    <div id="producao-materias"></div>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button class="btn btn-secondary" onclick="resetMateriasProducao()">Usar Receita do Produto</button>
+                                <button class="btn btn-secondary" onclick="adicionarMateriaProducao()">Adicionar Matéria-Prima</button>
+                                <button class="btn btn-primary" onclick="registrarProducao()">Registrar Produção</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack">
+                    <div class="card">
+                        <div class="toolbar">
+                            <div>
+                                <h2>Catálogo de Produtos</h2>
+                                <p class="card-intro">Selecione um item para editar preço, categoria e receita.</p>
+                            </div>
+                        </div>
+                        <div id="lista-produtos" class="product-grid"></div>
+                    </div>
+                    <div class="card">
+                        <h2>Produções do Dia</h2>
+                        <p class="card-intro">Histórico do que foi produzido hoje com o consumo registrado.</p>
+                        <div id="lista-producao"></div>
+                    </div>
+                </div>
             </div>
         </div>
         
         <!-- Estoque -->
         <div id="estoque" class="section">
-            <div class="card">
-                <h2>Nova Matéria-Prima</h2>
-                <div class="form-group">
-                    <label>Nome</label>
-                    <input type="text" id="mp-nome" placeholder="Ex: Leite Integral">
+            <div class="section-header">
+                <div>
+                    <h2>Estoque</h2>
+                    <p>Controle insumos, mínimos e custo unitário sem perder a visão do saldo disponível.</p>
                 </div>
-                <div class="form-group">
-                    <label>Unidade</label>
-                    <select id="mp-unidade">
-                        <option value="l">Litro (l)</option>
-                        <option value="kg">Quilograma (kg)</option>
-                        <option value="g">Grama (g)</option>
-                        <option value="ml">Mililitro (ml)</option>
-                        <option value="un">Unidade (un)</option>
-                        <option value="cx">Caixa (cx)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Quantidade em Estoque</label>
-                    <input type="number" id="mp-quantidade" step="0.01" placeholder="0">
-                </div>
-                <div class="form-group">
-                    <label>Quantidade Mínima</label>
-                    <input type="number" id="mp-minima" step="0.01" placeholder="10">
-                </div>
-                <div class="form-group">
-                    <label>Preço Unitário (R$)</label>
-                    <input type="number" id="mp-preco" step="0.01" placeholder="0.00">
-                </div>
-                <button class="btn btn-primary" onclick="criarMateriaPrima()">Cadastrar Matéria-Prima</button>
             </div>
-            <div class="card">
-                <h2>Estoque Atual</h2>
-                <div id="lista-estoque" class="grid"></div>
+            <div class="content-grid">
+                <div class="card">
+                    <h2>Nova Matéria-Prima</h2>
+                    <p class="card-intro">Cadastre insumos usados na cozinha e no atendimento.</p>
+                    <div class="form-grid">
+                        <div class="form-group full">
+                            <label>Nome</label>
+                            <input type="text" id="mp-nome" placeholder="Ex: Leite Integral">
+                        </div>
+                        <div class="form-group">
+                            <label>Unidade</label>
+                            <select id="mp-unidade">
+                                <option value="l">Litro (l)</option>
+                                <option value="kg">Quilograma (kg)</option>
+                                <option value="g">Grama (g)</option>
+                                <option value="ml">Mililitro (ml)</option>
+                                <option value="un">Unidade (un)</option>
+                                <option value="cx">Caixa (cx)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Quantidade em Estoque</label>
+                            <input type="number" id="mp-quantidade" step="0.01" placeholder="0">
+                        </div>
+                        <div class="form-group">
+                            <label>Quantidade Mínima</label>
+                            <input type="number" id="mp-minima" step="0.01" placeholder="10">
+                        </div>
+                        <div class="form-group">
+                            <label>Preço Unitário (R$)</label>
+                            <input type="number" id="mp-preco" step="0.01" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" onclick="criarMateriaPrima()">Cadastrar Matéria-Prima</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Estoque Atual</h2>
+                    <p class="card-intro">Acompanhe o saldo e os itens que já pedem reposição.</p>
+                    <div id="lista-estoque" class="grid"></div>
+                </div>
             </div>
         </div>
         
@@ -215,23 +778,6 @@
             </div>
         </div>
         
-        <!-- Produção -->
-        <div id="producao" class="section">
-            <div class="card">
-                <h2>Registrar Produção</h2>
-                <div id="producao-alert"></div>
-                <div class="form-group">
-                    <label>Produto</label>
-                    <select id="producao-produto"></select>
-                </div>
-                <div class="form-group">
-                    <label>Quantidade a Produzir</label>
-                    <input type="number" id="producao-quantidade" value="1" min="1">
-                </div>
-                <button class="btn btn-primary" onclick="registrarProducao()">Registrar Produção</button>
-            </div>
-        </div>
-        
         <!-- Caixa -->
         <div id="caixa" class="section">
             <div class="card">
@@ -275,21 +821,39 @@
         
         <!-- Relatórios -->
         <div id="relatorios" class="section">
-            <div class="card">
-                <h2>Relatórios</h2>
-                <button class="btn btn-primary" onclick="relatorioVendas()">Relatório de Vendas</button>
-                <button class="btn btn-primary" onclick="relatorioEstoque()">Relatório de Estoque</button>
-                <button class="btn btn-primary" onclick="relatorioLucratividade()">Relatório de Lucratividade</button>
+            <div class="section-header">
+                <div>
+                    <h2>Relatórios</h2>
+                    <p>Resumo executivo e detalhes operacionais por vendas, estoque, compras, caixa, lucratividade e produção.</p>
+                </div>
             </div>
-            <div class="card">
-                <h2>Resultado</h2>
+            <div class="report-grid">
+                <div class="card">
+                    <div class="toolbar">
+                        <div>
+                            <h2>Painel Analítico</h2>
+                            <p class="card-intro">Escolha a visão que você quer abrir com mais detalhe.</p>
+                        </div>
+                    </div>
+                    <div class="report-actions">
+                        <button class="btn btn-primary" onclick="relatorioVendas()">Vendas</button>
+                        <button class="btn btn-primary" onclick="relatorioEstoque()">Estoque</button>
+                        <button class="btn btn-primary" onclick="relatorioCompras()">Compras</button>
+                        <button class="btn btn-primary" onclick="relatorioCaixa()">Caixa</button>
+                        <button class="btn btn-primary" onclick="relatorioProducao()">Produção</button>
+                        <button class="btn btn-primary" onclick="relatorioLucratividade()">Lucratividade</button>
+                    </div>
+                </div>
                 <div id="relatorio-resultado"></div>
             </div>
         </div>
     </div>
 
     <script>
-        const API = 'http://localhost:8000/api';
+        const API = window.__API_BASE_URL__ || `${window.location.origin}/api`;
+        let produtosCache = [];
+        let estoqueCache = [];
+        let produtoSelecionadoId = '';
         
         function showSection(id) {
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
@@ -306,8 +870,8 @@
                 case 'estoque': loadEstoque(); break;
                 case 'vendas': loadVendas(); break;
                 case 'compras': loadCompras(); break;
-                case 'producao': loadProducao(); break;
                 case 'caixa': loadCaixa(); break;
+                case 'relatorios': relatorioVendas(); break;
             }
         }
         
@@ -336,37 +900,197 @@
         
         // Produtos
         async function loadProdutos() {
-            const produtos = await fetch(`${API}/produtos/`).then(r => r.json());
+            const [produtos, estoque, producoes] = await Promise.all([
+                fetch(`${API}/produtos/`).then(r => r.json()),
+                fetch(`${API}/estoque/`).then(r => r.json()),
+                fetch(`${API}/producao/do-dia`).then(r => r.json())
+            ]);
+            produtosCache = produtos;
+            estoqueCache = estoque;
+
             document.getElementById('lista-produtos').innerHTML = produtos.map(p => `
-                <div class="item">
-                    <h3>${p.nome}</h3>
-                    <p>${p.categoria}</p>
+                <div class="product-card ${produtoSelecionadoId === p.id ? 'active' : ''}">
+                    <div class="product-card-header">
+                        <div>
+                            <h3>${p.nome}</h3>
+                            <p>${p.categoria}</p>
+                        </div>
+                        <span class="badge badge-${p.status}">${p.status}</span>
+                    </div>
                     <div class="price">R$ ${p.preco_venda.toFixed(2)}</div>
-                    <span class="badge badge-${p.status}">${p.status}</span>
+                    <p>Custo base: R$ ${(p.custo_producao || 0).toFixed(2)}</p>
+                    <p>${p.receita?.length || 0} itens na receita padrão</p>
+                    <div class="chip-list">
+                        ${(p.receita || []).slice(0, 3).map(item => {
+                            const materia = estoque.find(m => m.id === item.materia_prima_id);
+                            return `<span class="chip">${materia ? materia.nome : item.materia_prima_id} • ${item.quantidade} ${item.unidade}</span>`;
+                        }).join('')}
+                    </div>
+                    <div class="product-card-actions">
+                        <button class="compact-btn" onclick="editarProduto('${p.id}')">Editar</button>
+                        <button class="compact-btn" onclick="prepararProducaoProduto('${p.id}')">Produzir</button>
+                    </div>
                 </div>
-            `).join('') || '<p>Nenhum produto cadastrado</p>';
+            `).join('') || '<div class="empty-state">Nenhum produto cadastrado.</div>';
+
+            document.getElementById('lista-estoque-produtos').innerHTML = estoque.map(m => `
+                <div class="stock-row">
+                    <div>
+                        <strong>${m.nome}</strong>
+                        <span class="muted">${m.unidade} • mínimo ${m.quantidade_minima}</span>
+                    </div>
+                    <div style="text-align:right">
+                        <strong>${m.quantidade_estoque} ${m.unidade}</strong>
+                        <span class="muted">R$ ${m.preco_unitario.toFixed(2)}</span>
+                    </div>
+                </div>
+            `).join('') || '<div class="empty-state">Cadastre matérias-primas para montar a receita dos produtos.</div>';
+
+            document.getElementById('producao-produto').innerHTML = produtos.map(p =>
+                `<option value="${p.id}" ${produtoSelecionadoId === p.id ? 'selected' : ''}>${p.nome}</option>`
+            ).join('');
+
+            document.getElementById('lista-producao').innerHTML = producoes.length ? `
+                <div class="table-wrap"><table>
+                    <tr><th>Produto</th><th>Qtd</th><th>Consumo</th><th>Data</th></tr>
+                    ${producoes.map(p => `
+                        <tr>
+                            <td>${p.itens.map(i => i.produto_nome).join(', ')}</td>
+                            <td>${p.itens.map(i => i.quantidade).join(', ')}</td>
+                            <td>${p.itens.map(i => (i.materias_primas || []).map(mp => `${mp.materia_prima_nome}: ${mp.quantidade} ${mp.unidade}`).join(' | ')).join('<br>')}</td>
+                            <td>${new Date(p.data).toLocaleString()}</td>
+                        </tr>
+                    `).join('')}
+                </table></div>
+            ` : '<div class="empty-state">Nenhuma produção hoje.</div>';
+
+            if (!document.getElementById('produto-receita').children.length) {
+                adicionarItemReceita();
+            }
+            if (!produtoSelecionadoId && produtos.length) {
+                prepararProducaoProduto(produtos[0].id);
+            } else {
+                resetMateriasProducao();
+            }
         }
-        
-        async function criarProduto() {
+
+        function receitaOptions(selectedId = '') {
+            return estoqueCache.map(m =>
+                `<option value="${m.id}" data-unidade="${m.unidade}" ${m.id === selectedId ? 'selected' : ''}>${m.nome}</option>`
+            ).join('');
+        }
+
+        function adicionarItemReceita(item = {}) {
+            const container = document.getElementById('produto-receita');
+            const row = document.createElement('div');
+            row.className = 'recipe-row';
+            row.innerHTML = `
+                <div class="form-group">
+                    <label>Matéria-Prima</label>
+                    <select class="receita-mp-id" onchange="syncUnidadeReceita(this)">
+                        ${receitaOptions(item.materia_prima_id)}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Quantidade por unidade</label>
+                    <input type="number" class="receita-quantidade" step="0.01" min="0.01" value="${item.quantidade || ''}">
+                </div>
+                <div class="form-group">
+                    <label>Unidade</label>
+                    <input type="text" class="receita-unidade" value="${item.unidade || ''}" readonly>
+                </div>
+                <button class="btn btn-secondary" type="button" onclick="this.parentElement.remove()">Remover</button>
+            `;
+            container.appendChild(row);
+            syncUnidadeReceita(row.querySelector('.receita-mp-id'));
+        }
+
+        function syncUnidadeReceita(select) {
+            const option = select.options[select.selectedIndex];
+            select.parentElement.parentElement.querySelector('.receita-unidade').value = option ? option.dataset.unidade : '';
+        }
+
+        function coletarReceitaProduto() {
+            return Array.from(document.querySelectorAll('#produto-receita .recipe-row'))
+                .map(row => ({
+                    materia_prima_id: row.querySelector('.receita-mp-id').value,
+                    quantidade: parseFloat(row.querySelector('.receita-quantidade').value),
+                    unidade: row.querySelector('.receita-unidade').value
+                }))
+                .filter(item => item.materia_prima_id && item.quantidade > 0);
+        }
+
+        function resetProdutoForm() {
+            produtoSelecionadoId = '';
+            document.getElementById('produto-id').value = '';
+            document.getElementById('produto-nome').value = '';
+            document.getElementById('produto-categoria').value = 'sorvete';
+            document.getElementById('produto-preco').value = '';
+            document.getElementById('produto-custo').value = '';
+            document.getElementById('produto-receita').innerHTML = '';
+            document.getElementById('produto-form-status').textContent = 'Novo produto';
+            adicionarItemReceita();
+        }
+
+        function editarProduto(produtoId) {
+            const produto = produtosCache.find(item => item.id === produtoId);
+            if (!produto) return;
+
+            produtoSelecionadoId = produto.id;
+            document.getElementById('produto-id').value = produto.id;
+            document.getElementById('produto-nome').value = produto.nome;
+            document.getElementById('produto-categoria').value = produto.categoria;
+            document.getElementById('produto-preco').value = produto.preco_venda;
+            document.getElementById('produto-custo').value = produto.custo_producao || 0;
+            document.getElementById('produto-form-status').textContent = `Editando ${produto.nome}`;
+            document.getElementById('produto-receita').innerHTML = '';
+
+            if (produto.receita?.length) {
+                produto.receita.forEach(item => adicionarItemReceita(item));
+            } else {
+                adicionarItemReceita();
+            }
+            prepararProducaoProduto(produto.id);
+            loadProdutos();
+        }
+
+        async function salvarProduto() {
+            const produtoId = document.getElementById('produto-id').value;
             const dados = {
                 nome: document.getElementById('produto-nome').value,
                 categoria: document.getElementById('produto-categoria').value,
                 preco_venda: parseFloat(document.getElementById('produto-preco').value),
                 custo_producao: parseFloat(document.getElementById('produto-custo').value) || 0,
-                receita: []
+                receita: coletarReceitaProduto()
             };
-            await fetch(`${API}/produtos/`, {
-                method: 'POST',
+
+            const response = await fetch(produtoId ? `${API}/produtos/${produtoId}` : `${API}/produtos/`, {
+                method: produtoId ? 'PUT' : 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(dados)
             });
-            alert('Produto criado com sucesso!');
+
+            if (!response.ok) {
+                alert('Não foi possível salvar o produto.');
+                return;
+            }
+
+            alert(produtoId ? 'Produto atualizado com sucesso!' : 'Produto criado com sucesso!');
+            produtoSelecionadoId = '';
+            document.getElementById('produto-receita').innerHTML = '';
+            adicionarItemReceita();
+            document.getElementById('produto-form-status').textContent = 'Novo produto';
+            document.getElementById('produto-id').value = '';
+            document.getElementById('produto-nome').value = '';
+            document.getElementById('produto-preco').value = '';
+            document.getElementById('produto-custo').value = '';
             loadProdutos();
         }
         
         // Estoque
         async function loadEstoque() {
             const estoque = await fetch(`${API}/estoque/`).then(r => r.json());
+            estoqueCache = estoque;
             document.getElementById('lista-estoque').innerHTML = estoque.map(m => `
                 <div class="item">
                     <h3>${m.nome}</h3>
@@ -375,7 +1099,7 @@
                     <p>Mín: ${m.quantidade_minima} | Preço: R$ ${m.preco_unitario.toFixed(2)}</p>
                     ${m.precisa_repor ? '<span style="color:red">⚠️ Repor estoque</span>' : ''}
                 </div>
-            `).join('') || '<p>Nenhuma matéria-prima cadastrada</p>';
+            `).join('') || '<div class="empty-state">Nenhuma matéria-prima cadastrada.</div>';
         }
         
         async function criarMateriaPrima() {
@@ -393,6 +1117,7 @@
             });
             alert('Matéria-prima criada com sucesso!');
             loadEstoque();
+            loadProdutos();
         }
         
         // Vendas
@@ -405,11 +1130,11 @@
             ).join('');
             
             document.getElementById('lista-vendas').innerHTML = vendas.length ? `
-                <table>
+                <div class="table-wrap"><table>
                     <tr><th>ID</th><th>Total</th><th>Forma Pagamento</th><th>Data</th></tr>
                     ${vendas.map(v => `<tr><td>${v.id}</td><td>R$ ${v.total.toFixed(2)}</td><td>${v.forma_pagamento}</td><td>${new Date(v.data).toLocaleString()}</td></tr>`).join('')}
-                </table>
-            ` : '<p>Nenhuma venda hoje</p>';
+                </table></div>
+            ` : '<div class="empty-state">Nenhuma venda hoje.</div>';
         }
         
         async function fazerVenda() {
@@ -475,34 +1200,111 @@
             }
         }
         
-        // Produção
-        async function loadProducao() {
-            const produtos = await fetch(`${API}/produtos/`).then(r => r.json());
-            document.getElementById('producao-produto').innerHTML = produtos.map(p => 
-                `<option value='${JSON.stringify({id: p.id, nome: p.nome})}'>${p.nome}</option>`
-            ).join('');
+        function materiaOptions(selectedId = '') {
+            return estoqueCache.map(m => `
+                <option value="${m.id}" data-unidade="${m.unidade}" ${m.id === selectedId ? 'selected' : ''}>${m.nome}</option>
+            `).join('');
+        }
+
+        function prepararProducaoProduto(produtoId) {
+            produtoSelecionadoId = produtoId;
+            if (document.getElementById('producao-produto').querySelector(`option[value="${produtoId}"]`)) {
+                document.getElementById('producao-produto').value = produtoId;
+            }
+            resetMateriasProducao();
+        }
+
+        function resetMateriasProducao() {
+            const produtoId = document.getElementById('producao-produto').value;
+            const produto = produtosCache.find(p => p.id === produtoId);
+            const container = document.getElementById('producao-materias');
+            container.innerHTML = '';
+
+            if (produto && produto.receita && produto.receita.length) {
+                produto.receita.forEach(item => {
+                    const materia = estoqueCache.find(m => m.id === item.materia_prima_id);
+                    adicionarMateriaProducao({
+                        materia_prima_id: item.materia_prima_id,
+                        quantidade: item.quantidade * (parseFloat(document.getElementById('producao-quantidade').value) || 1),
+                        unidade: item.unidade || materia?.unidade || ''
+                    });
+                });
+                return;
+            }
+
+            adicionarMateriaProducao();
+        }
+
+        function adicionarMateriaProducao(valores = {}) {
+            const container = document.getElementById('producao-materias');
+            const row = document.createElement('div');
+            row.className = 'inline-row';
+            row.innerHTML = `
+                <div class="form-group">
+                    <label>Matéria-Prima</label>
+                    <select class="producao-mp-id" onchange="syncUnidadeMateria(this)">
+                        ${materiaOptions(valores.materia_prima_id)}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Quantidade</label>
+                    <input type="number" class="producao-mp-quantidade" step="0.01" min="0.01" value="${valores.quantidade || ''}">
+                </div>
+                <div class="form-group">
+                    <label>Unidade</label>
+                    <input type="text" class="producao-mp-unidade" value="${valores.unidade || ''}" readonly>
+                </div>
+                <button class="btn btn-secondary" type="button" onclick="this.parentElement.remove()">Remover</button>
+            `;
+            container.appendChild(row);
+            syncUnidadeMateria(row.querySelector('.producao-mp-id'));
+        }
+
+        function syncUnidadeMateria(select) {
+            const option = select.options[select.selectedIndex];
+            const unidade = option ? option.dataset.unidade : '';
+            select.parentElement.parentElement.querySelector('.producao-mp-unidade').value = unidade;
         }
         
         async function registrarProducao() {
-            const prodSel = JSON.parse(document.getElementById('producao-produto').value);
+            const produtoId = document.getElementById('producao-produto').value;
+            const produto = produtosCache.find(item => item.id === produtoId);
+            const materias_primas = Array.from(document.querySelectorAll('#producao-materias .inline-row'))
+                .map(row => {
+                    const materiaId = row.querySelector('.producao-mp-id').value;
+                    const materia = estoqueCache.find(item => item.id === materiaId);
+                    return {
+                        materia_prima_id: materiaId,
+                        materia_prima_nome: materia ? materia.nome : '',
+                        quantidade: parseFloat(row.querySelector('.producao-mp-quantidade').value),
+                        unidade: row.querySelector('.producao-mp-unidade').value
+                    };
+                })
+                .filter(item => item.materia_prima_id && item.quantidade > 0);
+
             const dados = {
                 itens: [{
-                    produto_id: prodSel.id,
-                    produto_nome: prodSel.nome,
-                    quantidade: parseFloat(document.getElementById('producao-quantidade').value)
+                    produto_id: produto.id,
+                    produto_nome: produto.nome,
+                    quantidade: parseFloat(document.getElementById('producao-quantidade').value),
+                    materias_primas
                 }]
             };
             
-            const result = await fetch(`${API}/producao/`, {
+            const response = await fetch(`${API}/producao/`, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(dados)
-            }).then(r => r.json());
+            });
+            const result = await response.json();
             
-            if (result.erro) {
-                document.getElementById('producao-alert').innerHTML = '<div class="alert alert-error">Erro: ' + result.detalhes.join(', ') + '</div>';
+            if (!response.ok) {
+                const detail = Array.isArray(result.detail) ? result.detail.join(', ') : (result.detail || 'Erro ao registrar produção');
+                document.getElementById('producao-alert').innerHTML = '<div class="alert alert-error">Erro: ' + detail + '</div>';
             } else {
                 document.getElementById('producao-alert').innerHTML = '<div class="alert alert-success">Produção registrada! Matérias-primas descontadas.</div>';
+                loadProdutos();
+                loadEstoque();
             }
         }
         
@@ -549,34 +1351,185 @@
         async function relatorioVendas() {
             const r = await fetch(`${API}/relatorios/vendas`).then(r => r.json());
             document.getElementById('relatorio-resultado').innerHTML = `
-                <p><strong>Total Vendido:</strong> R$ ${r.resumo.total_vendido.toFixed(2)}</p>
-                <p><strong>Quantidade:</strong> ${r.resumo.quantidade_vendas}</p>
-                <p><strong>Ticket Médio:</strong> R$ ${r.resumo.ticket_medio.toFixed(2)}</p>
+                <div class="card">
+                    <h2>Relatório de Vendas</h2>
+                    <div class="report-metrics">
+                        <div class="metric-card"><strong>Total Vendido</strong><span>R$ ${r.resumo.total_vendido.toFixed(2)}</span></div>
+                        <div class="metric-card"><strong>Quantidade</strong><span>${r.resumo.quantidade_vendas}</span></div>
+                        <div class="metric-card"><strong>Ticket Médio</strong><span>R$ ${r.resumo.ticket_medio.toFixed(2)}</span></div>
+                        <div class="metric-card"><strong>Descontos</strong><span>R$ ${r.resumo.total_desconto.toFixed(2)}</span></div>
+                    </div>
+                    <div class="report-detail-grid" style="margin-top:16px">
+                        <div class="list-card">
+                            <h3>Por Forma de Pagamento</h3>
+                            <div class="kv-list">
+                                ${Object.entries(r.por_forma_pagamento).map(([forma, dados]) => `
+                                    <div class="kv-item"><span>${forma}</span><strong>${dados.quantidade} vendas • R$ ${dados.total.toFixed(2)}</strong></div>
+                                `).join('') || '<div class="empty-state">Sem vendas registradas.</div>'}
+                            </div>
+                        </div>
+                        <div class="list-card">
+                            <h3>Lançamentos</h3>
+                            ${r.vendas.length ? `<div class="table-wrap"><table>
+                                <tr><th>ID</th><th>Total</th><th>Pagamento</th><th>Data</th></tr>
+                                ${r.vendas.map(v => `<tr><td>${v.id}</td><td>R$ ${v.total.toFixed(2)}</td><td>${v.forma_pagamento}</td><td>${new Date(v.data).toLocaleString()}</td></tr>`).join('')}
+                            </table></div>` : '<div class="empty-state">Sem vendas no período.</div>'}
+                        </div>
+                    </div>
+                </div>
             `;
         }
         
         async function relatorioEstoque() {
             const r = await fetch(`${API}/relatorios/estoque`).then(r => r.json());
             document.getElementById('relatorio-resultado').innerHTML = `
-                <p><strong>Total Itens:</strong> ${r.resumo.total_itens}</p>
-                <p><strong>Estoque Baixo:</strong> ${r.resumo.estoque_baixo}</p>
-                <p><strong>Valor Total:</strong> R$ ${r.resumo.valor_total.toFixed(2)}</p>
+                <div class="card">
+                    <h2>Relatório de Estoque</h2>
+                    <div class="report-metrics">
+                        <div class="metric-card"><strong>Total de Itens</strong><span>${r.resumo.total_itens}</span></div>
+                        <div class="metric-card"><strong>Estoque Baixo</strong><span>${r.resumo.estoque_baixo}</span></div>
+                        <div class="metric-card"><strong>Valor Total</strong><span>R$ ${r.resumo.valor_total.toFixed(2)}</span></div>
+                    </div>
+                    <div class="report-detail-grid" style="margin-top:16px">
+                        <div class="list-card">
+                            <h3>Itens com Reposição</h3>
+                            <div class="kv-list">
+                                ${r.itens_estoque_baixo.map(item => `
+                                    <div class="kv-item"><span>${item.nome}</span><strong>${item.quantidade_estoque} ${item.unidade}</strong></div>
+                                `).join('') || '<div class="empty-state">Nenhum item abaixo do mínimo.</div>'}
+                            </div>
+                        </div>
+                        <div class="list-card">
+                            <h3>Inventário Atual</h3>
+                            <div class="table-wrap"><table>
+                                <tr><th>Matéria-Prima</th><th>Estoque</th><th>Mínimo</th><th>Preço</th></tr>
+                                ${r.todos_itens.map(item => `<tr><td>${item.nome}</td><td>${item.quantidade_estoque} ${item.unidade}</td><td>${item.quantidade_minima}</td><td>R$ ${item.preco_unitario.toFixed(2)}</td></tr>`).join('')}
+                            </table></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        async function relatorioCompras() {
+            const r = await fetch(`${API}/relatorios/compras`).then(r => r.json());
+            document.getElementById('relatorio-resultado').innerHTML = `
+                <div class="card">
+                    <h2>Relatório de Compras</h2>
+                    <div class="report-metrics">
+                        <div class="metric-card"><strong>Total Comprado</strong><span>R$ ${r.resumo.total_comprado.toFixed(2)}</span></div>
+                        <div class="metric-card"><strong>Quantidade</strong><span>${r.resumo.quantidade_compras}</span></div>
+                        <div class="metric-card"><strong>Média por Compra</strong><span>R$ ${r.resumo.media_por_compra.toFixed(2)}</span></div>
+                    </div>
+                    <div class="report-detail-grid" style="margin-top:16px">
+                        <div class="list-card">
+                            <h3>Por Fornecedor</h3>
+                            <div class="kv-list">
+                                ${Object.entries(r.por_fornecedor).map(([fornecedor, dados]) => `
+                                    <div class="kv-item"><span>${fornecedor}</span><strong>${dados.quantidade} compras • R$ ${dados.total.toFixed(2)}</strong></div>
+                                `).join('') || '<div class="empty-state">Sem compras no período.</div>'}
+                            </div>
+                        </div>
+                        <div class="list-card">
+                            <h3>Compras Lançadas</h3>
+                            ${r.compras.length ? `<div class="table-wrap"><table>
+                                <tr><th>Fornecedor</th><th>Total</th><th>Pagamento</th><th>Data</th></tr>
+                                ${r.compras.map(c => `<tr><td>${c.fornecedor}</td><td>R$ ${c.total.toFixed(2)}</td><td>${c.forma_pagamento}</td><td>${new Date(c.data).toLocaleString()}</td></tr>`).join('')}
+                            </table></div>` : '<div class="empty-state">Sem compras registradas.</div>'}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        async function relatorioCaixa() {
+            const r = await fetch(`${API}/relatorios/caixa`).then(r => r.json());
+            document.getElementById('relatorio-resultado').innerHTML = `
+                <div class="card">
+                    <h2>Relatório de Caixa</h2>
+                    <div class="report-metrics">
+                        <div class="metric-card"><strong>Entradas</strong><span>R$ ${r.entradas.total.toFixed(2)}</span></div>
+                        <div class="metric-card"><strong>Saídas</strong><span>R$ ${r.saidas.total.toFixed(2)}</span></div>
+                        <div class="metric-card"><strong>Saldo</strong><span>R$ ${r.saldo.toFixed(2)}</span></div>
+                    </div>
+                    <div class="report-detail-grid" style="margin-top:16px">
+                        <div class="list-card">
+                            <h3>Entradas por Forma</h3>
+                            <div class="kv-list">
+                                <div class="kv-item"><span>Dinheiro</span><strong>R$ ${r.entradas.dinheiro.toFixed(2)}</strong></div>
+                                <div class="kv-item"><span>PIX</span><strong>R$ ${r.entradas.pix.toFixed(2)}</strong></div>
+                                <div class="kv-item"><span>Crédito</span><strong>R$ ${r.entradas.cartao_credito.toFixed(2)}</strong></div>
+                                <div class="kv-item"><span>Débito</span><strong>R$ ${r.entradas.cartao_debito.toFixed(2)}</strong></div>
+                            </div>
+                        </div>
+                        <div class="list-card">
+                            <h3>Saídas por Forma</h3>
+                            <div class="kv-list">
+                                <div class="kv-item"><span>Dinheiro</span><strong>R$ ${r.saidas.dinheiro.toFixed(2)}</strong></div>
+                                <div class="kv-item"><span>PIX</span><strong>R$ ${r.saidas.pix.toFixed(2)}</strong></div>
+                                <div class="kv-item"><span>Crédito</span><strong>R$ ${r.saidas.cartao_credito.toFixed(2)}</strong></div>
+                                <div class="kv-item"><span>Débito</span><strong>R$ ${r.saidas.cartao_debito.toFixed(2)}</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        async function relatorioProducao() {
+            const r = await fetch(`${API}/relatorios/producao`).then(r => r.json());
+            document.getElementById('relatorio-resultado').innerHTML = `
+                <div class="card">
+                    <h2>Relatório de Produção</h2>
+                    <div class="report-metrics">
+                        <div class="metric-card"><strong>Produções</strong><span>${r.resumo.quantidade_producoes}</span></div>
+                        <div class="metric-card"><strong>Total Produzido</strong><span>${r.resumo.total_itens}</span></div>
+                    </div>
+                    <div class="report-detail-grid" style="margin-top:16px">
+                        <div class="list-card">
+                            <h3>Por Produto</h3>
+                            <div class="kv-list">
+                                ${Object.entries(r.por_produto).map(([produto, total]) => `
+                                    <div class="kv-item"><span>${produto}</span><strong>${total}</strong></div>
+                                `).join('') || '<div class="empty-state">Sem produção no período.</div>'}
+                            </div>
+                        </div>
+                        <div class="list-card">
+                            <h3>Lançamentos</h3>
+                            ${r.producoes.length ? `<div class="table-wrap"><table>
+                                <tr><th>Produto</th><th>Qtd</th><th>Data</th></tr>
+                                ${r.producoes.map(p => `<tr><td>${p.itens.map(i => i.produto_nome).join(', ')}</td><td>${p.total_itens}</td><td>${new Date(p.data).toLocaleString()}</td></tr>`).join('')}
+                            </table></div>` : '<div class="empty-state">Sem produção registrada.</div>'}
+                        </div>
+                    </div>
+                </div>
             `;
         }
         
         async function relatorioLucratividade() {
             const r = await fetch(`${API}/relatorios/lucratividade`).then(r => r.json());
             document.getElementById('relatorio-resultado').innerHTML = `
-                <p><strong>Receita:</strong> R$ ${r.resumo.receita_vendas.toFixed(2)}</p>
-                <p><strong>Custo:</strong> R$ ${r.resumo.custo_mercadorias.toFixed(2)}</p>
-                <p><strong>Lucro:</strong> R$ ${r.resumo.lucro_bruto.toFixed(2)}</p>
-                <p><strong>Margem:</strong> ${r.resumo.margem_percentual.toFixed(2)}%</p>
-                <p><em>${r.analise}</em></p>
+                <div class="card">
+                    <h2>Relatório de Lucratividade</h2>
+                    <div class="report-metrics">
+                        <div class="metric-card"><strong>Receita</strong><span>R$ ${r.resumo.receita_vendas.toFixed(2)}</span></div>
+                        <div class="metric-card"><strong>Custo</strong><span>R$ ${r.resumo.custo_mercadorias.toFixed(2)}</span></div>
+                        <div class="metric-card"><strong>Lucro Bruto</strong><span>R$ ${r.resumo.lucro_bruto.toFixed(2)}</span></div>
+                        <div class="metric-card"><strong>Margem</strong><span>${r.resumo.margem_percentual.toFixed(2)}%</span></div>
+                    </div>
+                    <div class="report-summary-text" style="margin-top:16px">
+                        <strong>Leitura do período:</strong> ${r.analise}
+                    </div>
+                </div>
             `;
         }
         
         // Inicializa
         loadDashboard();
+        adicionarItemReceita();
+        document.getElementById('producao-produto')?.addEventListener('change', resetMateriasProducao);
     </script>
+    </div>
+</div>
 </body>
 </html>

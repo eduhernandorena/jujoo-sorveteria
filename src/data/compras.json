@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "id": "compra_20260426200604_8debd551",
+    "fornecedor": "Carol",
+    "itens": [
+      {
+        "materia_prima_id": "mp_20260426195703_a13b0d7f",
+        "materia_prima_nome": "Leite integral UHT",
+        "quantidade": 10.0,
+        "preco_unitario": 5.0,
+        "total": 50.0
+      }
+    ],
+    "subtotal": 50.0,
+    "desconto": 0,
+    "total": 50.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-26T20:06:04.556458",
+    "data_cadastro": "2026-04-26T20:06:04.556458",
+    "data_atualizacao": "2026-04-26T20:06:04.556458"
+  }
+]

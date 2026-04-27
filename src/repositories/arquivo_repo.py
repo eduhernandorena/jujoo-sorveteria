@@ -42,6 +42,8 @@ class ArquivoRepositorio:
     def listar(self) -> List[T]:
         """Lista todos os registros"""
         dados = self._carregar()
+        if self.modelo is dict:
+            return dados
         return [self.modelo(**item) for item in dados]
     
     def buscar_por_id(self, id: str) -> Optional[T]:
@@ -49,12 +51,16 @@ class ArquivoRepositorio:
         dados = self._carregar()
         for item in dados:
             if item.get('id') == id:
+                if self.modelo is dict:
+                    return item
                 return self.modelo(**item)
         return None
     
     def buscar_por_campo(self, campo: str, valor: Any) -> List[T]:
         """Busca registros por campo"""
         dados = self._carregar()
+        if self.modelo is dict:
+            return [item for item in dados if item.get(campo) == valor]
         return [self.modelo(**item) for item in dados if item.get(campo) == valor]
     
     def buscar_por_filtro(self, filtros: Dict[str, Any]) -> List[T]:
@@ -68,16 +74,27 @@ class ArquivoRepositorio:
                     match = False
                     break
             if match:
-                resultados.append(self.modelo(**item))
+                if self.modelo is dict:
+                    resultados.append(item)
+                else:
+                    resultados.append(self.modelo(**item))
         return resultados
     
     def criar(self, dados: Dict) -> T:
         """Cria novo registro"""
         lista = self._carregar()
-        novo = self.modelo(**dados)
-        lista.append(novo.model_dump(mode='json'))
+        if self.modelo is dict:
+            novo = dados.copy()
+            agora = datetime.now().isoformat()
+            novo.setdefault("data", agora)
+            novo.setdefault("data_cadastro", agora)
+            novo.setdefault("data_atualizacao", agora)
+            lista.append(novo)
+        else:
+            novo = self.modelo(**dados)
+            lista.append(novo.model_dump(mode='json'))
         self._salvar(lista)
-        logger.info(f"Criado registro {novo.id} em {self.arquivo.name}")
+        logger.info(f"Criado registro {novo['id'] if self.modelo is dict else novo.id} em {self.arquivo.name}")
         return novo
     
     def atualizar(self, id: str, dados: Dict) -> Optional[T]:
@@ -89,6 +106,8 @@ class ArquivoRepositorio:
                 lista[i].update(dados)
                 self._salvar(lista)
                 logger.info(f"Atualizado registro {id} em {self.arquivo.name}")
+                if self.modelo is dict:
+                    return lista[i]
                 return self.modelo(**lista[i])
         return None
     

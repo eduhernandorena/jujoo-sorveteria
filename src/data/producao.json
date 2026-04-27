@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "prod_20260426200307_7c6d9260",
+    "itens": [
+      {
+        "produto_id": "prod_20260426195525_50ba6987",
+        "produto_nome": "Chocolate",
+        "quantidade": 2.0,
+        "materias_primas": [
+          {
+            "materia_prima_id": "mp_20260426195703_a13b0d7f",
+            "materia_prima_nome": "Leite integral UHT",
+            "quantidade": 1.5,
+            "unidade": "l"
+          }
+        ]
+      }
+    ],
+    "total_itens": 2.0,
+    "status": "ativo",
+    "observacoes": "teste manual",
+    "data": "2026-04-26T20:03:07.928486",
+    "data_cadastro": "2026-04-26T20:03:07.928486",
+    "data_atualizacao": "2026-04-26T20:03:07.928486"
+  },
+  {
+    "id": "prod_20260426200506_a20aeaaa",
+    "itens": [
+      {
+        "produto_id": "prod_20260426195312_7543ed09",
+        "produto_nome": "Teste Creme",
+        "quantidade": 1.0,
+        "materias_primas": [
+          {
+            "materia_prima_id": "mp_20260426195703_a13b0d7f",
+            "materia_prima_nome": "Leite integral UHT",
+            "quantidade": 1.0,
+            "unidade": "l"
+          }
+        ]
+      }
+    ],
+    "total_itens": 1.0,
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-26T20:05:06.081001",
+    "data_cadastro": "2026-04-26T20:05:06.081001",
+    "data_atualizacao": "2026-04-26T20:05:06.081001"
+  }
+]

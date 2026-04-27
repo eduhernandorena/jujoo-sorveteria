@@ -12,11 +12,24 @@ class ItemProducao(BaseModel):
     quantidade: float = Field(..., gt=0)
 
 
+class ConsumoMateriaPrima(BaseModel):
+    """Matéria-prima consumida em uma produção"""
+    materia_prima_id: str
+    materia_prima_nome: str
+    quantidade: float = Field(..., gt=0)
+    unidade: str
+
+
+class ItemProducaoCreate(ItemProducao):
+    """Item de produção com consumo informado para o lote"""
+    materias_primas: List[ConsumoMateriaPrima] = []
+
+
 class Producao(BaseModel):
     """Modelo de produção diária"""
     id: str
     data: datetime = Field(default_factory=datetime.now)
-    itens: List[ItemProducao]
+    itens: List[ItemProducaoCreate]
     total_itens: int
     status: str = STATUS_ATIVO
     observacoes: Optional[str] = ""
@@ -41,7 +54,7 @@ class Producao(BaseModel):
 
 class ProducaoCreate(BaseModel):
     """Schema para criar produção"""
-    itens: List[ItemProducao]
+    itens: List[ItemProducaoCreate]
     observacoes: Optional[str] = ""
 
 
@@ -49,7 +62,7 @@ class ProducaoResponse(BaseModel):
     """Schema de resposta de produção"""
     id: str
     data: datetime
-    itens: List[ItemProducao]
+    itens: List[ItemProducaoCreate]
     total_itens: int
     status: str
     observacoes: str

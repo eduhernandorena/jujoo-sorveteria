@@ -2,6 +2,7 @@
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 from src.models.compra import Compra, CompraCreate, CompraResponse, ItemCompra
+from src.models.caixa import MovimentoCaixaCreate
 from src.repositories.arquivo_repo import ArquivoRepositorio
 from src.core.config import ARQUIVO_COMPRAS
 from src.utils.logger import logger
@@ -57,8 +58,8 @@ class CompraService:
             tipo="saida",
             valor=total,
             origem="compra",
-            descricao=f"Compra #{compra.id} - {dados.fornecedor}",
-            referencia_id=compra.id,
+            descricao=f"Compra #{compra['id']} - {dados.fornecedor}",
+            referencia_id=compra["id"],
             forma_pagamento=dados.forma_pagamento
         ))
         
@@ -69,10 +70,10 @@ class CompraService:
                 item.quantidade
             )
         
-        logger.info(f"Compra criada: {compra.id} - R$ {total}")
-        
+        logger.info(f"Compra criada: {compra['id']} - R$ {total}")
+
         return {
-            "compra": self._to_response(self.repo.buscar_por_id(compra.id)),
+            "compra": self._to_response(self.repo.buscar_por_id(compra["id"])),
             "estoque_atualizado": True
         }
     

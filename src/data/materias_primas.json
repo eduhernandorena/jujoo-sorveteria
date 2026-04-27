@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "id": "mp_20260426195703_a13b0d7f",
+    "nome": "Leite integral UHT",
+    "descricao": "",
+    "unidade": "l",
+    "quantidade_estoque": 17.5,
+    "quantidade_minima": 10.0,
+    "preco_unitario": 5.0,
+    "status": "ativo",
+    "data": "2026-04-26T19:57:03.295663",
+    "data_cadastro": "2026-04-26T19:57:03.295663",
+    "data_atualizacao": "2026-04-26T20:06:04.596609"
+  },
+  {
+    "id": "mp_20260426200352_958d5f59",
+    "nome": "Leite Integral",
+    "descricao": "Leite fresco",
+    "unidade": "l",
+    "quantidade_estoque": 50.0,
+    "quantidade_minima": 20.0,
+    "preco_unitario": 5.0,
+    "status": "ativo",
+    "data": "2026-04-26T20:03:52.518117",
+    "data_cadastro": "2026-04-26T20:03:52.518117",
+    "data_atualizacao": "2026-04-26T20:03:52.518117"
+  },
+  {
+    "id": "mp_20260426221042_51146d74",
+    "nome": "Leite Integral",
+    "descricao": "Leite fresco",
+    "unidade": "l",
+    "quantidade_estoque": 50.0,
+    "quantidade_minima": 20.0,
+    "preco_unitario": 5.0,
+    "status": "ativo",
+    "data": "2026-04-26T22:10:42.815924",
+    "data_cadastro": "2026-04-26T22:10:42.815924",
+    "data_atualizacao": "2026-04-26T22:10:42.815924"
+  }
+]

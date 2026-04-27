@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "id": "mov_20260426195751_63fdd903",
+    "tipo": "entrada",
+    "valor": 25.0,
+    "origem": "venda",
+    "descricao": "Venda #venda_20260426195751_d37f08d3",
+    "referencia_id": "venda_20260426195751_d37f08d3",
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-26T19:57:51.921551",
+    "data_cadastro": "2026-04-26T19:57:51.921551",
+    "data_atualizacao": "2026-04-26T19:57:51.921551"
+  },
+  {
+    "id": "mov_20260426195801_b7ddf540",
+    "tipo": "entrada",
+    "valor": 12.5,
+    "origem": "venda",
+    "descricao": "Venda #venda_20260426195801_3a33e76d",
+    "referencia_id": "venda_20260426195801_3a33e76d",
+    "forma_pagamento": "pix",
+    "data": "2026-04-26T19:58:01.623203",
+    "data_cadastro": "2026-04-26T19:58:01.623203",
+    "data_atualizacao": "2026-04-26T19:58:01.623203"
+  },
+  {
+    "id": "mov_20260426200352_79e6c499",
+    "tipo": "entrada",
+    "valor": 100.0,
+    "origem": "venda",
+    "descricao": "Teste de entrada",
+    "referencia_id": null,
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-26T20:03:52.538418",
+    "data_cadastro": "2026-04-26T20:03:52.538418",
+    "data_atualizacao": "2026-04-26T20:03:52.538418"
+  },
+  {
+    "id": "mov_20260426200539_3150a44d",
+    "tipo": "entrada",
+    "valor": 25.0,
+    "origem": "venda",
+    "descricao": "Venda #venda_20260426200539_88ba39f1",
+    "referencia_id": "venda_20260426200539_88ba39f1",
+    "forma_pagamento": "cartao_credito",
+    "data": "2026-04-26T20:05:39.879086",
+    "data_cadastro": "2026-04-26T20:05:39.879086",
+    "data_atualizacao": "2026-04-26T20:05:39.879086"
+  },
+  {
+    "id": "mov_20260426200604_6a545834",
+    "tipo": "saida",
+    "valor": 50.0,
+    "origem": "compra",
+    "descricao": "Compra #compra_20260426200604_8debd551 - Carol",
+    "referencia_id": "compra_20260426200604_8debd551",
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-26T20:06:04.595347",
+    "data_cadastro": "2026-04-26T20:06:04.595347",
+    "data_atualizacao": "2026-04-26T20:06:04.595347"
+  },
+  {
+    "id": "mov_20260426221042_fdc5210b",
+    "tipo": "entrada",
+    "valor": 100.0,
+    "origem": "venda",
+    "descricao": "Teste de entrada",
+    "referencia_id": null,
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-26T22:10:42.840567",
+    "data_cadastro": "2026-04-26T22:10:42.840567",
+    "data_atualizacao": "2026-04-26T22:10:42.840567"
+  }
+]

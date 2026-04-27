@@ -13,10 +13,13 @@ DATA_DIR.mkdir(exist_ok=True)
 LOGS_DIR.mkdir(exist_ok=True)
 
 # Configurações da API
-API_HOST = "0.0.0.0"
-API_PORT = 8000
+API_HOST = os.getenv("API_HOST", "0.0.0.0")
+API_PORT = int(os.getenv("API_PORT", os.getenv("PORT", "8000")))
 API_TITLE = "Jujoo Sorveteria API"
 API_VERSION = "1.0.0"
+CORS_ORIGINS = [
+    origin.strip() for origin in os.getenv("CORS_ORIGINS", "*").split(",") if origin.strip()
+]
 
 # Configurações de persistência
 ARQUIVO_PRODUTOS = DATA_DIR / "produtos.json"
