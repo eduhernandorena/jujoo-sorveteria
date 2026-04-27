@@ -1,13 +1,121 @@
 # Jujoo Sorveteria
 
-Sistema de gestao para sorveteria com frontend web e backend FastAPI.
+Sistema de gestão para sorveteria com frontend web (arquivo único) e backend FastAPI.
 
-## Estrutura
+O projeto foi desenhado para operação rápida no balcão/cozinha, cobrindo estoque, produtos, vendas, compras, produção, caixa e relatórios.
+
+## Funcionalidades atuais
+
+- **Dashboard diário**
+  - Vendas do dia (valor e quantidade)
+  - Saldo de caixa atual/do dia
+  - Itens de estoque e alertas de estoque baixo
+  - Total produzido no dia
+
+- **Produtos**
+  - CRUD de produtos
+  - Categorias (`sorvete`, `picole`, `acai`, `topping`, `bebida`, `acompanhamento`)
+  - Cadastro de receita por produto (matéria-prima, quantidade, unidade)
+  - Catálogo com edição rápida pela própria tela
+
+- **Estoque (matérias-primas)**
+  - CRUD de matérias-primas
+  - Ajuste de estoque (adicionar/remover)
+  - Resumo de estoque e itens abaixo do mínimo
+
+- **Produção**
+  - Lançamento de produção com múltiplos itens
+  - Consumo automático de matéria-prima via receita do produto
+  - Validação de estoque insuficiente antes de confirmar produção
+
+- **Vendas**
+  - Registro de venda com itens e desconto
+  - Processamento de pagamento via mock
+  - Emissão de NFC-e via mock
+  - Geração automática de entrada no caixa
+
+- **Compras**
+  - Registro de compras por fornecedor
+  - Atualização automática de estoque
+  - Geração automática de saída no caixa
+
+- **Caixa**
+  - Lançamentos manuais de entrada/saída
+  - Saldo atual e saldo do dia
+  - Fechamento diário e mensal por forma de pagamento
+
+- **Relatórios**
+  - Vendas, compras, lucratividade, estoque, caixa, produção e dashboard
+  - Agregações por período e por forma de pagamento/fornecedor/produto
+
+- **Monitoramento**
+  - Endpoints de status e informações de recursos (`/api/monitor/status`, `/api/monitor/info`)
+
+## Arquitetura
+
+Arquitetura em camadas:
+
+- **Apresentação**
+  - `frontend.html`: UI completa (HTML + CSS + JS) servida pela própria API.
+  - `src/api/routes/*`: endpoints HTTP por domínio.
+
+- **Aplicação (regras de negócio)**
+  - `src/services/*`: orquestra casos de uso e integra domínios (ex.: venda -> caixa + NFC-e mock).
+
+- **Domínio / contratos**
+  - `src/models/*`: modelos Pydantic de entrada/saída e entidades de negócio.
+
+- **Persistência**
+  - `src/repositories/arquivo_repo.py`: repositório genérico em JSON.
+  - `src/data/*.json`: base atual de dados local.
+
+- **Infra / utilitários**
+  - `src/core/config.py`: variáveis de ambiente e caminhos.
+  - `src/utils/*`: logging, helpers, monitor.
+  - `src/mocks/*`: simulações de pagamento e NFC-e.
+
+### Fluxo resumido de requisições
+
+1. Frontend chama endpoint em `/api/...`.
+2. Rota delega para o serviço correspondente.
+3. Serviço aplica regras de negócio e chama repositórios/serviços auxiliares.
+4. Repositório persiste em JSON.
+5. Serviço retorna DTO de resposta para a rota.
+
+## Endpoints principais
+
+Base da API: `/api`
+
+- `GET/POST/PUT/DELETE /produtos`
+- `GET/POST/PUT/DELETE /estoque`
+- `POST /estoque/{materia_id}/adicionar`
+- `POST /estoque/{materia_id}/remover`
+- `GET/POST /vendas`
+- `GET /vendas/do-dia`
+- `GET/POST /compras`
+- `GET /compras/do-dia`
+- `GET/POST /producao`
+- `GET /producao/do-dia`
+- `GET /caixa/saldo`
+- `GET /caixa/movimentos`
+- `POST /caixa/movimento`
+- `POST /caixa/fechamento-diario`
+- `POST /caixa/fechamento-mensal`
+- `GET /relatorios/{vendas|compras|lucratividade|estoque|caixa|producao|dashboard}`
+- `GET /monitor/{status|info}`
+
+## Estrutura do projeto
 
 - `frontend.html`: interface web
-- `src/api`: rotas da API
-- `src/services`: regras de negocio
-- `src/data`: persistencia atual em arquivos JSON
+- `run.py`: inicialização local via Uvicorn
+- `src/api`: aplicação FastAPI e rotas
+- `src/services`: regras de negócio
+- `src/models`: contratos/entidades
+- `src/repositories`: persistência em arquivo
+- `src/data`: dados JSON
+- `src/mocks`: integrações simuladas
+- `tests`: testes unitários e integrados
+- `CHANGELOG.md`: histórico consolidado de mudanças
 
 ## Rodando localmente
 
@@ -21,10 +129,11 @@ python run.py
 Acesse:
 
 - App: `http://localhost:8000/frontend`
-- API: `http://localhost:8000/api`
+- API base: `http://localhost:8000/api`
 - Docs: `http://localhost:8000/docs`
+- Healthcheck: `http://localhost:8000/health`
 
-## Configuracao por ambiente
+## Configuração por ambiente
 
 Copie `.env.example` e ajuste conforme o ambiente:
 
@@ -32,12 +141,12 @@ Copie `.env.example` e ajuste conforme o ambiente:
 cp .env.example .env
 ```
 
-Variaveis suportadas:
+Variáveis suportadas:
 
 - `API_HOST`: host do servidor
-- `API_PORT`: porta da aplicacao
-- `PORT`: alternativa comum em plataformas de deploy
-- `CORS_ORIGINS`: dominios permitidos, separados por virgula
+- `API_PORT`: porta da aplicação
+- `PORT`: fallback comum em plataformas de deploy
+- `CORS_ORIGINS`: domínios permitidos, separados por vírgula
 
 Exemplo:
 
@@ -47,16 +156,14 @@ API_PORT=8000
 CORS_ORIGINS=https://app.seu-dominio.com,https://www.seu-dominio.com
 ```
 
-## Deploy tradicional
+## Deploy
 
-O frontend agora usa a API no mesmo dominio/origem da pagina:
+O frontend e a API podem ser servidos no mesmo domínio:
 
-- frontend: `https://seu-dominio.com/frontend`
+- Frontend: `https://seu-dominio.com/frontend`
 - API: `https://seu-dominio.com/api`
 
-Isso significa que o caminho mais simples de deploy e servir tudo pela mesma aplicacao FastAPI, atras de um proxy reverso ou plataforma com HTTPS.
-
-### Opcao 1: Docker
+### Opção 1: Docker
 
 Build:
 
@@ -74,24 +181,20 @@ docker run -p 8000:8000 \
   jujoo-sorveteria
 ```
 
-### Opcao 2: VM/VPS
-
-Instale Python 3.12+, dependencias e execute:
+### Opção 2: VM/VPS
 
 ```bash
 API_HOST=0.0.0.0 API_PORT=8000 CORS_ORIGINS=https://seu-dominio.com python run.py
 ```
 
-Depois coloque um proxy reverso na frente, como Nginx, apontando o dominio para a porta `8000`.
+Depois, publique com proxy reverso (ex.: Nginx) apontando para a porta `8000`.
 
-## Recomendacoes para producao
+## Limitações atuais e próximos passos
 
-Hoje o sistema persiste dados em JSON dentro de `src/data`. Para um uso remoto real, o ideal e migrar para banco de dados antes de colocar usuarios de verdade.
+Hoje a persistência é local em JSON (`src/data`). Para produção com múltiplos usuários, recomenda-se:
 
-Prioridades:
-
-1. trocar JSON por PostgreSQL
-2. adicionar autenticacao
-3. restringir `CORS_ORIGINS` ao dominio real
-4. configurar backup dos dados
-5. colocar HTTPS no dominio
+1. Migrar para PostgreSQL.
+2. Adicionar autenticação/autorização.
+3. Restringir `CORS_ORIGINS` ao domínio real.
+4. Configurar backup e retenção de dados.
+5. Habilitar HTTPS com certificados válidos.
