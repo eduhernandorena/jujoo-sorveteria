@@ -19,18 +19,26 @@ def setup_logger(name: str = "jujoo") -> logging.Logger:
     # Formatador
     formatter = logging.Formatter(LOG_FORMAT)
     
-    # Handler para arquivo
-    file_handler = logging.FileHandler(LOG_FILE, encoding='utf-8')
-    file_handler.setLevel(logging.DEBUG)
-    file_handler.setFormatter(formatter)
+    # Handler para arquivo (com fallback caso não seja possível escrever no arquivo)
+    try:
+        LOG_DIR = LOG_FILE.parent
+        LOG_DIR.mkdir(parents=True, exist_ok=True)
+        file_handler = logging.FileHandler(LOG_FILE, encoding='utf-8')
+        file_handler.setLevel(logging.DEBUG)
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
+    except Exception:
+        # Falha ao abrir/criar o arquivo de log; log apenas no stdout
+        pass
     
     # Handler para console
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setLevel(logging.INFO)
     console_handler.setFormatter(formatter)
     
-    logger.addHandler(file_handler)
-    logger.addHandler(console_handler)
+    # Evita duplicidade de handlers de console
+    if not any(isinstance(h, logging.StreamHandler) for h in logger.handlers):
+        logger.addHandler(console_handler)
     
     return logger
 

@@ -67,5 +67,1047 @@
     "data_cadastro": "2026-04-26T20:05:39.878245",
     "data_atualizacao": "2026-04-26T20:05:39.880490",
     "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093044_a4675d00",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093044_6b53d1ac",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:30:44.726835",
+    "data_cadastro": "2026-04-28T09:30:44.726835",
+    "data_atualizacao": "2026-04-28T09:30:44.728690",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093044_1b70d8e5",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093044_b9e10d98",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:30:44.738061",
+    "data_cadastro": "2026-04-28T09:30:44.738061",
+    "data_atualizacao": "2026-04-28T09:30:44.739933",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260428093044_0ce8250f",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:30:44.762423",
+    "data_cadastro": "2026-04-28T09:30:44.762423",
+    "data_atualizacao": "2026-04-28T09:30:44.764136",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260428093045_0ce418c7",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093045_cb8f23f9",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:30:45.360613",
+    "data_cadastro": "2026-04-28T09:30:45.360613",
+    "data_atualizacao": "2026-04-28T09:30:45.362390",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260428093142_4cf7f0ad",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093142_794af8b1",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:31:42.947753",
+    "data_cadastro": "2026-04-28T09:31:42.947753",
+    "data_atualizacao": "2026-04-28T09:31:42.950073",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093142_d4942b51",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093142_990bc10a",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:31:42.959022",
+    "data_cadastro": "2026-04-28T09:31:42.959022",
+    "data_atualizacao": "2026-04-28T09:31:42.961556",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260428093142_bb9be151",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:31:42.986058",
+    "data_cadastro": "2026-04-28T09:31:42.986058",
+    "data_atualizacao": "2026-04-28T09:31:42.989197",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260428093143_06b4b0bc",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093143_9193d6bb",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:31:43.549906",
+    "data_cadastro": "2026-04-28T09:31:43.549906",
+    "data_atualizacao": "2026-04-28T09:31:43.552135",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260428093251_1f8d46bd",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093251_c51774bd",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:32:51.052400",
+    "data_cadastro": "2026-04-28T09:32:51.052400",
+    "data_atualizacao": "2026-04-28T09:32:51.055379",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093251_4af5c5b5",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093251_9e8a5473",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:32:51.066945",
+    "data_cadastro": "2026-04-28T09:32:51.066945",
+    "data_atualizacao": "2026-04-28T09:32:51.069823",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260428093251_7a92f4e2",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:32:51.093378",
+    "data_cadastro": "2026-04-28T09:32:51.093378",
+    "data_atualizacao": "2026-04-28T09:32:51.096244",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260428093251_1b7a2749",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093251_82b1bc9a",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:32:51.637836",
+    "data_cadastro": "2026-04-28T09:32:51.637836",
+    "data_atualizacao": "2026-04-28T09:32:51.640814",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260428093308_5980a0d6",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093308_ee5fff7f",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:33:08.766068",
+    "data_cadastro": "2026-04-28T09:33:08.766068",
+    "data_atualizacao": "2026-04-28T09:33:08.769311",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093308_8fd3ab6c",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093308_515b9b4c",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:33:08.785069",
+    "data_cadastro": "2026-04-28T09:33:08.785069",
+    "data_atualizacao": "2026-04-28T09:33:08.788306",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260428093308_b70c138b",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:33:08.802157",
+    "data_cadastro": "2026-04-28T09:33:08.802157",
+    "data_atualizacao": "2026-04-28T09:33:08.805946",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260428093308_20e22702",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093308_4aa9bda9",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:33:08.895755",
+    "data_cadastro": "2026-04-28T09:33:08.895755",
+    "data_atualizacao": "2026-04-28T09:33:08.899873",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260428093314_4a5f2450",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093314_10ac8c51",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:33:14.413394",
+    "data_cadastro": "2026-04-28T09:33:14.413394",
+    "data_atualizacao": "2026-04-28T09:33:14.418271",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093332_76a1862c",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093332_f7073d38",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:33:32.717882",
+    "data_cadastro": "2026-04-28T09:33:32.717882",
+    "data_atualizacao": "2026-04-28T09:33:32.720503",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093417_519906cc",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093417_b40b0af8",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:34:17.885327",
+    "data_cadastro": "2026-04-28T09:34:17.885327",
+    "data_atualizacao": "2026-04-28T09:34:17.889402",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093417_55f2ec10",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093417_fe1ceaf8",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:34:17.903057",
+    "data_cadastro": "2026-04-28T09:34:17.903057",
+    "data_atualizacao": "2026-04-28T09:34:17.906805",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260428093417_2d46c6d3",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:34:17.923716",
+    "data_cadastro": "2026-04-28T09:34:17.923716",
+    "data_atualizacao": "2026-04-28T09:34:17.927297",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260428093418_957a9de5",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093418_834cd709",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:34:18.049933",
+    "data_cadastro": "2026-04-28T09:34:18.049933",
+    "data_atualizacao": "2026-04-28T09:34:18.054266",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260428093635_2dfd6c41",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093635_60739fc8",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:36:35.248578",
+    "data_cadastro": "2026-04-28T09:36:35.248578",
+    "data_atualizacao": "2026-04-28T09:36:35.252676",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093635_49e8c7b0",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093635_0ce66f3b",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:36:35.268486",
+    "data_cadastro": "2026-04-28T09:36:35.268486",
+    "data_atualizacao": "2026-04-28T09:36:35.275042",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260428093635_9d0e910a",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:36:35.303261",
+    "data_cadastro": "2026-04-28T09:36:35.303261",
+    "data_atualizacao": "2026-04-28T09:36:35.307810",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260428093635_a69fd43b",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093635_cb10d0ad",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:36:35.452315",
+    "data_cadastro": "2026-04-28T09:36:35.452315",
+    "data_atualizacao": "2026-04-28T09:36:35.457567",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260428093720_7185acfb",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093720_97c0fdfd",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:37:20.810190",
+    "data_cadastro": "2026-04-28T09:37:20.810190",
+    "data_atualizacao": "2026-04-28T09:37:20.815138",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093720_813c2328",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093720_caa0b76c",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:37:20.828747",
+    "data_cadastro": "2026-04-28T09:37:20.828747",
+    "data_atualizacao": "2026-04-28T09:37:20.834342",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260428093720_6257e5d7",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:37:20.852263",
+    "data_cadastro": "2026-04-28T09:37:20.852263",
+    "data_atualizacao": "2026-04-28T09:37:20.856685",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260428093720_f7157565",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093720_fdcfd0c1",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:37:20.993601",
+    "data_cadastro": "2026-04-28T09:37:20.993601",
+    "data_atualizacao": "2026-04-28T09:37:20.999526",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260428093852_1b7b7b45",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093852_494a45af",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:38:52.847220",
+    "data_cadastro": "2026-04-28T09:38:52.847220",
+    "data_atualizacao": "2026-04-28T09:38:52.853087",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260428093852_907f285e",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093852_f60a7617",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:38:52.867077",
+    "data_cadastro": "2026-04-28T09:38:52.867077",
+    "data_atualizacao": "2026-04-28T09:38:52.872176",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260428093852_9f19a0ba",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:38:52.891303",
+    "data_cadastro": "2026-04-28T09:38:52.891303",
+    "data_atualizacao": "2026-04-28T09:38:52.897093",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260428093853_9394e27e",
+    "itens": [
+      {
+        "produto_id": "prod_20260428093853_71c6b727",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-28T09:38:53.035257",
+    "data_cadastro": "2026-04-28T09:38:53.035257",
+    "data_atualizacao": "2026-04-28T09:38:53.041200",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260429233537_a925fbfa",
+    "itens": [
+      {
+        "produto_id": "prod_20260429233537_c42aa1db",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-29T23:35:37.510923",
+    "data_cadastro": "2026-04-29T23:35:37.510923",
+    "data_atualizacao": "2026-04-29T23:35:37.523146",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260429233537_daa97b44",
+    "itens": [
+      {
+        "produto_id": "prod_20260429233537_54279b93",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-29T23:35:37.559666",
+    "data_cadastro": "2026-04-29T23:35:37.559666",
+    "data_atualizacao": "2026-04-29T23:35:37.569968",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260429233537_37eed125",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-29T23:35:37.612359",
+    "data_cadastro": "2026-04-29T23:35:37.612359",
+    "data_atualizacao": "2026-04-29T23:35:37.623544",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260429233537_7bda5e6a",
+    "itens": [
+      {
+        "produto_id": "prod_20260429233537_269392b9",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-29T23:35:37.841896",
+    "data_cadastro": "2026-04-29T23:35:37.841896",
+    "data_atualizacao": "2026-04-29T23:35:37.853915",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260429233707_a0b9bb7f",
+    "itens": [
+      {
+        "produto_id": "prod_20260429233707_bb157772",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-29T23:37:07.173000",
+    "data_cadastro": "2026-04-29T23:37:07.173000",
+    "data_atualizacao": "2026-04-29T23:37:07.188362",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260429233707_cee8e439",
+    "itens": [
+      {
+        "produto_id": "prod_20260429233707_e27e55f4",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-29T23:37:07.237844",
+    "data_cadastro": "2026-04-29T23:37:07.237844",
+    "data_atualizacao": "2026-04-29T23:37:07.249463",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260429233707_12f1c271",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-29T23:37:07.289534",
+    "data_cadastro": "2026-04-29T23:37:07.289534",
+    "data_atualizacao": "2026-04-29T23:37:07.297770",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260429233707_6e5c8d47",
+    "itens": [
+      {
+        "produto_id": "prod_20260429233707_9476c2ec",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-29T23:37:07.521344",
+    "data_cadastro": "2026-04-29T23:37:07.521344",
+    "data_atualizacao": "2026-04-29T23:37:07.529529",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260430082348_b38d44de",
+    "itens": [
+      {
+        "produto_id": "prod_20260430082348_93a8f7f0",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T08:23:48.667011",
+    "data_cadastro": "2026-04-30T08:23:48.667011",
+    "data_atualizacao": "2026-04-30T08:23:48.676046",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260430082348_8fc3e0d6",
+    "itens": [
+      {
+        "produto_id": "prod_20260430082348_d6879295",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T08:23:48.724159",
+    "data_cadastro": "2026-04-30T08:23:48.724159",
+    "data_atualizacao": "2026-04-30T08:23:48.748453",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260430082348_b4c57f99",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T08:23:48.792451",
+    "data_cadastro": "2026-04-30T08:23:48.792451",
+    "data_atualizacao": "2026-04-30T08:23:48.815352",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260430082349_c60d3c4f",
+    "itens": [
+      {
+        "produto_id": "prod_20260430082349_e58ac2e4",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T08:23:49.061739",
+    "data_cadastro": "2026-04-30T08:23:49.061739",
+    "data_atualizacao": "2026-04-30T08:23:49.075346",
+    "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260430083822_7d21645e",
+    "itens": [
+      {
+        "produto_id": "prod_20260430083822_5f879410",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T08:38:22.524083",
+    "data_cadastro": "2026-04-30T08:38:22.524083",
+    "data_atualizacao": "2026-04-30T08:38:22.545205",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260430083822_e9d0ae47",
+    "itens": [
+      {
+        "produto_id": "prod_20260430083822_7cae4538",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T08:38:22.616240",
+    "data_cadastro": "2026-04-30T08:38:22.616240",
+    "data_atualizacao": "2026-04-30T08:38:22.647569",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260430083822_71d671ea",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T08:38:22.683938",
+    "data_cadastro": "2026-04-30T08:38:22.683938",
+    "data_atualizacao": "2026-04-30T08:38:22.696472",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260430083823_ee6b3f8c",
+    "itens": [
+      {
+        "produto_id": "prod_20260430083823_42ca9db3",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T08:38:23.161579",
+    "data_cadastro": "2026-04-30T08:38:23.161579",
+    "data_atualizacao": "2026-04-30T08:38:23.195976",
+    "nfce_id": "nfce_4"
   }
 ]

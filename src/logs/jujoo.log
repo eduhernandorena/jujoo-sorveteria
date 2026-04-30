@@ -113,3 +113,1089 @@
 2026-04-26 22:10:42,841 - jujoo - INFO - Criado registro mov_20260426221042_fdc5210b em caixa.json
 2026-04-26 22:10:42,841 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
 2026-04-26 22:10:42,903 - jujoo - INFO - Fechamento diário 2026-04-26: R$ 212.5
+2026-04-28 09:30:44,176 - jujoo - INFO - Criado registro prod_20260428093044_e8eeaa1a em produtos.json
+2026-04-28 09:30:44,177 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-28 09:30:44,193 - jujoo - INFO - Criado registro mp_20260428093044_7df551a8 em materias_primas.json
+2026-04-28 09:30:44,193 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-28 09:30:44,214 - jujoo - INFO - Criado registro mov_20260428093044_ba3365ab em caixa.json
+2026-04-28 09:30:44,214 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-28 09:30:44,264 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 100.0
+2026-04-28 09:30:44,494 - jujoo - INFO - Criado registro prod_20260428093044_a4459b21 em produtos.json
+2026-04-28 09:30:44,495 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-28 09:30:44,499 - jujoo - INFO - Atualizado registro prod_20260428093044_a4459b21 em produtos.json
+2026-04-28 09:30:44,506 - jujoo - INFO - Criado registro prod_20260428093044_9d7a0edd em produtos.json
+2026-04-28 09:30:44,506 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-28 09:30:44,510 - jujoo - INFO - Atualizado registro prod_20260428093044_9d7a0edd em produtos.json
+2026-04-28 09:30:44,579 - jujoo - INFO - Criado registro prod_20260428093044_41b5077b em produtos.json
+2026-04-28 09:30:44,579 - jujoo - INFO - Produto criado: 
+2026-04-28 09:30:44,602 - jujoo - INFO - Criado registro mp_20260428093044_005b73ad em materias_primas.json
+2026-04-28 09:30:44,602 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-28 09:30:44,607 - jujoo - INFO - Atualizado registro mp_20260428093044_005b73ad em materias_primas.json
+2026-04-28 09:30:44,613 - jujoo - INFO - Criado registro mp_20260428093044_54705441 em materias_primas.json
+2026-04-28 09:30:44,613 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-28 09:30:44,617 - jujoo - INFO - Atualizado registro mp_20260428093044_54705441 em materias_primas.json
+2026-04-28 09:30:44,627 - jujoo - INFO - Criado registro mp_20260428093044_feb019c0 em materias_primas.json
+2026-04-28 09:30:44,627 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-28 09:30:44,653 - jujoo - INFO - Criado registro mp_20260428093044_fce10d6e em materias_primas.json
+2026-04-28 09:30:44,653 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-28 09:30:44,672 - jujoo - INFO - Criado registro mp_20260428093044_66005393 em materias_primas.json
+2026-04-28 09:30:44,672 - jujoo - INFO - Matéria-prima criada: 
+2026-04-28 09:30:44,687 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 100.0
+2026-04-28 09:30:44,703 - jujoo - INFO - Fechamento mensal 2026-04: R$ 312.5
+2026-04-28 09:30:44,709 - jujoo - INFO - Criado registro mov_20260428093044_c3593d53 em caixa.json
+2026-04-28 09:30:44,709 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:30:44,723 - jujoo - INFO - Criado registro prod_20260428093044_6b53d1ac em produtos.json
+2026-04-28 09:30:44,723 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-28 09:30:44,726 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-28 09:30:44,727 - jujoo - INFO - Criado registro venda_20260428093044_a4675d00 em vendas.json
+2026-04-28 09:30:44,727 - jujoo - INFO - Criado registro mov_20260428093044_eba17194 em caixa.json
+2026-04-28 09:30:44,727 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-28 09:30:44,728 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093044_a4675d00
+2026-04-28 09:30:44,728 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-28 09:30:44,729 - jujoo - INFO - Atualizado registro venda_20260428093044_a4675d00 em vendas.json
+2026-04-28 09:30:44,729 - jujoo - INFO - Venda criada: venda_20260428093044_a4675d00 - R$ 30.0
+2026-04-28 09:30:44,734 - jujoo - INFO - Criado registro prod_20260428093044_b9e10d98 em produtos.json
+2026-04-28 09:30:44,734 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-28 09:30:44,737 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-28 09:30:44,738 - jujoo - INFO - Criado registro venda_20260428093044_1b70d8e5 em vendas.json
+2026-04-28 09:30:44,739 - jujoo - INFO - Criado registro mov_20260428093044_0fa3f9ee em caixa.json
+2026-04-28 09:30:44,739 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-28 09:30:44,739 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093044_1b70d8e5
+2026-04-28 09:30:44,739 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-28 09:30:44,740 - jujoo - INFO - Atualizado registro venda_20260428093044_1b70d8e5 em vendas.json
+2026-04-28 09:30:44,740 - jujoo - INFO - Venda criada: venda_20260428093044_1b70d8e5 - R$ 12.0
+2026-04-28 09:30:44,762 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-28 09:30:44,763 - jujoo - INFO - Criado registro venda_20260428093044_0ce8250f em vendas.json
+2026-04-28 09:30:44,763 - jujoo - INFO - Criado registro mov_20260428093044_809796cd em caixa.json
+2026-04-28 09:30:44,763 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-28 09:30:44,763 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093044_0ce8250f
+2026-04-28 09:30:44,763 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-28 09:30:44,764 - jujoo - INFO - Atualizado registro venda_20260428093044_0ce8250f em vendas.json
+2026-04-28 09:30:44,764 - jujoo - INFO - Venda criada: venda_20260428093044_0ce8250f - R$ 0
+2026-04-28 09:30:44,785 - jujoo - INFO - Criado registro compra_20260428093044_e7f8e0d4 em compras.json
+2026-04-28 09:30:44,786 - jujoo - INFO - Criado registro mov_20260428093044_add7949b em caixa.json
+2026-04-28 09:30:44,786 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:30:44,786 - jujoo - INFO - Compra criada: compra_20260428093044_e7f8e0d4 - R$ 50.0
+2026-04-28 09:30:44,791 - jujoo - INFO - Criado registro compra_20260428093044_bd9e23d1 em compras.json
+2026-04-28 09:30:44,792 - jujoo - INFO - Criado registro mov_20260428093044_acf8e8e7 em caixa.json
+2026-04-28 09:30:44,792 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:30:44,792 - jujoo - INFO - Compra criada: compra_20260428093044_bd9e23d1 - R$ 50.0
+2026-04-28 09:30:45,351 - jujoo - INFO - Fechamento diário 2026-04-28: R$ -8.0
+2026-04-28 09:30:45,355 - jujoo - INFO - Criado registro prod_20260428093045_cb8f23f9 em produtos.json
+2026-04-28 09:30:45,356 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-28 09:30:45,360 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-28 09:30:45,360 - jujoo - INFO - Criado registro venda_20260428093045_0ce418c7 em vendas.json
+2026-04-28 09:30:45,361 - jujoo - INFO - Criado registro mov_20260428093045_229b971d em caixa.json
+2026-04-28 09:30:45,361 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-28 09:30:45,361 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093045_0ce418c7
+2026-04-28 09:30:45,362 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-28 09:30:45,362 - jujoo - INFO - Atualizado registro venda_20260428093045_0ce418c7 em vendas.json
+2026-04-28 09:30:45,363 - jujoo - INFO - Venda criada: venda_20260428093045_0ce418c7 - R$ 54.0
+2026-04-28 09:30:45,375 - jujoo - INFO - Criado registro mp_20260428093045_f92d5835 em materias_primas.json
+2026-04-28 09:30:45,375 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-28 09:31:42,399 - jujoo - INFO - Criado registro prod_20260428093142_22a8ee81 em produtos.json
+2026-04-28 09:31:42,399 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-28 09:31:42,417 - jujoo - INFO - Criado registro mp_20260428093142_f3346448 em materias_primas.json
+2026-04-28 09:31:42,418 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-28 09:31:42,442 - jujoo - INFO - Criado registro mov_20260428093142_7b4fdbff em caixa.json
+2026-04-28 09:31:42,443 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-28 09:31:42,500 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 146.0
+2026-04-28 09:31:42,727 - jujoo - INFO - Criado registro prod_20260428093142_b1e1364f em produtos.json
+2026-04-28 09:31:42,727 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-28 09:31:42,731 - jujoo - INFO - Atualizado registro prod_20260428093142_b1e1364f em produtos.json
+2026-04-28 09:31:42,737 - jujoo - INFO - Criado registro prod_20260428093142_991e2527 em produtos.json
+2026-04-28 09:31:42,737 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-28 09:31:42,741 - jujoo - INFO - Atualizado registro prod_20260428093142_991e2527 em produtos.json
+2026-04-28 09:31:42,804 - jujoo - INFO - Criado registro prod_20260428093142_06e1abb4 em produtos.json
+2026-04-28 09:31:42,805 - jujoo - INFO - Produto criado: 
+2026-04-28 09:31:42,825 - jujoo - INFO - Criado registro mp_20260428093142_7eb13cf7 em materias_primas.json
+2026-04-28 09:31:42,825 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-28 09:31:42,830 - jujoo - INFO - Atualizado registro mp_20260428093142_7eb13cf7 em materias_primas.json
+2026-04-28 09:31:42,835 - jujoo - INFO - Criado registro mp_20260428093142_ad67e8ec em materias_primas.json
+2026-04-28 09:31:42,835 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-28 09:31:42,838 - jujoo - INFO - Atualizado registro mp_20260428093142_ad67e8ec em materias_primas.json
+2026-04-28 09:31:42,848 - jujoo - INFO - Criado registro mp_20260428093142_d8ee74b3 em materias_primas.json
+2026-04-28 09:31:42,849 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-28 09:31:42,869 - jujoo - INFO - Criado registro mp_20260428093142_a61cf53e em materias_primas.json
+2026-04-28 09:31:42,869 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-28 09:31:42,888 - jujoo - INFO - Criado registro mp_20260428093142_c650e6ce em materias_primas.json
+2026-04-28 09:31:42,888 - jujoo - INFO - Matéria-prima criada: 
+2026-04-28 09:31:42,903 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 146.0
+2026-04-28 09:31:42,921 - jujoo - INFO - Fechamento mensal 2026-04: R$ 358.5
+2026-04-28 09:31:42,927 - jujoo - INFO - Criado registro mov_20260428093142_f7569a5e em caixa.json
+2026-04-28 09:31:42,927 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:31:42,943 - jujoo - INFO - Criado registro prod_20260428093142_794af8b1 em produtos.json
+2026-04-28 09:31:42,943 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-28 09:31:42,947 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-28 09:31:42,948 - jujoo - INFO - Criado registro venda_20260428093142_4cf7f0ad em vendas.json
+2026-04-28 09:31:42,949 - jujoo - INFO - Criado registro mov_20260428093142_5aa84c49 em caixa.json
+2026-04-28 09:31:42,949 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-28 09:31:42,949 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093142_4cf7f0ad
+2026-04-28 09:31:42,949 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-28 09:31:42,950 - jujoo - INFO - Atualizado registro venda_20260428093142_4cf7f0ad em vendas.json
+2026-04-28 09:31:42,950 - jujoo - INFO - Venda criada: venda_20260428093142_4cf7f0ad - R$ 30.0
+2026-04-28 09:31:42,955 - jujoo - INFO - Criado registro prod_20260428093142_990bc10a em produtos.json
+2026-04-28 09:31:42,955 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-28 09:31:42,958 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-28 09:31:42,959 - jujoo - INFO - Criado registro venda_20260428093142_d4942b51 em vendas.json
+2026-04-28 09:31:42,960 - jujoo - INFO - Criado registro mov_20260428093142_f09fd977 em caixa.json
+2026-04-28 09:31:42,960 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-28 09:31:42,961 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093142_d4942b51
+2026-04-28 09:31:42,961 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-28 09:31:42,962 - jujoo - INFO - Atualizado registro venda_20260428093142_d4942b51 em vendas.json
+2026-04-28 09:31:42,962 - jujoo - INFO - Venda criada: venda_20260428093142_d4942b51 - R$ 12.0
+2026-04-28 09:31:42,985 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-28 09:31:42,987 - jujoo - INFO - Criado registro venda_20260428093142_bb9be151 em vendas.json
+2026-04-28 09:31:42,988 - jujoo - INFO - Criado registro mov_20260428093142_9b4705ba em caixa.json
+2026-04-28 09:31:42,988 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-28 09:31:42,988 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093142_bb9be151
+2026-04-28 09:31:42,988 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-28 09:31:42,989 - jujoo - INFO - Atualizado registro venda_20260428093142_bb9be151 em vendas.json
+2026-04-28 09:31:42,990 - jujoo - INFO - Venda criada: venda_20260428093142_bb9be151 - R$ 0
+2026-04-28 09:31:43,026 - jujoo - INFO - Criado registro compra_20260428093143_51324437 em compras.json
+2026-04-28 09:31:43,027 - jujoo - INFO - Criado registro mov_20260428093143_01d87157 em caixa.json
+2026-04-28 09:31:43,028 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:31:43,028 - jujoo - INFO - Compra criada: compra_20260428093143_51324437 - R$ 50.0
+2026-04-28 09:31:43,035 - jujoo - INFO - Criado registro compra_20260428093143_6201fc97 em compras.json
+2026-04-28 09:31:43,036 - jujoo - INFO - Criado registro mov_20260428093143_e6923934 em caixa.json
+2026-04-28 09:31:43,036 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:31:43,036 - jujoo - INFO - Compra criada: compra_20260428093143_6201fc97 - R$ 50.0
+2026-04-28 09:31:43,540 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 38.0
+2026-04-28 09:31:43,545 - jujoo - INFO - Criado registro prod_20260428093143_9193d6bb em produtos.json
+2026-04-28 09:31:43,546 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-28 09:31:43,549 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-28 09:31:43,550 - jujoo - INFO - Criado registro venda_20260428093143_06b4b0bc em vendas.json
+2026-04-28 09:31:43,551 - jujoo - INFO - Criado registro mov_20260428093143_beaa59ef em caixa.json
+2026-04-28 09:31:43,551 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-28 09:31:43,551 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093143_06b4b0bc
+2026-04-28 09:31:43,551 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-28 09:31:43,553 - jujoo - INFO - Atualizado registro venda_20260428093143_06b4b0bc em vendas.json
+2026-04-28 09:31:43,553 - jujoo - INFO - Venda criada: venda_20260428093143_06b4b0bc - R$ 54.0
+2026-04-28 09:31:43,568 - jujoo - INFO - Criado registro mp_20260428093143_9bb15ede em materias_primas.json
+2026-04-28 09:31:43,568 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-28 09:31:59,082 - jujoo - INFO - Criado registro prod_20260428093159_5516370b em produtos.json
+2026-04-28 09:31:59,083 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-28 09:31:59,089 - jujoo - INFO - Atualizado registro prod_20260428093159_5516370b em produtos.json
+2026-04-28 09:31:59,096 - jujoo - INFO - Criado registro prod_20260428093159_3b90ab52 em produtos.json
+2026-04-28 09:31:59,096 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-28 09:31:59,100 - jujoo - INFO - Atualizado registro prod_20260428093159_3b90ab52 em produtos.json
+2026-04-28 09:31:59,176 - jujoo - INFO - Criado registro prod_20260428093159_e5310050 em produtos.json
+2026-04-28 09:31:59,176 - jujoo - INFO - Produto criado: 
+2026-04-28 09:32:36,865 - jujoo - INFO - Criado registro prod_20260428093236_346c45ea em produtos.json
+2026-04-28 09:32:36,866 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-28 09:32:36,872 - jujoo - INFO - Atualizado registro prod_20260428093236_346c45ea em produtos.json
+2026-04-28 09:32:36,880 - jujoo - INFO - Criado registro prod_20260428093236_8710ff5f em produtos.json
+2026-04-28 09:32:36,880 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-28 09:32:36,886 - jujoo - INFO - Atualizado registro prod_20260428093236_8710ff5f em produtos.json
+2026-04-28 09:32:36,903 - jujoo - INFO - Criado registro prod_20260428093236_5a61d548 em produtos.json
+2026-04-28 09:32:36,903 - jujoo - INFO - Produto criado: 
+2026-04-28 09:32:50,750 - jujoo - INFO - Criado registro prod_20260428093250_e7cf0be8 em produtos.json
+2026-04-28 09:32:50,750 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-28 09:32:50,757 - jujoo - INFO - Atualizado registro prod_20260428093250_e7cf0be8 em produtos.json
+2026-04-28 09:32:50,764 - jujoo - INFO - Criado registro prod_20260428093250_0bace5f4 em produtos.json
+2026-04-28 09:32:50,764 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-28 09:32:50,769 - jujoo - INFO - Atualizado registro prod_20260428093250_0bace5f4 em produtos.json
+2026-04-28 09:32:50,788 - jujoo - INFO - Criado registro prod_20260428093250_2b16e28c em produtos.json
+2026-04-28 09:32:50,788 - jujoo - INFO - Produto criado: 
+2026-04-28 09:32:50,802 - jujoo - INFO - Criado registro mp_20260428093250_d1a978b0 em materias_primas.json
+2026-04-28 09:32:50,802 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-28 09:32:50,809 - jujoo - INFO - Atualizado registro mp_20260428093250_d1a978b0 em materias_primas.json
+2026-04-28 09:32:50,816 - jujoo - INFO - Criado registro mp_20260428093250_31c0f189 em materias_primas.json
+2026-04-28 09:32:50,817 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-28 09:32:50,822 - jujoo - INFO - Atualizado registro mp_20260428093250_31c0f189 em materias_primas.json
+2026-04-28 09:32:50,835 - jujoo - INFO - Criado registro mp_20260428093250_f91a1b66 em materias_primas.json
+2026-04-28 09:32:50,836 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-28 09:32:50,937 - jujoo - INFO - Criado registro mp_20260428093250_c6311805 em materias_primas.json
+2026-04-28 09:32:50,937 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-28 09:32:50,970 - jujoo - INFO - Criado registro mp_20260428093250_690cd23e em materias_primas.json
+2026-04-28 09:32:50,971 - jujoo - INFO - Matéria-prima criada: 
+2026-04-28 09:32:50,996 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 92.0
+2026-04-28 09:32:51,022 - jujoo - INFO - Fechamento mensal 2026-04: R$ 304.5
+2026-04-28 09:32:51,028 - jujoo - INFO - Criado registro mov_20260428093251_d9ee2e06 em caixa.json
+2026-04-28 09:32:51,028 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:32:51,048 - jujoo - INFO - Criado registro prod_20260428093251_c51774bd em produtos.json
+2026-04-28 09:32:51,048 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-28 09:32:51,051 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-28 09:32:51,053 - jujoo - INFO - Criado registro venda_20260428093251_1f8d46bd em vendas.json
+2026-04-28 09:32:51,054 - jujoo - INFO - Criado registro mov_20260428093251_3ef3fe6b em caixa.json
+2026-04-28 09:32:51,054 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-28 09:32:51,054 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093251_1f8d46bd
+2026-04-28 09:32:51,055 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-28 09:32:51,056 - jujoo - INFO - Atualizado registro venda_20260428093251_1f8d46bd em vendas.json
+2026-04-28 09:32:51,056 - jujoo - INFO - Venda criada: venda_20260428093251_1f8d46bd - R$ 30.0
+2026-04-28 09:32:51,063 - jujoo - INFO - Criado registro prod_20260428093251_9e8a5473 em produtos.json
+2026-04-28 09:32:51,063 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-28 09:32:51,066 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-28 09:32:51,067 - jujoo - INFO - Criado registro venda_20260428093251_4af5c5b5 em vendas.json
+2026-04-28 09:32:51,069 - jujoo - INFO - Criado registro mov_20260428093251_a01b8079 em caixa.json
+2026-04-28 09:32:51,069 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-28 09:32:51,069 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093251_4af5c5b5
+2026-04-28 09:32:51,069 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-28 09:32:51,070 - jujoo - INFO - Atualizado registro venda_20260428093251_4af5c5b5 em vendas.json
+2026-04-28 09:32:51,070 - jujoo - INFO - Venda criada: venda_20260428093251_4af5c5b5 - R$ 12.0
+2026-04-28 09:32:51,092 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-28 09:32:51,094 - jujoo - INFO - Criado registro venda_20260428093251_7a92f4e2 em vendas.json
+2026-04-28 09:32:51,095 - jujoo - INFO - Criado registro mov_20260428093251_caf08dda em caixa.json
+2026-04-28 09:32:51,095 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-28 09:32:51,095 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093251_7a92f4e2
+2026-04-28 09:32:51,095 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-28 09:32:51,097 - jujoo - INFO - Atualizado registro venda_20260428093251_7a92f4e2 em vendas.json
+2026-04-28 09:32:51,097 - jujoo - INFO - Venda criada: venda_20260428093251_7a92f4e2 - R$ 0
+2026-04-28 09:32:51,118 - jujoo - INFO - Criado registro compra_20260428093251_9d7e6691 em compras.json
+2026-04-28 09:32:51,119 - jujoo - INFO - Criado registro mov_20260428093251_ec90baf6 em caixa.json
+2026-04-28 09:32:51,119 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:32:51,120 - jujoo - INFO - Compra criada: compra_20260428093251_9d7e6691 - R$ 50.0
+2026-04-28 09:32:51,126 - jujoo - INFO - Criado registro compra_20260428093251_9430e34a em compras.json
+2026-04-28 09:32:51,127 - jujoo - INFO - Criado registro mov_20260428093251_6bff94e8 em caixa.json
+2026-04-28 09:32:51,127 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:32:51,128 - jujoo - INFO - Compra criada: compra_20260428093251_9430e34a - R$ 50.0
+2026-04-28 09:32:51,627 - jujoo - INFO - Fechamento diário 2026-04-28: R$ -16.0
+2026-04-28 09:32:51,634 - jujoo - INFO - Criado registro prod_20260428093251_82b1bc9a em produtos.json
+2026-04-28 09:32:51,634 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-28 09:32:51,637 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-28 09:32:51,638 - jujoo - INFO - Criado registro venda_20260428093251_1b7a2749 em vendas.json
+2026-04-28 09:32:51,640 - jujoo - INFO - Criado registro mov_20260428093251_2896fe92 em caixa.json
+2026-04-28 09:32:51,640 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-28 09:32:51,640 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093251_1b7a2749
+2026-04-28 09:32:51,640 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-28 09:32:51,641 - jujoo - INFO - Atualizado registro venda_20260428093251_1b7a2749 em vendas.json
+2026-04-28 09:32:51,641 - jujoo - INFO - Venda criada: venda_20260428093251_1b7a2749 - R$ 54.0
+2026-04-28 09:32:51,654 - jujoo - INFO - Criado registro mp_20260428093251_c7868695 em materias_primas.json
+2026-04-28 09:32:51,654 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-28 09:33:08,293 - jujoo - INFO - Criado registro prod_20260428093308_a970b882 em produtos.json
+2026-04-28 09:33:08,293 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-28 09:33:08,313 - jujoo - INFO - Criado registro mp_20260428093308_736852c2 em materias_primas.json
+2026-04-28 09:33:08,313 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-28 09:33:08,341 - jujoo - INFO - Criado registro mov_20260428093308_fffb17f2 em caixa.json
+2026-04-28 09:33:08,341 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-28 09:33:08,398 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 138.0
+2026-04-28 09:33:08,622 - jujoo - INFO - Criado registro prod_20260428093308_432416d8 em produtos.json
+2026-04-28 09:33:08,622 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-28 09:33:08,626 - jujoo - INFO - Atualizado registro prod_20260428093308_432416d8 em produtos.json
+2026-04-28 09:33:08,633 - jujoo - INFO - Criado registro prod_20260428093308_8f9de957 em produtos.json
+2026-04-28 09:33:08,634 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-28 09:33:08,638 - jujoo - INFO - Atualizado registro prod_20260428093308_8f9de957 em produtos.json
+2026-04-28 09:33:08,655 - jujoo - INFO - Criado registro prod_20260428093308_c7bd45dd em produtos.json
+2026-04-28 09:33:08,655 - jujoo - INFO - Produto criado: 
+2026-04-28 09:33:08,666 - jujoo - INFO - Criado registro mp_20260428093308_27c248bd em materias_primas.json
+2026-04-28 09:33:08,666 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-28 09:33:08,671 - jujoo - INFO - Atualizado registro mp_20260428093308_27c248bd em materias_primas.json
+2026-04-28 09:33:08,678 - jujoo - INFO - Criado registro mp_20260428093308_85c465fa em materias_primas.json
+2026-04-28 09:33:08,679 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-28 09:33:08,683 - jujoo - INFO - Atualizado registro mp_20260428093308_85c465fa em materias_primas.json
+2026-04-28 09:33:08,695 - jujoo - INFO - Criado registro mp_20260428093308_530fd007 em materias_primas.json
+2026-04-28 09:33:08,695 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-28 09:33:08,706 - jujoo - INFO - Criado registro mp_20260428093308_16ec29b1 em materias_primas.json
+2026-04-28 09:33:08,706 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-28 09:33:08,718 - jujoo - INFO - Criado registro mp_20260428093308_60edb398 em materias_primas.json
+2026-04-28 09:33:08,718 - jujoo - INFO - Matéria-prima criada: 
+2026-04-28 09:33:08,729 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 138.0
+2026-04-28 09:33:08,734 - jujoo - INFO - Fechamento mensal 2026-04: R$ 350.5
+2026-04-28 09:33:08,742 - jujoo - INFO - Criado registro mov_20260428093308_d0d8b757 em caixa.json
+2026-04-28 09:33:08,742 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:33:08,760 - jujoo - INFO - Criado registro prod_20260428093308_ee5fff7f em produtos.json
+2026-04-28 09:33:08,760 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-28 09:33:08,765 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-28 09:33:08,767 - jujoo - INFO - Criado registro venda_20260428093308_5980a0d6 em vendas.json
+2026-04-28 09:33:08,768 - jujoo - INFO - Criado registro mov_20260428093308_30ec31a8 em caixa.json
+2026-04-28 09:33:08,768 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-28 09:33:08,768 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093308_5980a0d6
+2026-04-28 09:33:08,769 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-28 09:33:08,770 - jujoo - INFO - Atualizado registro venda_20260428093308_5980a0d6 em vendas.json
+2026-04-28 09:33:08,770 - jujoo - INFO - Venda criada: venda_20260428093308_5980a0d6 - R$ 30.0
+2026-04-28 09:33:08,777 - jujoo - INFO - Criado registro prod_20260428093308_515b9b4c em produtos.json
+2026-04-28 09:33:08,778 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-28 09:33:08,784 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-28 09:33:08,786 - jujoo - INFO - Criado registro venda_20260428093308_8fd3ab6c em vendas.json
+2026-04-28 09:33:08,787 - jujoo - INFO - Criado registro mov_20260428093308_41d00822 em caixa.json
+2026-04-28 09:33:08,787 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-28 09:33:08,787 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093308_8fd3ab6c
+2026-04-28 09:33:08,787 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-28 09:33:08,789 - jujoo - INFO - Atualizado registro venda_20260428093308_8fd3ab6c em vendas.json
+2026-04-28 09:33:08,789 - jujoo - INFO - Venda criada: venda_20260428093308_8fd3ab6c - R$ 12.0
+2026-04-28 09:33:08,801 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-28 09:33:08,803 - jujoo - INFO - Criado registro venda_20260428093308_b70c138b em vendas.json
+2026-04-28 09:33:08,804 - jujoo - INFO - Criado registro mov_20260428093308_358d3ed4 em caixa.json
+2026-04-28 09:33:08,805 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-28 09:33:08,805 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093308_b70c138b
+2026-04-28 09:33:08,805 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-28 09:33:08,807 - jujoo - INFO - Atualizado registro venda_20260428093308_b70c138b em vendas.json
+2026-04-28 09:33:08,807 - jujoo - INFO - Venda criada: venda_20260428093308_b70c138b - R$ 0
+2026-04-28 09:33:08,821 - jujoo - INFO - Criado registro compra_20260428093308_53118776 em compras.json
+2026-04-28 09:33:08,822 - jujoo - INFO - Criado registro mov_20260428093308_f802df9b em caixa.json
+2026-04-28 09:33:08,822 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:33:08,822 - jujoo - INFO - Compra criada: compra_20260428093308_53118776 - R$ 50.0
+2026-04-28 09:33:08,828 - jujoo - INFO - Criado registro compra_20260428093308_b49b1822 em compras.json
+2026-04-28 09:33:08,830 - jujoo - INFO - Criado registro mov_20260428093308_c1e8f1a1 em caixa.json
+2026-04-28 09:33:08,830 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:33:08,830 - jujoo - INFO - Compra criada: compra_20260428093308_b49b1822 - R$ 50.0
+2026-04-28 09:33:08,884 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 30.0
+2026-04-28 09:33:08,891 - jujoo - INFO - Criado registro prod_20260428093308_4aa9bda9 em produtos.json
+2026-04-28 09:33:08,892 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-28 09:33:08,895 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-28 09:33:08,897 - jujoo - INFO - Criado registro venda_20260428093308_20e22702 em vendas.json
+2026-04-28 09:33:08,898 - jujoo - INFO - Criado registro mov_20260428093308_de01d7c8 em caixa.json
+2026-04-28 09:33:08,898 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-28 09:33:08,899 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093308_20e22702
+2026-04-28 09:33:08,899 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-28 09:33:08,900 - jujoo - INFO - Atualizado registro venda_20260428093308_20e22702 em vendas.json
+2026-04-28 09:33:08,901 - jujoo - INFO - Venda criada: venda_20260428093308_20e22702 - R$ 54.0
+2026-04-28 09:33:08,916 - jujoo - INFO - Criado registro mp_20260428093308_31269163 em materias_primas.json
+2026-04-28 09:33:08,916 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-28 09:33:14,407 - jujoo - INFO - Criado registro prod_20260428093314_10ac8c51 em produtos.json
+2026-04-28 09:33:14,407 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-28 09:33:14,412 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-28 09:33:14,415 - jujoo - INFO - Criado registro venda_20260428093314_4a5f2450 em vendas.json
+2026-04-28 09:33:14,417 - jujoo - INFO - Criado registro mov_20260428093314_bc877850 em caixa.json
+2026-04-28 09:33:14,417 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-28 09:33:14,417 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093314_4a5f2450
+2026-04-28 09:33:14,417 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-28 09:33:14,419 - jujoo - INFO - Atualizado registro venda_20260428093314_4a5f2450 em vendas.json
+2026-04-28 09:33:14,419 - jujoo - INFO - Venda criada: venda_20260428093314_4a5f2450 - R$ 30.0
+2026-04-28 09:33:32,712 - jujoo - INFO - Criado registro prod_20260428093332_f7073d38 em produtos.json
+2026-04-28 09:33:32,713 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-28 09:33:32,717 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-28 09:33:32,718 - jujoo - INFO - Criado registro venda_20260428093332_76a1862c em vendas.json
+2026-04-28 09:33:32,719 - jujoo - INFO - Criado registro mov_20260428093332_7198cac6 em caixa.json
+2026-04-28 09:33:32,719 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-28 09:33:32,719 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093332_76a1862c
+2026-04-28 09:33:32,720 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-28 09:33:32,721 - jujoo - INFO - Atualizado registro venda_20260428093332_76a1862c em vendas.json
+2026-04-28 09:33:32,721 - jujoo - INFO - Venda criada: venda_20260428093332_76a1862c - R$ 12.0
+2026-04-28 09:33:58,182 - jujoo - INFO - Criado registro mp_20260428093358_80932737 em materias_primas.json
+2026-04-28 09:33:58,182 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-28 09:34:17,397 - jujoo - INFO - Criado registro prod_20260428093417_9b1bbbc9 em produtos.json
+2026-04-28 09:34:17,397 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-28 09:34:17,413 - jujoo - INFO - Criado registro mp_20260428093417_a58729dd em materias_primas.json
+2026-04-28 09:34:17,413 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-28 09:34:17,437 - jujoo - INFO - Criado registro mov_20260428093417_5a819768 em caixa.json
+2026-04-28 09:34:17,437 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-28 09:34:17,491 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 226.0
+2026-04-28 09:34:17,723 - jujoo - INFO - Criado registro prod_20260428093417_27bcf865 em produtos.json
+2026-04-28 09:34:17,723 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-28 09:34:17,729 - jujoo - INFO - Atualizado registro prod_20260428093417_27bcf865 em produtos.json
+2026-04-28 09:34:17,738 - jujoo - INFO - Criado registro prod_20260428093417_69541f22 em produtos.json
+2026-04-28 09:34:17,738 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-28 09:34:17,746 - jujoo - INFO - Atualizado registro prod_20260428093417_69541f22 em produtos.json
+2026-04-28 09:34:17,765 - jujoo - INFO - Criado registro prod_20260428093417_a07609ec em produtos.json
+2026-04-28 09:34:17,765 - jujoo - INFO - Produto criado: 
+2026-04-28 09:34:17,779 - jujoo - INFO - Criado registro mp_20260428093417_323579aa em materias_primas.json
+2026-04-28 09:34:17,779 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-28 09:34:17,786 - jujoo - INFO - Atualizado registro mp_20260428093417_323579aa em materias_primas.json
+2026-04-28 09:34:17,793 - jujoo - INFO - Criado registro mp_20260428093417_fdebb1ce em materias_primas.json
+2026-04-28 09:34:17,793 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-28 09:34:17,799 - jujoo - INFO - Atualizado registro mp_20260428093417_fdebb1ce em materias_primas.json
+2026-04-28 09:34:17,812 - jujoo - INFO - Criado registro mp_20260428093417_c1d2a16b em materias_primas.json
+2026-04-28 09:34:17,812 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-28 09:34:17,818 - jujoo - INFO - Atualizado registro mp_20260428093417_c1d2a16b em materias_primas.json
+2026-04-28 09:34:17,826 - jujoo - INFO - Criado registro mp_20260428093417_e5618ea9 em materias_primas.json
+2026-04-28 09:34:17,826 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-28 09:34:17,831 - jujoo - INFO - Atualizado registro mp_20260428093417_e5618ea9 em materias_primas.json
+2026-04-28 09:34:17,838 - jujoo - INFO - Criado registro mp_20260428093417_69514ac4 em materias_primas.json
+2026-04-28 09:34:17,838 - jujoo - INFO - Matéria-prima criada: 
+2026-04-28 09:34:17,846 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 226.0
+2026-04-28 09:34:17,854 - jujoo - INFO - Fechamento mensal 2026-04: R$ 438.5
+2026-04-28 09:34:17,860 - jujoo - INFO - Criado registro mov_20260428093417_e0c20712 em caixa.json
+2026-04-28 09:34:17,860 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:34:17,881 - jujoo - INFO - Criado registro prod_20260428093417_b40b0af8 em produtos.json
+2026-04-28 09:34:17,881 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-28 09:34:17,884 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-28 09:34:17,886 - jujoo - INFO - Criado registro venda_20260428093417_519906cc em vendas.json
+2026-04-28 09:34:17,888 - jujoo - INFO - Criado registro mov_20260428093417_36cc525d em caixa.json
+2026-04-28 09:34:17,888 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-28 09:34:17,888 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093417_519906cc
+2026-04-28 09:34:17,888 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-28 09:34:17,890 - jujoo - INFO - Atualizado registro venda_20260428093417_519906cc em vendas.json
+2026-04-28 09:34:17,891 - jujoo - INFO - Venda criada: venda_20260428093417_519906cc - R$ 30.0
+2026-04-28 09:34:17,898 - jujoo - INFO - Criado registro prod_20260428093417_fe1ceaf8 em produtos.json
+2026-04-28 09:34:17,899 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-28 09:34:17,902 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-28 09:34:17,904 - jujoo - INFO - Criado registro venda_20260428093417_55f2ec10 em vendas.json
+2026-04-28 09:34:17,905 - jujoo - INFO - Criado registro mov_20260428093417_425e1703 em caixa.json
+2026-04-28 09:34:17,906 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-28 09:34:17,906 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093417_55f2ec10
+2026-04-28 09:34:17,906 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-28 09:34:17,908 - jujoo - INFO - Atualizado registro venda_20260428093417_55f2ec10 em vendas.json
+2026-04-28 09:34:17,908 - jujoo - INFO - Venda criada: venda_20260428093417_55f2ec10 - R$ 12.0
+2026-04-28 09:34:17,922 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-28 09:34:17,925 - jujoo - INFO - Criado registro venda_20260428093417_2d46c6d3 em vendas.json
+2026-04-28 09:34:17,926 - jujoo - INFO - Criado registro mov_20260428093417_77be2d94 em caixa.json
+2026-04-28 09:34:17,926 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-28 09:34:17,926 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093417_2d46c6d3
+2026-04-28 09:34:17,926 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-28 09:34:17,928 - jujoo - INFO - Atualizado registro venda_20260428093417_2d46c6d3 em vendas.json
+2026-04-28 09:34:17,928 - jujoo - INFO - Venda criada: venda_20260428093417_2d46c6d3 - R$ 0
+2026-04-28 09:34:17,941 - jujoo - INFO - Criado registro compra_20260428093417_0b186aa6 em compras.json
+2026-04-28 09:34:17,943 - jujoo - INFO - Criado registro mov_20260428093417_0bc525b6 em caixa.json
+2026-04-28 09:34:17,943 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:34:17,944 - jujoo - INFO - Compra criada: compra_20260428093417_0b186aa6 - R$ 50.0
+2026-04-28 09:34:17,949 - jujoo - INFO - Criado registro compra_20260428093417_429f6f59 em compras.json
+2026-04-28 09:34:17,951 - jujoo - INFO - Criado registro mov_20260428093417_904bffd3 em caixa.json
+2026-04-28 09:34:17,951 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:34:17,951 - jujoo - INFO - Compra criada: compra_20260428093417_429f6f59 - R$ 50.0
+2026-04-28 09:34:18,003 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 118.0
+2026-04-28 09:34:18,010 - jujoo - INFO - Criado registro prod_20260428093418_834cd709 em produtos.json
+2026-04-28 09:34:18,010 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-28 09:34:18,049 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-28 09:34:18,051 - jujoo - INFO - Criado registro venda_20260428093418_957a9de5 em vendas.json
+2026-04-28 09:34:18,053 - jujoo - INFO - Criado registro mov_20260428093418_38692fc8 em caixa.json
+2026-04-28 09:34:18,053 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-28 09:34:18,053 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093418_957a9de5
+2026-04-28 09:34:18,053 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-28 09:34:18,055 - jujoo - INFO - Atualizado registro venda_20260428093418_957a9de5 em vendas.json
+2026-04-28 09:34:18,055 - jujoo - INFO - Venda criada: venda_20260428093418_957a9de5 - R$ 54.0
+2026-04-28 09:34:18,072 - jujoo - INFO - Criado registro mp_20260428093418_ff1ecce1 em materias_primas.json
+2026-04-28 09:34:18,073 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-28 09:34:29,241 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 172.0
+2026-04-28 09:36:34,652 - jujoo - INFO - Criado registro prod_20260428093634_f645f567 em produtos.json
+2026-04-28 09:36:34,652 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-28 09:36:34,680 - jujoo - INFO - Criado registro mp_20260428093634_ff1cb73c em materias_primas.json
+2026-04-28 09:36:34,680 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-28 09:36:34,716 - jujoo - INFO - Criado registro mov_20260428093634_f77828b5 em caixa.json
+2026-04-28 09:36:34,716 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-28 09:36:34,796 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 272.0
+2026-04-28 09:36:35,036 - jujoo - INFO - Criado registro prod_20260428093635_a1bb1e6a em produtos.json
+2026-04-28 09:36:35,037 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-28 09:36:35,044 - jujoo - INFO - Atualizado registro prod_20260428093635_a1bb1e6a em produtos.json
+2026-04-28 09:36:35,054 - jujoo - INFO - Criado registro prod_20260428093635_b5e36f8a em produtos.json
+2026-04-28 09:36:35,054 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-28 09:36:35,066 - jujoo - INFO - Atualizado registro prod_20260428093635_b5e36f8a em produtos.json
+2026-04-28 09:36:35,093 - jujoo - INFO - Criado registro prod_20260428093635_34a5b691 em produtos.json
+2026-04-28 09:36:35,093 - jujoo - INFO - Produto criado: 
+2026-04-28 09:36:35,114 - jujoo - INFO - Criado registro mp_20260428093635_94f614bc em materias_primas.json
+2026-04-28 09:36:35,114 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-28 09:36:35,119 - jujoo - INFO - Atualizado registro mp_20260428093635_94f614bc em materias_primas.json
+2026-04-28 09:36:35,128 - jujoo - INFO - Criado registro mp_20260428093635_d7143ba9 em materias_primas.json
+2026-04-28 09:36:35,129 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-28 09:36:35,134 - jujoo - INFO - Atualizado registro mp_20260428093635_d7143ba9 em materias_primas.json
+2026-04-28 09:36:35,151 - jujoo - INFO - Criado registro mp_20260428093635_ebecb4ef em materias_primas.json
+2026-04-28 09:36:35,152 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-28 09:36:35,159 - jujoo - INFO - Atualizado registro mp_20260428093635_ebecb4ef em materias_primas.json
+2026-04-28 09:36:35,168 - jujoo - INFO - Criado registro mp_20260428093635_d77c3bcc em materias_primas.json
+2026-04-28 09:36:35,168 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-28 09:36:35,176 - jujoo - INFO - Atualizado registro mp_20260428093635_d77c3bcc em materias_primas.json
+2026-04-28 09:36:35,185 - jujoo - INFO - Criado registro mp_20260428093635_28da790b em materias_primas.json
+2026-04-28 09:36:35,185 - jujoo - INFO - Matéria-prima criada: 
+2026-04-28 09:36:35,193 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 272.0
+2026-04-28 09:36:35,200 - jujoo - INFO - Fechamento mensal 2026-04: R$ 484.5
+2026-04-28 09:36:35,212 - jujoo - INFO - Criado registro mov_20260428093635_0d3735b2 em caixa.json
+2026-04-28 09:36:35,213 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:36:35,240 - jujoo - INFO - Criado registro prod_20260428093635_60739fc8 em produtos.json
+2026-04-28 09:36:35,240 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-28 09:36:35,247 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-28 09:36:35,249 - jujoo - INFO - Criado registro venda_20260428093635_2dfd6c41 em vendas.json
+2026-04-28 09:36:35,251 - jujoo - INFO - Criado registro mov_20260428093635_01e3a838 em caixa.json
+2026-04-28 09:36:35,251 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-28 09:36:35,252 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093635_2dfd6c41
+2026-04-28 09:36:35,252 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-28 09:36:35,253 - jujoo - INFO - Atualizado registro venda_20260428093635_2dfd6c41 em vendas.json
+2026-04-28 09:36:35,253 - jujoo - INFO - Venda criada: venda_20260428093635_2dfd6c41 - R$ 30.0
+2026-04-28 09:36:35,264 - jujoo - INFO - Criado registro prod_20260428093635_0ce66f3b em produtos.json
+2026-04-28 09:36:35,264 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-28 09:36:35,267 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-28 09:36:35,270 - jujoo - INFO - Criado registro venda_20260428093635_49e8c7b0 em vendas.json
+2026-04-28 09:36:35,273 - jujoo - INFO - Criado registro mov_20260428093635_5c1ce70b em caixa.json
+2026-04-28 09:36:35,273 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-28 09:36:35,274 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093635_49e8c7b0
+2026-04-28 09:36:35,274 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-28 09:36:35,276 - jujoo - INFO - Atualizado registro venda_20260428093635_49e8c7b0 em vendas.json
+2026-04-28 09:36:35,277 - jujoo - INFO - Venda criada: venda_20260428093635_49e8c7b0 - R$ 12.0
+2026-04-28 09:36:35,302 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-28 09:36:35,304 - jujoo - INFO - Criado registro venda_20260428093635_9d0e910a em vendas.json
+2026-04-28 09:36:35,306 - jujoo - INFO - Criado registro mov_20260428093635_73df5fca em caixa.json
+2026-04-28 09:36:35,306 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-28 09:36:35,307 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093635_9d0e910a
+2026-04-28 09:36:35,307 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-28 09:36:35,309 - jujoo - INFO - Atualizado registro venda_20260428093635_9d0e910a em vendas.json
+2026-04-28 09:36:35,309 - jujoo - INFO - Venda criada: venda_20260428093635_9d0e910a - R$ 0
+2026-04-28 09:36:35,327 - jujoo - INFO - Criado registro compra_20260428093635_eeccb042 em compras.json
+2026-04-28 09:36:35,330 - jujoo - INFO - Criado registro mov_20260428093635_14b078f4 em caixa.json
+2026-04-28 09:36:35,330 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:36:35,330 - jujoo - INFO - Compra criada: compra_20260428093635_eeccb042 - R$ 50.0
+2026-04-28 09:36:35,338 - jujoo - INFO - Criado registro compra_20260428093635_6999a5ef em compras.json
+2026-04-28 09:36:35,342 - jujoo - INFO - Criado registro mov_20260428093635_f0b444e9 em caixa.json
+2026-04-28 09:36:35,342 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:36:35,343 - jujoo - INFO - Compra criada: compra_20260428093635_6999a5ef - R$ 50.0
+2026-04-28 09:36:35,437 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 164.0
+2026-04-28 09:36:35,448 - jujoo - INFO - Criado registro prod_20260428093635_cb10d0ad em produtos.json
+2026-04-28 09:36:35,448 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-28 09:36:35,451 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-28 09:36:35,453 - jujoo - INFO - Criado registro venda_20260428093635_a69fd43b em vendas.json
+2026-04-28 09:36:35,455 - jujoo - INFO - Criado registro mov_20260428093635_5f79875c em caixa.json
+2026-04-28 09:36:35,456 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-28 09:36:35,456 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093635_a69fd43b
+2026-04-28 09:36:35,456 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-28 09:36:35,459 - jujoo - INFO - Atualizado registro venda_20260428093635_a69fd43b em vendas.json
+2026-04-28 09:36:35,459 - jujoo - INFO - Venda criada: venda_20260428093635_a69fd43b - R$ 54.0
+2026-04-28 09:36:35,478 - jujoo - INFO - Criado registro mp_20260428093635_b4ca4999 em materias_primas.json
+2026-04-28 09:36:35,478 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-28 09:36:35,485 - jujoo - INFO - Atualizado registro mp_20260428093635_b4ca4999 em materias_primas.json
+2026-04-28 09:37:20,318 - jujoo - INFO - Criado registro prod_20260428093720_a9858d4b em produtos.json
+2026-04-28 09:37:20,318 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-28 09:37:20,342 - jujoo - INFO - Criado registro mp_20260428093720_a8be607c em materias_primas.json
+2026-04-28 09:37:20,342 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-28 09:37:20,370 - jujoo - INFO - Criado registro mov_20260428093720_4adf310d em caixa.json
+2026-04-28 09:37:20,371 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-28 09:37:20,438 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 318.0
+2026-04-28 09:37:20,666 - jujoo - INFO - Criado registro prod_20260428093720_496f55cb em produtos.json
+2026-04-28 09:37:20,666 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-28 09:37:20,672 - jujoo - INFO - Atualizado registro prod_20260428093720_496f55cb em produtos.json
+2026-04-28 09:37:20,679 - jujoo - INFO - Criado registro prod_20260428093720_d4797598 em produtos.json
+2026-04-28 09:37:20,679 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-28 09:37:20,683 - jujoo - INFO - Atualizado registro prod_20260428093720_d4797598 em produtos.json
+2026-04-28 09:37:20,699 - jujoo - INFO - Criado registro prod_20260428093720_5fff9bce em produtos.json
+2026-04-28 09:37:20,700 - jujoo - INFO - Produto criado: 
+2026-04-28 09:37:20,711 - jujoo - INFO - Criado registro mp_20260428093720_c907fb5c em materias_primas.json
+2026-04-28 09:37:20,711 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-28 09:37:20,716 - jujoo - INFO - Atualizado registro mp_20260428093720_c907fb5c em materias_primas.json
+2026-04-28 09:37:20,721 - jujoo - INFO - Criado registro mp_20260428093720_965edf21 em materias_primas.json
+2026-04-28 09:37:20,722 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-28 09:37:20,727 - jujoo - INFO - Atualizado registro mp_20260428093720_965edf21 em materias_primas.json
+2026-04-28 09:37:20,739 - jujoo - INFO - Criado registro mp_20260428093720_911cdd6e em materias_primas.json
+2026-04-28 09:37:20,739 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-28 09:37:20,744 - jujoo - INFO - Atualizado registro mp_20260428093720_911cdd6e em materias_primas.json
+2026-04-28 09:37:20,751 - jujoo - INFO - Criado registro mp_20260428093720_fdd089de em materias_primas.json
+2026-04-28 09:37:20,751 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-28 09:37:20,756 - jujoo - INFO - Atualizado registro mp_20260428093720_fdd089de em materias_primas.json
+2026-04-28 09:37:20,762 - jujoo - INFO - Criado registro mp_20260428093720_f788f25f em materias_primas.json
+2026-04-28 09:37:20,762 - jujoo - INFO - Matéria-prima criada: 
+2026-04-28 09:37:20,768 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 318.0
+2026-04-28 09:37:20,774 - jujoo - INFO - Fechamento mensal 2026-04: R$ 530.5
+2026-04-28 09:37:20,782 - jujoo - INFO - Criado registro mov_20260428093720_6537c706 em caixa.json
+2026-04-28 09:37:20,782 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:37:20,804 - jujoo - INFO - Criado registro prod_20260428093720_97c0fdfd em produtos.json
+2026-04-28 09:37:20,805 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-28 09:37:20,809 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-28 09:37:20,811 - jujoo - INFO - Criado registro venda_20260428093720_7185acfb em vendas.json
+2026-04-28 09:37:20,814 - jujoo - INFO - Criado registro mov_20260428093720_833667c7 em caixa.json
+2026-04-28 09:37:20,814 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-28 09:37:20,814 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093720_7185acfb
+2026-04-28 09:37:20,814 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-28 09:37:20,816 - jujoo - INFO - Atualizado registro venda_20260428093720_7185acfb em vendas.json
+2026-04-28 09:37:20,816 - jujoo - INFO - Venda criada: venda_20260428093720_7185acfb - R$ 30.0
+2026-04-28 09:37:20,824 - jujoo - INFO - Criado registro prod_20260428093720_caa0b76c em produtos.json
+2026-04-28 09:37:20,824 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-28 09:37:20,828 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-28 09:37:20,830 - jujoo - INFO - Criado registro venda_20260428093720_813c2328 em vendas.json
+2026-04-28 09:37:20,832 - jujoo - INFO - Criado registro mov_20260428093720_b361c952 em caixa.json
+2026-04-28 09:37:20,833 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-28 09:37:20,833 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093720_813c2328
+2026-04-28 09:37:20,833 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-28 09:37:20,835 - jujoo - INFO - Atualizado registro venda_20260428093720_813c2328 em vendas.json
+2026-04-28 09:37:20,836 - jujoo - INFO - Venda criada: venda_20260428093720_813c2328 - R$ 12.0
+2026-04-28 09:37:20,851 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-28 09:37:20,854 - jujoo - INFO - Criado registro venda_20260428093720_6257e5d7 em vendas.json
+2026-04-28 09:37:20,855 - jujoo - INFO - Criado registro mov_20260428093720_6c1c4a86 em caixa.json
+2026-04-28 09:37:20,855 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-28 09:37:20,856 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093720_6257e5d7
+2026-04-28 09:37:20,856 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-28 09:37:20,858 - jujoo - INFO - Atualizado registro venda_20260428093720_6257e5d7 em vendas.json
+2026-04-28 09:37:20,858 - jujoo - INFO - Venda criada: venda_20260428093720_6257e5d7 - R$ 0
+2026-04-28 09:37:20,874 - jujoo - INFO - Criado registro compra_20260428093720_78aa500f em compras.json
+2026-04-28 09:37:20,877 - jujoo - INFO - Criado registro mov_20260428093720_42e7c361 em caixa.json
+2026-04-28 09:37:20,877 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:37:20,878 - jujoo - INFO - Compra criada: compra_20260428093720_78aa500f - R$ 50.0
+2026-04-28 09:37:20,886 - jujoo - INFO - Criado registro compra_20260428093720_4676a019 em compras.json
+2026-04-28 09:37:20,889 - jujoo - INFO - Criado registro mov_20260428093720_7564fc35 em caixa.json
+2026-04-28 09:37:20,889 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:37:20,889 - jujoo - INFO - Compra criada: compra_20260428093720_4676a019 - R$ 50.0
+2026-04-28 09:37:20,908 - jujoo - INFO - Criado registro prod_20260428093720_f54d1c5e em produtos.json
+2026-04-28 09:37:20,908 - jujoo - INFO - Produto criado: Sorvete Produção Teste
+2026-04-28 09:37:20,980 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 210.0
+2026-04-28 09:37:20,988 - jujoo - INFO - Criado registro prod_20260428093720_fdcfd0c1 em produtos.json
+2026-04-28 09:37:20,988 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-28 09:37:20,992 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-28 09:37:20,995 - jujoo - INFO - Criado registro venda_20260428093720_f7157565 em vendas.json
+2026-04-28 09:37:20,998 - jujoo - INFO - Criado registro mov_20260428093720_c15a9a95 em caixa.json
+2026-04-28 09:37:20,998 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-28 09:37:20,998 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093720_f7157565
+2026-04-28 09:37:20,998 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-28 09:37:21,001 - jujoo - INFO - Atualizado registro venda_20260428093720_f7157565 em vendas.json
+2026-04-28 09:37:21,001 - jujoo - INFO - Venda criada: venda_20260428093720_f7157565 - R$ 54.0
+2026-04-28 09:37:21,023 - jujoo - INFO - Criado registro mp_20260428093721_97dcdce0 em materias_primas.json
+2026-04-28 09:37:21,023 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-28 09:37:21,029 - jujoo - INFO - Atualizado registro mp_20260428093721_97dcdce0 em materias_primas.json
+2026-04-28 09:38:49,102 - jujoo - INFO - ==================================================
+2026-04-28 09:38:49,103 - jujoo - INFO - Iniciando Jujoo Sorveteria
+2026-04-28 09:38:49,103 - jujoo - INFO - ==================================================
+2026-04-28 09:38:49,185 - jujoo - INFO - Iniciando Jujoo Sorveteria API v1.0.0
+2026-04-28 09:38:52,344 - jujoo - INFO - Criado registro prod_20260428093852_a692caf3 em produtos.json
+2026-04-28 09:38:52,344 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-28 09:38:52,367 - jujoo - INFO - Criado registro mp_20260428093852_7efcc766 em materias_primas.json
+2026-04-28 09:38:52,367 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-28 09:38:52,395 - jujoo - INFO - Criado registro mov_20260428093852_79c5e342 em caixa.json
+2026-04-28 09:38:52,395 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-28 09:38:52,453 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 364.0
+2026-04-28 09:38:52,683 - jujoo - INFO - Criado registro prod_20260428093852_98236a34 em produtos.json
+2026-04-28 09:38:52,684 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-28 09:38:52,690 - jujoo - INFO - Atualizado registro prod_20260428093852_98236a34 em produtos.json
+2026-04-28 09:38:52,697 - jujoo - INFO - Criado registro prod_20260428093852_adbe0091 em produtos.json
+2026-04-28 09:38:52,697 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-28 09:38:52,703 - jujoo - INFO - Atualizado registro prod_20260428093852_adbe0091 em produtos.json
+2026-04-28 09:38:52,724 - jujoo - INFO - Criado registro prod_20260428093852_9e2be945 em produtos.json
+2026-04-28 09:38:52,724 - jujoo - INFO - Produto criado: 
+2026-04-28 09:38:52,736 - jujoo - INFO - Criado registro mp_20260428093852_9621d89e em materias_primas.json
+2026-04-28 09:38:52,737 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-28 09:38:52,742 - jujoo - INFO - Atualizado registro mp_20260428093852_9621d89e em materias_primas.json
+2026-04-28 09:38:52,750 - jujoo - INFO - Criado registro mp_20260428093852_749062b8 em materias_primas.json
+2026-04-28 09:38:52,751 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-28 09:38:52,757 - jujoo - INFO - Atualizado registro mp_20260428093852_749062b8 em materias_primas.json
+2026-04-28 09:38:52,770 - jujoo - INFO - Criado registro mp_20260428093852_c9abcb66 em materias_primas.json
+2026-04-28 09:38:52,771 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-28 09:38:52,778 - jujoo - INFO - Atualizado registro mp_20260428093852_c9abcb66 em materias_primas.json
+2026-04-28 09:38:52,786 - jujoo - INFO - Criado registro mp_20260428093852_34d84f4a em materias_primas.json
+2026-04-28 09:38:52,787 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-28 09:38:52,793 - jujoo - INFO - Atualizado registro mp_20260428093852_34d84f4a em materias_primas.json
+2026-04-28 09:38:52,801 - jujoo - INFO - Criado registro mp_20260428093852_04138810 em materias_primas.json
+2026-04-28 09:38:52,801 - jujoo - INFO - Matéria-prima criada: 
+2026-04-28 09:38:52,807 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 364.0
+2026-04-28 09:38:52,814 - jujoo - INFO - Fechamento mensal 2026-04: R$ 576.5
+2026-04-28 09:38:52,821 - jujoo - INFO - Criado registro mov_20260428093852_63e21d48 em caixa.json
+2026-04-28 09:38:52,822 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:38:52,842 - jujoo - INFO - Criado registro prod_20260428093852_494a45af em produtos.json
+2026-04-28 09:38:52,842 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-28 09:38:52,846 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-28 09:38:52,849 - jujoo - INFO - Criado registro venda_20260428093852_1b7b7b45 em vendas.json
+2026-04-28 09:38:52,851 - jujoo - INFO - Criado registro mov_20260428093852_7a8d1448 em caixa.json
+2026-04-28 09:38:52,852 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-28 09:38:52,852 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093852_1b7b7b45
+2026-04-28 09:38:52,852 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-28 09:38:52,854 - jujoo - INFO - Atualizado registro venda_20260428093852_1b7b7b45 em vendas.json
+2026-04-28 09:38:52,854 - jujoo - INFO - Venda criada: venda_20260428093852_1b7b7b45 - R$ 30.0
+2026-04-28 09:38:52,862 - jujoo - INFO - Criado registro prod_20260428093852_f60a7617 em produtos.json
+2026-04-28 09:38:52,862 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-28 09:38:52,866 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-28 09:38:52,869 - jujoo - INFO - Criado registro venda_20260428093852_907f285e em vendas.json
+2026-04-28 09:38:52,871 - jujoo - INFO - Criado registro mov_20260428093852_59fe69e0 em caixa.json
+2026-04-28 09:38:52,871 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-28 09:38:52,871 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093852_907f285e
+2026-04-28 09:38:52,871 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-28 09:38:52,873 - jujoo - INFO - Atualizado registro venda_20260428093852_907f285e em vendas.json
+2026-04-28 09:38:52,873 - jujoo - INFO - Venda criada: venda_20260428093852_907f285e - R$ 12.0
+2026-04-28 09:38:52,890 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-28 09:38:52,893 - jujoo - INFO - Criado registro venda_20260428093852_9f19a0ba em vendas.json
+2026-04-28 09:38:52,896 - jujoo - INFO - Criado registro mov_20260428093852_773a8777 em caixa.json
+2026-04-28 09:38:52,896 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-28 09:38:52,896 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093852_9f19a0ba
+2026-04-28 09:38:52,896 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-28 09:38:52,898 - jujoo - INFO - Atualizado registro venda_20260428093852_9f19a0ba em vendas.json
+2026-04-28 09:38:52,898 - jujoo - INFO - Venda criada: venda_20260428093852_9f19a0ba - R$ 0
+2026-04-28 09:38:52,914 - jujoo - INFO - Criado registro compra_20260428093852_c24fff0d em compras.json
+2026-04-28 09:38:52,919 - jujoo - INFO - Criado registro mov_20260428093852_d49e6db9 em caixa.json
+2026-04-28 09:38:52,920 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:38:52,921 - jujoo - INFO - Compra criada: compra_20260428093852_c24fff0d - R$ 50.0
+2026-04-28 09:38:52,928 - jujoo - INFO - Criado registro compra_20260428093852_0e60910a em compras.json
+2026-04-28 09:38:52,931 - jujoo - INFO - Criado registro mov_20260428093852_aa848f62 em caixa.json
+2026-04-28 09:38:52,931 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-28 09:38:52,932 - jujoo - INFO - Compra criada: compra_20260428093852_0e60910a - R$ 50.0
+2026-04-28 09:38:52,951 - jujoo - INFO - Criado registro prod_20260428093852_740edcaf em produtos.json
+2026-04-28 09:38:52,951 - jujoo - INFO - Produto criado: Sorvete Produção Teste
+2026-04-28 09:38:53,021 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 256.0
+2026-04-28 09:38:53,029 - jujoo - INFO - Criado registro prod_20260428093853_71c6b727 em produtos.json
+2026-04-28 09:38:53,030 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-28 09:38:53,034 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-28 09:38:53,037 - jujoo - INFO - Criado registro venda_20260428093853_9394e27e em vendas.json
+2026-04-28 09:38:53,039 - jujoo - INFO - Criado registro mov_20260428093853_7575a756 em caixa.json
+2026-04-28 09:38:53,040 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-28 09:38:53,040 - jujoo - INFO - Emitindo NFCe para venda venda_20260428093853_9394e27e
+2026-04-28 09:38:53,040 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-28 09:38:53,043 - jujoo - INFO - Atualizado registro venda_20260428093853_9394e27e em vendas.json
+2026-04-28 09:38:53,043 - jujoo - INFO - Venda criada: venda_20260428093853_9394e27e - R$ 54.0
+2026-04-28 09:38:53,063 - jujoo - INFO - Criado registro mp_20260428093853_f98f1925 em materias_primas.json
+2026-04-28 09:38:53,064 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-28 09:38:53,071 - jujoo - INFO - Atualizado registro mp_20260428093853_f98f1925 em materias_primas.json
+2026-04-28 09:45:08,501 - jujoo - INFO - Encerrando API
+2026-04-29 23:35:36,025 - jujoo - INFO - CORS não configurado (CORS_ORIGINS vazio); origens explícitas necessárias para habilitar CORS.
+2026-04-29 23:35:36,364 - jujoo - INFO - Criado registro prod_20260429233536_256de8f5 em produtos.json
+2026-04-29 23:35:36,365 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-29 23:35:36,415 - jujoo - INFO - Criado registro mp_20260429233536_7c1c3cee em materias_primas.json
+2026-04-29 23:35:36,416 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-29 23:35:36,503 - jujoo - INFO - Criado registro mov_20260429233536_cbd1b363 em caixa.json
+2026-04-29 23:35:36,504 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-29 23:35:36,665 - jujoo - INFO - Fechamento diário 2026-04-29: R$ 100.0
+2026-04-29 23:35:36,981 - jujoo - INFO - Criado registro prod_20260429233536_f36c2da9 em produtos.json
+2026-04-29 23:35:36,982 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-29 23:35:37,005 - jujoo - INFO - Atualizado registro prod_20260429233536_f36c2da9 em produtos.json
+2026-04-29 23:35:37,027 - jujoo - INFO - Criado registro prod_20260429233537_4defd32f em produtos.json
+2026-04-29 23:35:37,027 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-29 23:35:37,047 - jujoo - INFO - Atualizado registro prod_20260429233537_4defd32f em produtos.json
+2026-04-29 23:35:37,104 - jujoo - INFO - Criado registro prod_20260429233537_ed9f5112 em produtos.json
+2026-04-29 23:35:37,105 - jujoo - INFO - Produto criado: 
+2026-04-29 23:35:37,145 - jujoo - INFO - Criado registro mp_20260429233537_1f075a53 em materias_primas.json
+2026-04-29 23:35:37,145 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-29 23:35:37,159 - jujoo - INFO - Atualizado registro mp_20260429233537_1f075a53 em materias_primas.json
+2026-04-29 23:35:37,185 - jujoo - INFO - Criado registro mp_20260429233537_f8f974db em materias_primas.json
+2026-04-29 23:35:37,185 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-29 23:35:37,203 - jujoo - INFO - Atualizado registro mp_20260429233537_f8f974db em materias_primas.json
+2026-04-29 23:35:37,257 - jujoo - INFO - Criado registro mp_20260429233537_f78ce784 em materias_primas.json
+2026-04-29 23:35:37,258 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-29 23:35:37,276 - jujoo - INFO - Atualizado registro mp_20260429233537_f78ce784 em materias_primas.json
+2026-04-29 23:35:37,305 - jujoo - INFO - Criado registro mp_20260429233537_87d7cbed em materias_primas.json
+2026-04-29 23:35:37,309 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-29 23:35:37,348 - jujoo - INFO - Atualizado registro mp_20260429233537_87d7cbed em materias_primas.json
+2026-04-29 23:35:37,366 - jujoo - INFO - Criado registro mp_20260429233537_c602b4c5 em materias_primas.json
+2026-04-29 23:35:37,367 - jujoo - INFO - Matéria-prima criada: 
+2026-04-29 23:35:37,393 - jujoo - INFO - Fechamento diário 2026-04-29: R$ 100.0
+2026-04-29 23:35:37,422 - jujoo - INFO - Fechamento mensal 2026-04: R$ 622.5
+2026-04-29 23:35:37,435 - jujoo - INFO - Criado registro mov_20260429233537_35883963 em caixa.json
+2026-04-29 23:35:37,439 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-29 23:35:37,496 - jujoo - INFO - Criado registro prod_20260429233537_c42aa1db em produtos.json
+2026-04-29 23:35:37,496 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-29 23:35:37,509 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-29 23:35:37,515 - jujoo - INFO - Criado registro venda_20260429233537_a925fbfa em vendas.json
+2026-04-29 23:35:37,521 - jujoo - INFO - Criado registro mov_20260429233537_bcce8c10 em caixa.json
+2026-04-29 23:35:37,521 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-29 23:35:37,521 - jujoo - INFO - Emitindo NFCe para venda venda_20260429233537_a925fbfa
+2026-04-29 23:35:37,522 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-29 23:35:37,528 - jujoo - INFO - Atualizado registro venda_20260429233537_a925fbfa em vendas.json
+2026-04-29 23:35:37,528 - jujoo - INFO - Venda criada: venda_20260429233537_a925fbfa - R$ 30.0
+2026-04-29 23:35:37,551 - jujoo - INFO - Criado registro prod_20260429233537_54279b93 em produtos.json
+2026-04-29 23:35:37,551 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-29 23:35:37,558 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-29 23:35:37,563 - jujoo - INFO - Criado registro venda_20260429233537_daa97b44 em vendas.json
+2026-04-29 23:35:37,568 - jujoo - INFO - Criado registro mov_20260429233537_ef7598ea em caixa.json
+2026-04-29 23:35:37,568 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-29 23:35:37,568 - jujoo - INFO - Emitindo NFCe para venda venda_20260429233537_daa97b44
+2026-04-29 23:35:37,569 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-29 23:35:37,578 - jujoo - INFO - Atualizado registro venda_20260429233537_daa97b44 em vendas.json
+2026-04-29 23:35:37,579 - jujoo - INFO - Venda criada: venda_20260429233537_daa97b44 - R$ 12.0
+2026-04-29 23:35:37,611 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-29 23:35:37,616 - jujoo - INFO - Criado registro venda_20260429233537_37eed125 em vendas.json
+2026-04-29 23:35:37,621 - jujoo - INFO - Criado registro mov_20260429233537_f840c679 em caixa.json
+2026-04-29 23:35:37,622 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-29 23:35:37,622 - jujoo - INFO - Emitindo NFCe para venda venda_20260429233537_37eed125
+2026-04-29 23:35:37,622 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-29 23:35:37,627 - jujoo - INFO - Atualizado registro venda_20260429233537_37eed125 em vendas.json
+2026-04-29 23:35:37,627 - jujoo - INFO - Venda criada: venda_20260429233537_37eed125 - R$ 0
+2026-04-29 23:35:37,667 - jujoo - INFO - Criado registro compra_20260429233537_c3426876 em compras.json
+2026-04-29 23:35:37,670 - jujoo - INFO - Criado registro mov_20260429233537_83ac7d2e em caixa.json
+2026-04-29 23:35:37,670 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-29 23:35:37,671 - jujoo - INFO - Compra criada: compra_20260429233537_c3426876 - R$ 50.0
+2026-04-29 23:35:37,686 - jujoo - INFO - Criado registro compra_20260429233537_1f2663db em compras.json
+2026-04-29 23:35:37,689 - jujoo - INFO - Criado registro mov_20260429233537_ab303f02 em caixa.json
+2026-04-29 23:35:37,690 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-29 23:35:37,690 - jujoo - INFO - Compra criada: compra_20260429233537_1f2663db - R$ 50.0
+2026-04-29 23:35:37,718 - jujoo - INFO - Criado registro prod_20260429233537_07223b5b em produtos.json
+2026-04-29 23:35:37,719 - jujoo - INFO - Produto criado: Sorvete Produção Teste
+2026-04-29 23:35:37,821 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 310.0
+2026-04-29 23:35:37,833 - jujoo - INFO - Criado registro prod_20260429233537_269392b9 em produtos.json
+2026-04-29 23:35:37,834 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-29 23:35:37,840 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-29 23:35:37,848 - jujoo - INFO - Criado registro venda_20260429233537_7bda5e6a em vendas.json
+2026-04-29 23:35:37,852 - jujoo - INFO - Criado registro mov_20260429233537_ab35fabf em caixa.json
+2026-04-29 23:35:37,852 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-29 23:35:37,852 - jujoo - INFO - Emitindo NFCe para venda venda_20260429233537_7bda5e6a
+2026-04-29 23:35:37,853 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-29 23:35:37,857 - jujoo - INFO - Atualizado registro venda_20260429233537_7bda5e6a em vendas.json
+2026-04-29 23:35:37,857 - jujoo - INFO - Venda criada: venda_20260429233537_7bda5e6a - R$ 54.0
+2026-04-29 23:35:37,889 - jujoo - INFO - Criado registro mp_20260429233537_99d04bfa em materias_primas.json
+2026-04-29 23:35:37,889 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-29 23:35:37,899 - jujoo - INFO - Atualizado registro mp_20260429233537_99d04bfa em materias_primas.json
+2026-04-29 23:35:37,954 - jujoo - INFO - Processando pagamento em dinheiro: R$ 100.0
+2026-04-29 23:35:37,956 - jujoo - INFO - Processando pagamento PIX: R$ 100.0
+2026-04-29 23:35:37,959 - jujoo - INFO - Processando cartão de crédito: R$ 100.0
+2026-04-29 23:35:37,962 - jujoo - INFO - Processando cartão de débito: R$ 100.0
+2026-04-29 23:35:37,968 - jujoo - INFO - Estornando transação: transacao_123
+2026-04-29 23:35:37,971 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-29 23:35:37,971 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-29 23:35:37,974 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-29 23:35:37,974 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-29 23:35:37,977 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-29 23:35:37,977 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-29 23:35:37,978 - jujoo - INFO - NFCe 1 cancelada
+2026-04-29 23:37:06,048 - jujoo - INFO - CORS não configurado (CORS_ORIGINS vazio); origens explícitas necessárias para habilitar CORS.
+2026-04-29 23:37:06,248 - jujoo - INFO - Criado registro prod_20260429233706_a9841512 em produtos.json
+2026-04-29 23:37:06,248 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-29 23:37:06,292 - jujoo - INFO - Criado registro mp_20260429233706_61b0d159 em materias_primas.json
+2026-04-29 23:37:06,292 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-29 23:37:06,361 - jujoo - INFO - Criado registro mov_20260429233706_d37df63d em caixa.json
+2026-04-29 23:37:06,362 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-29 23:37:06,517 - jujoo - INFO - Fechamento diário 2026-04-29: R$ 146.0
+2026-04-29 23:37:06,804 - jujoo - INFO - Criado registro prod_20260429233706_ae1f4a42 em produtos.json
+2026-04-29 23:37:06,805 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-29 23:37:06,817 - jujoo - INFO - Atualizado registro prod_20260429233706_ae1f4a42 em produtos.json
+2026-04-29 23:37:06,845 - jujoo - INFO - Criado registro prod_20260429233706_1f6f00ee em produtos.json
+2026-04-29 23:37:06,845 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-29 23:37:06,862 - jujoo - INFO - Atualizado registro prod_20260429233706_1f6f00ee em produtos.json
+2026-04-29 23:37:06,902 - jujoo - INFO - Criado registro prod_20260429233706_a9d58fea em produtos.json
+2026-04-29 23:37:06,902 - jujoo - INFO - Produto criado: 
+2026-04-29 23:37:06,926 - jujoo - INFO - Criado registro mp_20260429233706_7956a740 em materias_primas.json
+2026-04-29 23:37:06,926 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-29 23:37:06,936 - jujoo - INFO - Atualizado registro mp_20260429233706_7956a740 em materias_primas.json
+2026-04-29 23:37:06,954 - jujoo - INFO - Criado registro mp_20260429233706_54c97c17 em materias_primas.json
+2026-04-29 23:37:06,955 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-29 23:37:06,966 - jujoo - INFO - Atualizado registro mp_20260429233706_54c97c17 em materias_primas.json
+2026-04-29 23:37:06,999 - jujoo - INFO - Criado registro mp_20260429233706_96dac4b0 em materias_primas.json
+2026-04-29 23:37:07,001 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-29 23:37:07,031 - jujoo - INFO - Atualizado registro mp_20260429233706_96dac4b0 em materias_primas.json
+2026-04-29 23:37:07,047 - jujoo - INFO - Criado registro mp_20260429233707_6e4fb04b em materias_primas.json
+2026-04-29 23:37:07,047 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-29 23:37:07,064 - jujoo - INFO - Atualizado registro mp_20260429233707_6e4fb04b em materias_primas.json
+2026-04-29 23:37:07,082 - jujoo - INFO - Criado registro mp_20260429233707_93c614ef em materias_primas.json
+2026-04-29 23:37:07,082 - jujoo - INFO - Matéria-prima criada: 
+2026-04-29 23:37:07,096 - jujoo - INFO - Fechamento diário 2026-04-29: R$ 146.0
+2026-04-29 23:37:07,105 - jujoo - INFO - Fechamento mensal 2026-04: R$ 668.5
+2026-04-29 23:37:07,121 - jujoo - INFO - Criado registro mov_20260429233707_24dc54bc em caixa.json
+2026-04-29 23:37:07,121 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-29 23:37:07,160 - jujoo - INFO - Criado registro prod_20260429233707_bb157772 em produtos.json
+2026-04-29 23:37:07,161 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-29 23:37:07,172 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-29 23:37:07,179 - jujoo - INFO - Criado registro venda_20260429233707_a0b9bb7f em vendas.json
+2026-04-29 23:37:07,185 - jujoo - INFO - Criado registro mov_20260429233707_e2c786be em caixa.json
+2026-04-29 23:37:07,186 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-29 23:37:07,186 - jujoo - INFO - Emitindo NFCe para venda venda_20260429233707_a0b9bb7f
+2026-04-29 23:37:07,186 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-29 23:37:07,195 - jujoo - INFO - Atualizado registro venda_20260429233707_a0b9bb7f em vendas.json
+2026-04-29 23:37:07,195 - jujoo - INFO - Venda criada: venda_20260429233707_a0b9bb7f - R$ 30.0
+2026-04-29 23:37:07,223 - jujoo - INFO - Criado registro prod_20260429233707_e27e55f4 em produtos.json
+2026-04-29 23:37:07,224 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-29 23:37:07,236 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-29 23:37:07,241 - jujoo - INFO - Criado registro venda_20260429233707_cee8e439 em vendas.json
+2026-04-29 23:37:07,248 - jujoo - INFO - Criado registro mov_20260429233707_4aeab1d7 em caixa.json
+2026-04-29 23:37:07,248 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-29 23:37:07,248 - jujoo - INFO - Emitindo NFCe para venda venda_20260429233707_cee8e439
+2026-04-29 23:37:07,248 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-29 23:37:07,252 - jujoo - INFO - Atualizado registro venda_20260429233707_cee8e439 em vendas.json
+2026-04-29 23:37:07,253 - jujoo - INFO - Venda criada: venda_20260429233707_cee8e439 - R$ 12.0
+2026-04-29 23:37:07,283 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-29 23:37:07,292 - jujoo - INFO - Criado registro venda_20260429233707_12f1c271 em vendas.json
+2026-04-29 23:37:07,296 - jujoo - INFO - Criado registro mov_20260429233707_e943b889 em caixa.json
+2026-04-29 23:37:07,296 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-29 23:37:07,296 - jujoo - INFO - Emitindo NFCe para venda venda_20260429233707_12f1c271
+2026-04-29 23:37:07,297 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-29 23:37:07,300 - jujoo - INFO - Atualizado registro venda_20260429233707_12f1c271 em vendas.json
+2026-04-29 23:37:07,300 - jujoo - INFO - Venda criada: venda_20260429233707_12f1c271 - R$ 0
+2026-04-29 23:37:07,339 - jujoo - INFO - Criado registro compra_20260429233707_a75e31f6 em compras.json
+2026-04-29 23:37:07,346 - jujoo - INFO - Criado registro mov_20260429233707_49d9568d em caixa.json
+2026-04-29 23:37:07,346 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-29 23:37:07,347 - jujoo - INFO - Compra criada: compra_20260429233707_a75e31f6 - R$ 50.0
+2026-04-29 23:37:07,380 - jujoo - INFO - Criado registro compra_20260429233707_099ad532 em compras.json
+2026-04-29 23:37:07,386 - jujoo - INFO - Criado registro mov_20260429233707_d4211aad em caixa.json
+2026-04-29 23:37:07,386 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-29 23:37:07,387 - jujoo - INFO - Compra criada: compra_20260429233707_099ad532 - R$ 50.0
+2026-04-29 23:37:07,416 - jujoo - INFO - Criado registro prod_20260429233707_66b86440 em produtos.json
+2026-04-29 23:37:07,416 - jujoo - INFO - Produto criado: Sorvete Produção Teste
+2026-04-29 23:37:07,500 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 310.0
+2026-04-29 23:37:07,515 - jujoo - INFO - Criado registro prod_20260429233707_9476c2ec em produtos.json
+2026-04-29 23:37:07,516 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-29 23:37:07,520 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-29 23:37:07,524 - jujoo - INFO - Criado registro venda_20260429233707_6e5c8d47 em vendas.json
+2026-04-29 23:37:07,528 - jujoo - INFO - Criado registro mov_20260429233707_cbc290f0 em caixa.json
+2026-04-29 23:37:07,528 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-29 23:37:07,528 - jujoo - INFO - Emitindo NFCe para venda venda_20260429233707_6e5c8d47
+2026-04-29 23:37:07,528 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-29 23:37:07,532 - jujoo - INFO - Atualizado registro venda_20260429233707_6e5c8d47 em vendas.json
+2026-04-29 23:37:07,532 - jujoo - INFO - Venda criada: venda_20260429233707_6e5c8d47 - R$ 54.0
+2026-04-29 23:37:07,563 - jujoo - INFO - Criado registro mp_20260429233707_2ee362e6 em materias_primas.json
+2026-04-29 23:37:07,563 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-29 23:37:07,573 - jujoo - INFO - Atualizado registro mp_20260429233707_2ee362e6 em materias_primas.json
+2026-04-29 23:37:07,608 - jujoo - INFO - Processando pagamento em dinheiro: R$ 100.0
+2026-04-29 23:37:07,610 - jujoo - INFO - Processando pagamento PIX: R$ 100.0
+2026-04-29 23:37:07,612 - jujoo - INFO - Processando cartão de crédito: R$ 100.0
+2026-04-29 23:37:07,614 - jujoo - INFO - Processando cartão de débito: R$ 100.0
+2026-04-29 23:37:07,618 - jujoo - INFO - Estornando transação: transacao_123
+2026-04-29 23:37:07,620 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-29 23:37:07,620 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-29 23:37:07,622 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-29 23:37:07,623 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-29 23:37:07,625 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-29 23:37:07,625 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-29 23:37:07,625 - jujoo - INFO - NFCe 1 cancelada
+2026-04-30 08:23:03,097 - jujoo - INFO - CORS não configurado (CORS_ORIGINS vazio); origens explícitas necessárias para habilitar CORS.
+2026-04-30 08:23:36,745 - jujoo - INFO - CORS não configurado (CORS_ORIGINS vazio); origens explícitas necessárias para habilitar CORS.
+2026-04-30 08:23:47,520 - jujoo - INFO - CORS não configurado (CORS_ORIGINS vazio); origens explícitas necessárias para habilitar CORS.
+2026-04-30 08:23:47,642 - jujoo - INFO - Criado registro prod_20260430082347_7818098b em produtos.json
+2026-04-30 08:23:47,642 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-30 08:23:47,710 - jujoo - INFO - Criado registro mp_20260430082347_bb300a1d em materias_primas.json
+2026-04-30 08:23:47,710 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-30 08:23:47,790 - jujoo - INFO - Criado registro mov_20260430082347_06390352 em caixa.json
+2026-04-30 08:23:47,791 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-30 08:23:47,958 - jujoo - INFO - Fechamento diário 2026-04-30: R$ 100.0
+2026-04-30 08:23:48,284 - jujoo - INFO - Criado registro prod_20260430082348_9e3cf154 em produtos.json
+2026-04-30 08:23:48,284 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-30 08:23:48,302 - jujoo - INFO - Atualizado registro prod_20260430082348_9e3cf154 em produtos.json
+2026-04-30 08:23:48,333 - jujoo - INFO - Criado registro prod_20260430082348_edbd4576 em produtos.json
+2026-04-30 08:23:48,333 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-30 08:23:48,351 - jujoo - INFO - Atualizado registro prod_20260430082348_edbd4576 em produtos.json
+2026-04-30 08:23:48,391 - jujoo - INFO - Criado registro prod_20260430082348_9598ea6d em produtos.json
+2026-04-30 08:23:48,392 - jujoo - INFO - Produto criado: 
+2026-04-30 08:23:48,425 - jujoo - INFO - Criado registro mp_20260430082348_bce7fa15 em materias_primas.json
+2026-04-30 08:23:48,426 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-30 08:23:48,441 - jujoo - INFO - Atualizado registro mp_20260430082348_bce7fa15 em materias_primas.json
+2026-04-30 08:23:48,458 - jujoo - INFO - Criado registro mp_20260430082348_71310a0f em materias_primas.json
+2026-04-30 08:23:48,458 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-30 08:23:48,479 - jujoo - INFO - Atualizado registro mp_20260430082348_71310a0f em materias_primas.json
+2026-04-30 08:23:48,508 - jujoo - INFO - Criado registro mp_20260430082348_c9c5416b em materias_primas.json
+2026-04-30 08:23:48,508 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-30 08:23:48,518 - jujoo - INFO - Atualizado registro mp_20260430082348_c9c5416b em materias_primas.json
+2026-04-30 08:23:48,529 - jujoo - INFO - Criado registro mp_20260430082348_5ae62a7e em materias_primas.json
+2026-04-30 08:23:48,529 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-30 08:23:48,546 - jujoo - INFO - Atualizado registro mp_20260430082348_5ae62a7e em materias_primas.json
+2026-04-30 08:23:48,566 - jujoo - INFO - Criado registro mp_20260430082348_984ad90d em materias_primas.json
+2026-04-30 08:23:48,566 - jujoo - INFO - Matéria-prima criada: 
+2026-04-30 08:23:48,579 - jujoo - INFO - Fechamento diário 2026-04-30: R$ 100.0
+2026-04-30 08:23:48,589 - jujoo - INFO - Fechamento mensal 2026-04: R$ 714.5
+2026-04-30 08:23:48,606 - jujoo - INFO - Criado registro mov_20260430082348_94f74f6d em caixa.json
+2026-04-30 08:23:48,606 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-30 08:23:48,655 - jujoo - INFO - Criado registro prod_20260430082348_93a8f7f0 em produtos.json
+2026-04-30 08:23:48,656 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-30 08:23:48,665 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-30 08:23:48,670 - jujoo - INFO - Criado registro venda_20260430082348_b38d44de em vendas.json
+2026-04-30 08:23:48,674 - jujoo - INFO - Criado registro mov_20260430082348_2c243eb3 em caixa.json
+2026-04-30 08:23:48,674 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-30 08:23:48,674 - jujoo - INFO - Emitindo NFCe para venda venda_20260430082348_b38d44de
+2026-04-30 08:23:48,675 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-30 08:23:48,679 - jujoo - INFO - Atualizado registro venda_20260430082348_b38d44de em vendas.json
+2026-04-30 08:23:48,679 - jujoo - INFO - Venda criada: venda_20260430082348_b38d44de - R$ 30.0
+2026-04-30 08:23:48,708 - jujoo - INFO - Criado registro prod_20260430082348_d6879295 em produtos.json
+2026-04-30 08:23:48,709 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-30 08:23:48,723 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-30 08:23:48,734 - jujoo - INFO - Criado registro venda_20260430082348_8fc3e0d6 em vendas.json
+2026-04-30 08:23:48,746 - jujoo - INFO - Criado registro mov_20260430082348_6649eb4a em caixa.json
+2026-04-30 08:23:48,747 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-30 08:23:48,747 - jujoo - INFO - Emitindo NFCe para venda venda_20260430082348_8fc3e0d6
+2026-04-30 08:23:48,747 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-30 08:23:48,753 - jujoo - INFO - Atualizado registro venda_20260430082348_8fc3e0d6 em vendas.json
+2026-04-30 08:23:48,753 - jujoo - INFO - Venda criada: venda_20260430082348_8fc3e0d6 - R$ 12.0
+2026-04-30 08:23:48,791 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-30 08:23:48,802 - jujoo - INFO - Criado registro venda_20260430082348_b4c57f99 em vendas.json
+2026-04-30 08:23:48,810 - jujoo - INFO - Criado registro mov_20260430082348_431c99b9 em caixa.json
+2026-04-30 08:23:48,811 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-30 08:23:48,811 - jujoo - INFO - Emitindo NFCe para venda venda_20260430082348_b4c57f99
+2026-04-30 08:23:48,811 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-30 08:23:48,823 - jujoo - INFO - Atualizado registro venda_20260430082348_b4c57f99 em vendas.json
+2026-04-30 08:23:48,823 - jujoo - INFO - Venda criada: venda_20260430082348_b4c57f99 - R$ 0
+2026-04-30 08:23:48,842 - jujoo - INFO - Criado registro compra_20260430082348_d58a7dbd em compras.json
+2026-04-30 08:23:48,847 - jujoo - INFO - Criado registro mov_20260430082348_8e504041 em caixa.json
+2026-04-30 08:23:48,847 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-30 08:23:48,848 - jujoo - INFO - Compra criada: compra_20260430082348_d58a7dbd - R$ 50.0
+2026-04-30 08:23:48,873 - jujoo - INFO - Criado registro compra_20260430082348_07fbf5d4 em compras.json
+2026-04-30 08:23:48,882 - jujoo - INFO - Criado registro mov_20260430082348_42057fc6 em caixa.json
+2026-04-30 08:23:48,883 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-30 08:23:48,885 - jujoo - INFO - Compra criada: compra_20260430082348_07fbf5d4 - R$ 50.0
+2026-04-30 08:23:48,916 - jujoo - INFO - Criado registro prod_20260430082348_5a22acea em produtos.json
+2026-04-30 08:23:48,917 - jujoo - INFO - Produto criado: Sorvete Produção Teste
+2026-04-30 08:23:49,030 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 310.0
+2026-04-30 08:23:49,053 - jujoo - INFO - Criado registro prod_20260430082349_e58ac2e4 em produtos.json
+2026-04-30 08:23:49,053 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-30 08:23:49,060 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-30 08:23:49,068 - jujoo - INFO - Criado registro venda_20260430082349_c60d3c4f em vendas.json
+2026-04-30 08:23:49,072 - jujoo - INFO - Criado registro mov_20260430082349_5445a575 em caixa.json
+2026-04-30 08:23:49,073 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-30 08:23:49,073 - jujoo - INFO - Emitindo NFCe para venda venda_20260430082349_c60d3c4f
+2026-04-30 08:23:49,073 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-30 08:23:49,078 - jujoo - INFO - Atualizado registro venda_20260430082349_c60d3c4f em vendas.json
+2026-04-30 08:23:49,078 - jujoo - INFO - Venda criada: venda_20260430082349_c60d3c4f - R$ 54.0
+2026-04-30 08:23:49,111 - jujoo - INFO - Criado registro mp_20260430082349_21fead72 em materias_primas.json
+2026-04-30 08:23:49,111 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-30 08:23:49,125 - jujoo - INFO - Atualizado registro mp_20260430082349_21fead72 em materias_primas.json
+2026-04-30 08:23:49,253 - jujoo - INFO - Processando pagamento em dinheiro: R$ 100.0
+2026-04-30 08:23:49,255 - jujoo - INFO - Processando pagamento PIX: R$ 100.0
+2026-04-30 08:23:49,257 - jujoo - INFO - Processando cartão de crédito: R$ 100.0
+2026-04-30 08:23:49,262 - jujoo - INFO - Processando cartão de débito: R$ 100.0
+2026-04-30 08:23:49,274 - jujoo - INFO - Estornando transação: transacao_123
+2026-04-30 08:23:49,277 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-30 08:23:49,277 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-30 08:23:49,290 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-30 08:23:49,290 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-30 08:23:49,295 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-30 08:23:49,296 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-30 08:23:49,296 - jujoo - INFO - NFCe 1 cancelada
+2026-04-30 08:38:20,797 - jujoo - INFO - CORS não configurado (CORS_ORIGINS vazio); origens explícitas necessárias para habilitar CORS.
+2026-04-30 08:38:21,092 - jujoo - INFO - Criado registro prod_20260430083821_3fe3bf06 em produtos.json
+2026-04-30 08:38:21,092 - jujoo - INFO - Produto criado: Sorvete de Morango
+2026-04-30 08:38:21,225 - jujoo - INFO - Criado registro mp_20260430083821_e1f253ab em materias_primas.json
+2026-04-30 08:38:21,225 - jujoo - INFO - Matéria-prima criada: Leite Integral
+2026-04-30 08:38:21,314 - jujoo - INFO - Criado registro mov_20260430083821_7b3fa49f em caixa.json
+2026-04-30 08:38:21,314 - jujoo - INFO - Movimento criado: entrada - R$ 100.0
+2026-04-30 08:38:21,582 - jujoo - INFO - Fechamento diário 2026-04-30: R$ 146.0
+2026-04-30 08:38:21,946 - jujoo - INFO - Criado registro prod_20260430083821_ec14c577 em produtos.json
+2026-04-30 08:38:21,946 - jujoo - INFO - Produto criado: Sorvete Teste Atualização
+2026-04-30 08:38:21,983 - jujoo - INFO - Atualizado registro prod_20260430083821_ec14c577 em produtos.json
+2026-04-30 08:38:22,003 - jujoo - INFO - Criado registro prod_20260430083821_02db3484 em produtos.json
+2026-04-30 08:38:22,003 - jujoo - INFO - Produto criado: Sorvete Para Deletar
+2026-04-30 08:38:22,017 - jujoo - INFO - Atualizado registro prod_20260430083821_02db3484 em produtos.json
+2026-04-30 08:38:22,091 - jujoo - INFO - Criado registro prod_20260430083822_049294da em produtos.json
+2026-04-30 08:38:22,091 - jujoo - INFO - Produto criado: 
+2026-04-30 08:38:22,121 - jujoo - INFO - Criado registro mp_20260430083822_f703372a em materias_primas.json
+2026-04-30 08:38:22,121 - jujoo - INFO - Matéria-prima criada: Leite Teste Atualização
+2026-04-30 08:38:22,140 - jujoo - INFO - Atualizado registro mp_20260430083822_f703372a em materias_primas.json
+2026-04-30 08:38:22,159 - jujoo - INFO - Criado registro mp_20260430083822_628cb3dd em materias_primas.json
+2026-04-30 08:38:22,159 - jujoo - INFO - Matéria-prima criada: Leite Para Deletar
+2026-04-30 08:38:22,170 - jujoo - INFO - Atualizado registro mp_20260430083822_628cb3dd em materias_primas.json
+2026-04-30 08:38:22,200 - jujoo - INFO - Criado registro mp_20260430083822_1a69b80c em materias_primas.json
+2026-04-30 08:38:22,200 - jujoo - INFO - Matéria-prima criada: Leite Adicionar
+2026-04-30 08:38:22,225 - jujoo - INFO - Atualizado registro mp_20260430083822_1a69b80c em materias_primas.json
+2026-04-30 08:38:22,242 - jujoo - INFO - Criado registro mp_20260430083822_09df9087 em materias_primas.json
+2026-04-30 08:38:22,242 - jujoo - INFO - Matéria-prima criada: Leite Remover
+2026-04-30 08:38:22,263 - jujoo - INFO - Atualizado registro mp_20260430083822_09df9087 em materias_primas.json
+2026-04-30 08:38:22,313 - jujoo - INFO - Criado registro mp_20260430083822_9813d9e5 em materias_primas.json
+2026-04-30 08:38:22,313 - jujoo - INFO - Matéria-prima criada: 
+2026-04-30 08:38:22,360 - jujoo - INFO - Fechamento diário 2026-04-30: R$ 146.0
+2026-04-30 08:38:22,375 - jujoo - INFO - Fechamento mensal 2026-04: R$ 760.5
+2026-04-30 08:38:22,404 - jujoo - INFO - Criado registro mov_20260430083822_8553a731 em caixa.json
+2026-04-30 08:38:22,404 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-30 08:38:22,504 - jujoo - INFO - Criado registro prod_20260430083822_5f879410 em produtos.json
+2026-04-30 08:38:22,505 - jujoo - INFO - Produto criado: Sorvete Venda Integração
+2026-04-30 08:38:22,522 - jujoo - INFO - Processando pagamento em dinheiro: R$ 30.0
+2026-04-30 08:38:22,530 - jujoo - INFO - Criado registro venda_20260430083822_7d21645e em vendas.json
+2026-04-30 08:38:22,539 - jujoo - INFO - Criado registro mov_20260430083822_1105972c em caixa.json
+2026-04-30 08:38:22,541 - jujoo - INFO - Movimento criado: entrada - R$ 30.0
+2026-04-30 08:38:22,541 - jujoo - INFO - Emitindo NFCe para venda venda_20260430083822_7d21645e
+2026-04-30 08:38:22,541 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-30 08:38:22,553 - jujoo - INFO - Atualizado registro venda_20260430083822_7d21645e em vendas.json
+2026-04-30 08:38:22,553 - jujoo - INFO - Venda criada: venda_20260430083822_7d21645e - R$ 30.0
+2026-04-30 08:38:22,590 - jujoo - INFO - Criado registro prod_20260430083822_7cae4538 em produtos.json
+2026-04-30 08:38:22,591 - jujoo - INFO - Produto criado: Sorvete Busca Venda
+2026-04-30 08:38:22,613 - jujoo - INFO - Processando pagamento PIX: R$ 12.0
+2026-04-30 08:38:22,626 - jujoo - INFO - Criado registro venda_20260430083822_e9d0ae47 em vendas.json
+2026-04-30 08:38:22,633 - jujoo - INFO - Criado registro mov_20260430083822_87f209a6 em caixa.json
+2026-04-30 08:38:22,641 - jujoo - INFO - Movimento criado: entrada - R$ 12.0
+2026-04-30 08:38:22,642 - jujoo - INFO - Emitindo NFCe para venda venda_20260430083822_e9d0ae47
+2026-04-30 08:38:22,642 - jujoo - INFO - NFCe 2 emitida com sucesso
+2026-04-30 08:38:22,650 - jujoo - INFO - Atualizado registro venda_20260430083822_e9d0ae47 em vendas.json
+2026-04-30 08:38:22,651 - jujoo - INFO - Venda criada: venda_20260430083822_e9d0ae47 - R$ 12.0
+2026-04-30 08:38:22,682 - jujoo - INFO - Processando pagamento em dinheiro: R$ 0
+2026-04-30 08:38:22,688 - jujoo - INFO - Criado registro venda_20260430083822_71d671ea em vendas.json
+2026-04-30 08:38:22,694 - jujoo - INFO - Criado registro mov_20260430083822_1f1b1a54 em caixa.json
+2026-04-30 08:38:22,695 - jujoo - INFO - Movimento criado: entrada - R$ 0.0
+2026-04-30 08:38:22,695 - jujoo - INFO - Emitindo NFCe para venda venda_20260430083822_71d671ea
+2026-04-30 08:38:22,695 - jujoo - INFO - NFCe 3 emitida com sucesso
+2026-04-30 08:38:22,701 - jujoo - INFO - Atualizado registro venda_20260430083822_71d671ea em vendas.json
+2026-04-30 08:38:22,702 - jujoo - INFO - Venda criada: venda_20260430083822_71d671ea - R$ 0
+2026-04-30 08:38:22,730 - jujoo - INFO - Criado registro compra_20260430083822_5ec580d7 em compras.json
+2026-04-30 08:38:22,736 - jujoo - INFO - Criado registro mov_20260430083822_ff605a3f em caixa.json
+2026-04-30 08:38:22,737 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-30 08:38:22,738 - jujoo - INFO - Compra criada: compra_20260430083822_5ec580d7 - R$ 50.0
+2026-04-30 08:38:22,760 - jujoo - INFO - Criado registro compra_20260430083822_3b7d5ebc em compras.json
+2026-04-30 08:38:22,766 - jujoo - INFO - Criado registro mov_20260430083822_6505b065 em caixa.json
+2026-04-30 08:38:22,766 - jujoo - INFO - Movimento criado: saida - R$ 50.0
+2026-04-30 08:38:22,767 - jujoo - INFO - Compra criada: compra_20260430083822_3b7d5ebc - R$ 50.0
+2026-04-30 08:38:22,837 - jujoo - INFO - Criado registro prod_20260430083822_2d0a1976 em produtos.json
+2026-04-30 08:38:22,838 - jujoo - INFO - Produto criado: Sorvete Produção Teste
+2026-04-30 08:38:23,082 - jujoo - INFO - Fechamento diário 2026-04-28: R$ 310.0
+2026-04-30 08:38:23,137 - jujoo - INFO - Criado registro prod_20260430083823_42ca9db3 em produtos.json
+2026-04-30 08:38:23,139 - jujoo - INFO - Produto criado: Sorvete Fluxo Integrado
+2026-04-30 08:38:23,160 - jujoo - INFO - Processando pagamento em dinheiro: R$ 54.0
+2026-04-30 08:38:23,180 - jujoo - INFO - Criado registro venda_20260430083823_ee6b3f8c em vendas.json
+2026-04-30 08:38:23,188 - jujoo - INFO - Criado registro mov_20260430083823_b3ff8465 em caixa.json
+2026-04-30 08:38:23,188 - jujoo - INFO - Movimento criado: entrada - R$ 54.0
+2026-04-30 08:38:23,192 - jujoo - INFO - Emitindo NFCe para venda venda_20260430083823_ee6b3f8c
+2026-04-30 08:38:23,194 - jujoo - INFO - NFCe 4 emitida com sucesso
+2026-04-30 08:38:23,209 - jujoo - INFO - Atualizado registro venda_20260430083823_ee6b3f8c em vendas.json
+2026-04-30 08:38:23,210 - jujoo - INFO - Venda criada: venda_20260430083823_ee6b3f8c - R$ 54.0
+2026-04-30 08:38:23,304 - jujoo - INFO - Criado registro mp_20260430083823_f7eee4d1 em materias_primas.json
+2026-04-30 08:38:23,304 - jujoo - INFO - Matéria-prima criada: Leite Fluxo Integrado
+2026-04-30 08:38:23,349 - jujoo - INFO - Atualizado registro mp_20260430083823_f7eee4d1 em materias_primas.json
+2026-04-30 08:38:23,659 - jujoo - INFO - Processando pagamento em dinheiro: R$ 100.0
+2026-04-30 08:38:23,664 - jujoo - INFO - Processando pagamento PIX: R$ 100.0
+2026-04-30 08:38:23,667 - jujoo - INFO - Processando cartão de crédito: R$ 100.0
+2026-04-30 08:38:23,669 - jujoo - INFO - Processando cartão de débito: R$ 100.0
+2026-04-30 08:38:23,678 - jujoo - INFO - Estornando transação: transacao_123
+2026-04-30 08:38:23,689 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-30 08:38:23,690 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-30 08:38:23,692 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-30 08:38:23,692 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-30 08:38:23,695 - jujoo - INFO - Emitindo NFCe para venda venda_001
+2026-04-30 08:38:23,696 - jujoo - INFO - NFCe 1 emitida com sucesso
+2026-04-30 08:38:23,698 - jujoo - INFO - NFCe 1 cancelada

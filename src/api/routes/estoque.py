@@ -1,10 +1,16 @@
 # Rotas de Matérias-Primas / Estoque
 from fastapi import APIRouter, HTTPException
+from pydantic import BaseModel
 from typing import List
 from src.models.materia_prima import MateriaPrimaCreate, MateriaPrimaUpdate, MateriaPrimaResponse
 from src.services.estoque_service import estoque_service
 
 router = APIRouter(prefix="/estoque", tags=["Estoque"])
+
+class QuantidadeRequest(BaseModel):
+    """Payload para quantidade de estoque."""
+    quantidade: float
+
 
 
 @router.get("/", response_model=List[MateriaPrimaResponse])
@@ -50,8 +56,15 @@ def atualizar_materia(materia_id: str, dados: MateriaPrimaUpdate):
 
 
 @router.post("/{materia_id}/adicionar")
-def adicionar_estoque(materia_id: str, quantidade: float):
+def adicionar_estoque(materia_id: str, quantidade: float | None = None, payload: QuantidadeRequest | None = None):
     """Adiciona quantidade ao estoque"""
+    # Validação básica: quantidade deve ser positiva
+    if quantidade is None:
+        if payload is not None:
+            quantidade = payload.quantidade
+    if quantidade is None or quantidade <= 0:
+        from fastapi import HTTPException
+        raise HTTPException(status_code=400, detail="Quantidade deve ser maior que zero")
     materia = estoque_service.adicionar_estoque(materia_id, quantidade)
     if not materia:
         raise HTTPException(status_code=404, detail="Matéria-prima não encontrada")
@@ -59,8 +72,15 @@ def adicionar_estoque(materia_id: str, quantidade: float):
 
 
 @router.post("/{materia_id}/remover")
-def remover_estoque(materia_id: str, quantidade: float):
+def remover_estoque(materia_id: str, quantidade: float | None = None, payload: QuantidadeRequest | None = None):
     """Remove quantidade do estoque"""
+    # Validação básica: quantidade deve ser positiva
+    if quantidade is None:
+        if payload is not None:
+            quantidade = payload.quantidade
+    if quantidade is None or quantidade <= 0:
+        from fastapi import HTTPException
+        raise HTTPException(status_code=400, detail="Quantidade deve ser maior que zero")
     materia = estoque_service.remover_estoque(materia_id, quantidade)
     if not materia:
         raise HTTPException(status_code=404, detail="Matéria-prima não encontrada")

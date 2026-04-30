@@ -82,4 +82,8 @@ Este arquivo foi consolidado a partir do histórico de commits do repositório.
 
 ### Commits
 - `75e0795` - first commit
+## Unreleased
 
+- Rodada 4: Documentação e Governança
+  - Adicionado guia de QA/CI, CI/Repo governance, migração API entre as Rodadas, e checklist de validação.
+  - Criação workflow CI básico (.github/workflows/ci.yml) para execução de testes em PRs e push.

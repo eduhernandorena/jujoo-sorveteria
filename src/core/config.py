@@ -17,9 +17,10 @@ API_HOST = os.getenv("API_HOST", "0.0.0.0")
 API_PORT = int(os.getenv("API_PORT", os.getenv("PORT", "8000")))
 API_TITLE = "Jujoo Sorveteria API"
 API_VERSION = "1.0.0"
-CORS_ORIGINS = [
-    origin.strip() for origin in os.getenv("CORS_ORIGINS", "*").split(",") if origin.strip()
-]
+# CORS: exigir configuração explícita de origens. Se não houver CORS_ORIGINS definida via env,
+# o middleware de CORS não será instalado (origens não permitidas por padrão).
+CORS_ORIGINS_ENV = os.getenv("CORS_ORIGINS", "")
+CORS_ORIGINS = [origin.strip() for origin in CORS_ORIGINS_ENV.split(",") if origin.strip()] if CORS_ORIGINS_ENV else []
 
 # Configurações de persistência
 ARQUIVO_PRODUTOS = DATA_DIR / "produtos.json"

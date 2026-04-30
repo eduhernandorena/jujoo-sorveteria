@@ -189,6 +189,14 @@ API_HOST=0.0.0.0 API_PORT=8000 CORS_ORIGINS=https://seu-dominio.com python run.p
 
 Depois, publique com proxy reverso (ex.: Nginx) apontando para a porta `8000`.
 
+## Rodada 1 — Configuração Segura
+
+- Cors: CORS_ORIGINS agora exige configuração explícita; sem origens definidas, o CORS não será habilitado.
+- Logging: logs terão fallback para stdout caso não seja possível escrever no arquivo de logs.
+- Frontend: a rota /frontend verifica a existência de frontend.html e retorna 404 claro se não encontrado.
+- Validação de entradas: validações básicas para pontos críticos (ex.: estoque) para evitar estados inválidos.
+- Documentação de configuração: README atualizado com vars de ambiente esperadas (API_HOST, API_PORT, CORS_ORIGINS).
+
 ## Limitações atuais e próximos passos
 
 Hoje a persistência é local em JSON (`src/data`). Para produção com múltiplos usuários, recomenda-se:
@@ -198,3 +206,13 @@ Hoje a persistência é local em JSON (`src/data`). Para produção com múltipl
 3. Restringir `CORS_ORIGINS` ao domínio real.
 4. Configurar backup e retenção de dados.
 5. Habilitar HTTPS com certificados válidos.
+
+## Rodada 4 — Documentação e Governança
+
+- Guia de QA/CI: definição de padrões mínimos de qualidade, execução de testes, linting e verificação de estilo de código.
+- Configuração de CI: inclusão de workflow (GitHub Actions) para rodar testes automaticamente em PRs e pushes, com relatório de falhas.
+- Migração e governança de API: constar diretrizes de migração entre versões (Rodadas 2 vs 3) com compatibilidade e planos de descontinuação.
+- Backup e recuperação de dados: recomendações para ambientes de produção (DB, snapshots, políticas de retenção).
+- Segurança operacional: checklist de aspectos de segurança (CORS, autenticação, TLS, logs, secrets).
+- Checklist de validação: lista de cenários de teste para rodadas futuras, incluindo casos de erro e limites.
+- Documentação externa: links para guias de uso, exemplos de chamadas, e um changelog evolutivo com cada rodada.

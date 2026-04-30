@@ -15,19 +15,25 @@ app = FastAPI(
 )
 
 # Configurar CORS
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=CORS_ORIGINS if CORS_ORIGINS else ["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+if CORS_ORIGINS:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=CORS_ORIGINS,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+else:
+    logger.info("CORS não configurado (CORS_ORIGINS vazio); origens explícitas necessárias para habilitar CORS.")
 
 # Rota para o frontend
 @app.get("/frontend")
 def get_frontend():
     """Serve o frontend HTML"""
     frontend_path = Path(__file__).parent.parent.parent / "frontend.html"
+    if not frontend_path.exists():
+        from fastapi import HTTPException
+        raise HTTPException(status_code=404, detail="Frontend não disponível")
     return FileResponse(frontend_path)
 
 # Incluir routers
