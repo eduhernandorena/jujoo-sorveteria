@@ -548,5 +548,49 @@
     "data": "2026-04-30T08:38:22.757681",
     "data_cadastro": "2026-04-30T08:38:22.757681",
     "data_atualizacao": "2026-04-30T08:38:22.757681"
+  },
+  {
+    "id": "compra_20260430090813_2eb07832",
+    "fornecedor": "Fornecedor Teste",
+    "itens": [
+      {
+        "materia_prima_id": "leite",
+        "materia_prima_nome": "Leite",
+        "quantidade": 10.0,
+        "preco_unitario": 5.0,
+        "total": 50.0
+      }
+    ],
+    "subtotal": 50.0,
+    "desconto": 0.0,
+    "total": 50.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T09:08:13.670174",
+    "data_cadastro": "2026-04-30T09:08:13.670174",
+    "data_atualizacao": "2026-04-30T09:08:13.670174"
+  },
+  {
+    "id": "compra_20260430090813_b6dd7c76",
+    "fornecedor": "Fornecedor Busca",
+    "itens": [
+      {
+        "materia_prima_id": "creme",
+        "materia_prima_nome": "Creme",
+        "quantidade": 5.0,
+        "preco_unitario": 10.0,
+        "total": 50.0
+      }
+    ],
+    "subtotal": 50.0,
+    "desconto": 0,
+    "total": 50.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T09:08:13.705327",
+    "data_cadastro": "2026-04-30T09:08:13.705327",
+    "data_atualizacao": "2026-04-30T09:08:13.705327"
   }
 ]

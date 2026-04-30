@@ -1234,5 +1234,101 @@
     "data": "2026-04-30T08:38:23.184620",
     "data_cadastro": "2026-04-30T08:38:23.184620",
     "data_atualizacao": "2026-04-30T08:38:23.184620"
+  },
+  {
+    "id": "mov_20260430090811_493bf819",
+    "tipo": "entrada",
+    "valor": 100.0,
+    "origem": "venda",
+    "descricao": "Teste de entrada",
+    "referencia_id": null,
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-30T09:08:11.865424",
+    "data_cadastro": "2026-04-30T09:08:11.865424",
+    "data_atualizacao": "2026-04-30T09:08:11.865424"
+  },
+  {
+    "id": "mov_20260430090813_ec80ef1c",
+    "tipo": "saida",
+    "valor": 50.0,
+    "origem": "compra",
+    "descricao": "Teste de saída",
+    "referencia_id": null,
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-30T09:08:13.130780",
+    "data_cadastro": "2026-04-30T09:08:13.130780",
+    "data_atualizacao": "2026-04-30T09:08:13.130780"
+  },
+  {
+    "id": "mov_20260430090813_a978ff40",
+    "tipo": "entrada",
+    "valor": 30.0,
+    "origem": "venda",
+    "descricao": "Venda #venda_20260430090813_9d17a68f",
+    "referencia_id": "venda_20260430090813_9d17a68f",
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-30T09:08:13.243607",
+    "data_cadastro": "2026-04-30T09:08:13.243607",
+    "data_atualizacao": "2026-04-30T09:08:13.243607"
+  },
+  {
+    "id": "mov_20260430090813_11b43b92",
+    "tipo": "entrada",
+    "valor": 12.0,
+    "origem": "venda",
+    "descricao": "Venda #venda_20260430090813_3fb514e4",
+    "referencia_id": "venda_20260430090813_3fb514e4",
+    "forma_pagamento": "pix",
+    "data": "2026-04-30T09:08:13.355784",
+    "data_cadastro": "2026-04-30T09:08:13.355784",
+    "data_atualizacao": "2026-04-30T09:08:13.355784"
+  },
+  {
+    "id": "mov_20260430090813_59f75932",
+    "tipo": "entrada",
+    "valor": 0.0,
+    "origem": "venda",
+    "descricao": "Venda #venda_20260430090813_687aa92e",
+    "referencia_id": "venda_20260430090813_687aa92e",
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-30T09:08:13.532930",
+    "data_cadastro": "2026-04-30T09:08:13.532930",
+    "data_atualizacao": "2026-04-30T09:08:13.532930"
+  },
+  {
+    "id": "mov_20260430090813_1bd89dd2",
+    "tipo": "saida",
+    "valor": 50.0,
+    "origem": "compra",
+    "descricao": "Compra #compra_20260430090813_2eb07832 - Fornecedor Teste",
+    "referencia_id": "compra_20260430090813_2eb07832",
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-30T09:08:13.675217",
+    "data_cadastro": "2026-04-30T09:08:13.675217",
+    "data_atualizacao": "2026-04-30T09:08:13.675217"
+  },
+  {
+    "id": "mov_20260430090813_4b9cd4cc",
+    "tipo": "saida",
+    "valor": 50.0,
+    "origem": "compra",
+    "descricao": "Compra #compra_20260430090813_b6dd7c76 - Fornecedor Busca",
+    "referencia_id": "compra_20260430090813_b6dd7c76",
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-30T09:08:13.709430",
+    "data_cadastro": "2026-04-30T09:08:13.709430",
+    "data_atualizacao": "2026-04-30T09:08:13.709430"
+  },
+  {
+    "id": "mov_20260430090814_009286e3",
+    "tipo": "entrada",
+    "valor": 54.0,
+    "origem": "venda",
+    "descricao": "Venda #venda_20260430090813_6004186f",
+    "referencia_id": "venda_20260430090813_6004186f",
+    "forma_pagamento": "dinheiro",
+    "data": "2026-04-30T09:08:14.006313",
+    "data_cadastro": "2026-04-30T09:08:14.006313",
+    "data_atualizacao": "2026-04-30T09:08:14.006313"
   }
 ]

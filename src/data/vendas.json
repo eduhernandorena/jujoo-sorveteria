@@ -1109,5 +1109,88 @@
     "data_cadastro": "2026-04-30T08:38:23.161579",
     "data_atualizacao": "2026-04-30T08:38:23.195976",
     "nfce_id": "nfce_4"
+  },
+  {
+    "id": "venda_20260430090813_9d17a68f",
+    "itens": [
+      {
+        "produto_id": "prod_20260430090813_53dd671a",
+        "produto_nome": "Sorvete Venda Integração",
+        "quantidade": 2.0,
+        "preco_unitario": 15.0,
+        "desconto": 0.0,
+        "total": 30.0
+      }
+    ],
+    "subtotal": 30.0,
+    "desconto_total": 0.0,
+    "total": 30.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T09:08:13.219897",
+    "data_cadastro": "2026-04-30T09:08:13.219897",
+    "data_atualizacao": "2026-04-30T09:08:13.250498",
+    "nfce_id": "nfce_1"
+  },
+  {
+    "id": "venda_20260430090813_3fb514e4",
+    "itens": [
+      {
+        "produto_id": "prod_20260430090813_b70fed9f",
+        "produto_nome": "Sorvete Busca Venda",
+        "quantidade": 1.0,
+        "preco_unitario": 12.0,
+        "desconto": 0.0,
+        "total": 12.0
+      }
+    ],
+    "subtotal": 12.0,
+    "desconto_total": 0,
+    "total": 12.0,
+    "forma_pagamento": "pix",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T09:08:13.347002",
+    "data_cadastro": "2026-04-30T09:08:13.347002",
+    "data_atualizacao": "2026-04-30T09:08:13.379894",
+    "nfce_id": "nfce_2"
+  },
+  {
+    "id": "venda_20260430090813_687aa92e",
+    "itens": [],
+    "subtotal": 0,
+    "desconto_total": 0,
+    "total": 0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T09:08:13.521642",
+    "data_cadastro": "2026-04-30T09:08:13.521642",
+    "data_atualizacao": "2026-04-30T09:08:13.552041",
+    "nfce_id": "nfce_3"
+  },
+  {
+    "id": "venda_20260430090813_6004186f",
+    "itens": [
+      {
+        "produto_id": "prod_20260430090813_116a65d3",
+        "produto_nome": "Sorvete Fluxo Integrado",
+        "quantidade": 3.0,
+        "preco_unitario": 18.0,
+        "desconto": 0.0,
+        "total": 54.0
+      }
+    ],
+    "subtotal": 54.0,
+    "desconto_total": 0,
+    "total": 54.0,
+    "forma_pagamento": "dinheiro",
+    "status": "ativo",
+    "observacoes": "",
+    "data": "2026-04-30T09:08:13.994750",
+    "data_cadastro": "2026-04-30T09:08:13.994750",
+    "data_atualizacao": "2026-04-30T09:08:14.016419",
+    "nfce_id": "nfce_4"
   }
 ]
